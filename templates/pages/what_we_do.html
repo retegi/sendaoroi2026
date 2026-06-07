@@ -4,18 +4,64 @@
 {% block title %}{% trans "Qué hacemos" %} | Sendaoroi.org{% endblock %}
 
 {% block content %}
-<section class="grid gap-6 md:grid-cols-2">
-  <div class="rounded-xl bg-white p-8 shadow-sm">
-    <p class="text-sm font-semibold uppercase tracking-wide text-brand-moss">{% trans "Programa" %}</p>
-    <h1 class="mt-3 text-3xl font-bold text-brand-teal">{% trans "Qué hacemos" %}</h1>
-    <p class="mt-3 text-brand-gray">
-      {% trans "Resumen breve de las líneas de trabajo y propuestas de acompañamiento." %}
+<section class="overflow-hidden rounded-2xl bg-gradient-to-r from-sendaoroi-blue to-sendaoroi-green px-6 py-10 text-white shadow-lg md:px-10 md:py-12">
+  <div class="max-w-3xl">
+    <p class="text-sm font-semibold uppercase tracking-widest text-white/80">{% trans "Programa Sendaoroi" %}</p>
+    <h1 class="mt-3 text-4xl font-bold md:text-5xl">{% trans "Qué hacemos" %}</h1>
+    <p class="mt-4 text-base leading-relaxed text-white/90 md:text-lg">
+      {% trans "Acompañamos heridas invisibles que siguen presentes en la vida de muchas personas, familias y comunidades." %}
     </p>
   </div>
-  <div class="rounded-xl border border-brand-stone/30 bg-brand-moss/10 p-8">
-    <h2 class="text-lg font-semibold text-brand-teal">{% trans "Sección en construcción" %}</h2>
-    <p class="mt-2 text-sm text-brand-gray">{% trans "Espacio visual temporal hasta incorporar el contenido final." %}</p>
-    <div class="mt-6 h-40 rounded-lg border-2 border-dashed border-brand-stone/50 bg-white/70"></div>
+</section>
+
+<section class="mt-10 card-sendaoroi">
+  <div class="space-y-5 text-base leading-relaxed text-sendaoroi-gray">
+    <p>
+      {% blocktrans %}
+      Las heridas invisibles no se borran solo con el invierno de los años. Aunque las vulneraciones más graves de los derechos humanos ligadas al contexto vasco cesaron tiempo atrás, el sufrimiento, el trauma y las secuelas psicosociales siguen pesando en silencio en la intimidad de muchas personas y en sus entornos afectivos y comunitarios.
+      {% endblocktrans %}
+    </p>
+    <p>
+      {% blocktrans %}
+      Los procesos institucionales de reconocimiento y reparación cumplen una función fundamental y necesaria. Sin embargo, la sanación emocional y comunitaria es una tarea humana que requiere otro tipo de espacios complementarios.
+      {% endblocktrans %}
+    </p>
+    <p>
+      {% blocktrans %}
+      Sendaoroi nace para ser esa comunidad de cuidados que complementa los marcos existentes: un lugar donde descansar del peso del pasado, un suelo firme para el trabajo personal y un ágora donde tejer de nuevo, paso a paso, los lazos que un día se desgastaron.
+      {% endblocktrans %}
+    </p>
   </div>
+</section>
+
+<section class="mt-10 grid gap-5 md:grid-cols-2">
+  <article class="card-sendaoroi">
+    <h2 class="text-xl font-semibold text-sendaoroi-blue">{% trans "El dolor no responde a plazos ni a leyes" %}</h2>
+    <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
+      {% trans "El sufrimiento derivado de lo vivido es una realidad viva hoy. Palpita en el presente y necesita atención diaria, más allá del estado de los trámites oficiales, los expedientes o las acreditaciones de cada persona." %}
+    </p>
+  </article>
+  <article class="card-sendaoroi">
+    <h2 class="text-xl font-semibold text-sendaoroi-blue">{% trans "Sanar es un camino íntimo y compartido" %}</h2>
+    <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
+      {% trans "Este proceso requiere paciencia, esfuerzo personal y valentía para transitar la herida, poner palabras a la propia historia y respetar los tiempos y necesidades. A veces necesita privacidad; otras, encuentro con otras realidades y abrazo colectivo para romper el aislamiento y sanar en común." %}
+    </p>
+  </article>
+  <article class="card-sendaoroi">
+    <h2 class="text-xl font-semibold text-sendaoroi-blue">{% trans "El impacto viaja en el silencio de los hogares" %}</h2>
+    <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
+      {% trans "El trauma no se limita a quien sufrió la violencia en primera persona; se transmite, como un peso invisible, a los entornos familiares y afectivos, que a menudo quedan desdibujados en los relatos públicos." %}
+    </p>
+  </article>
+  <article class="card-sendaoroi">
+    <h2 class="text-xl font-semibold text-sendaoroi-blue">{% trans "Acompañar es sostener la raíz" %}</h2>
+    <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
+      {% trans "Para que la luz y la primavera retornen al corazón de cada persona y de sus hogares, primero es imprescindible escuchar sin condiciones, caminar al lado de cada una y cuidar con delicadeza las raíces que quedaron dañadas bajo la tierra." %}
+    </p>
+  </article>
+</section>
+
+<section class="mt-10">
+  <a href="{% url 'compass' %}" class="btn-sendaoroi">{% trans "Conocer nuestra brújula" %}</a>
 </section>
 {% endblock %}

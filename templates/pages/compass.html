@@ -4,18 +4,81 @@
 {% block title %}{% trans "Nuestra brújula" %} | Sendaoroi.org{% endblock %}
 
 {% block content %}
-<section class="grid gap-6 md:grid-cols-2">
-  <div class="rounded-xl bg-white p-8 shadow-sm">
-    <p class="text-sm font-semibold uppercase tracking-wide text-brand-moss">{% trans "Programa" %}</p>
-    <h1 class="mt-3 text-3xl font-bold text-brand-teal">{% trans "Nuestra brújula" %}</h1>
-    <p class="mt-3 text-brand-gray">
-      {% trans "Página puente para presentar valores, criterio y dirección metodológica." %}
+<section class="overflow-hidden rounded-2xl bg-gradient-to-r from-sendaoroi-blue to-sendaoroi-green px-6 py-10 text-white shadow-lg md:px-10 md:py-12">
+  <div class="max-w-3xl">
+    <p class="text-sm font-semibold uppercase tracking-widest text-white/80">{% trans "Programa Sendaoroi" %}</p>
+    <h1 class="mt-3 text-4xl font-bold md:text-5xl">{% trans "Nuestra brújula" %}</h1>
+    <p class="mt-4 text-base leading-relaxed text-white/90 md:text-lg">
+      {% trans "Los principios que orientan el acompañamiento de Sendaoroi." %}
     </p>
   </div>
-  <div class="rounded-xl border border-brand-stone/30 bg-brand-moss/10 p-8">
-    <h2 class="text-lg font-semibold text-brand-teal">{% trans "Contenido definitivo pendiente" %}</h2>
-    <p class="mt-2 text-sm text-brand-gray">{% trans "Placeholder visual elegante para completar en la fase de contenido." %}</p>
-    <div class="mt-6 h-40 rounded-lg border-2 border-dashed border-brand-stone/50 bg-white/70"></div>
+  <div class="mt-6 inline-flex items-center gap-2 rounded-full bg-white/10 px-4 py-2 text-sm">
+    <span aria-hidden="true" class="text-lg">🧭</span>
+    <span>{% trans "Dirección compartida y cuidado sostenido" %}</span>
   </div>
+</section>
+
+<section class="mt-10 grid gap-6">
+  <article class="card-sendaoroi">
+    <h2 class="text-2xl font-bold text-sendaoroi-blue">{% trans "Nuestra esencia: el compromiso con la persona" %}</h2>
+    <ul class="mt-5 grid gap-4 md:grid-cols-2">
+      <li class="rounded-lg border border-sendaoroi-gray/20 bg-sendaoroi-sand/20 p-4">
+        <h3 class="font-semibold text-sendaoroi-blue">{% trans "Dignidad y humanidad" %}</h3>
+        <p class="mt-2 text-sm text-sendaoroi-gray">{% trans "Ponemos a la persona en el centro, reconociendo su valor único y su historia." %}</p>
+      </li>
+      <li class="rounded-lg border border-sendaoroi-gray/20 bg-sendaoroi-sand/20 p-4">
+        <h3 class="font-semibold text-sendaoroi-blue">{% trans "Cuidado y respeto" %}</h3>
+        <p class="mt-2 text-sm text-sendaoroi-gray">{% trans "Establecemos un trato humano que sostiene y protege la integridad de quien acompañamos." %}</p>
+      </li>
+      <li class="rounded-lg border border-sendaoroi-gray/20 bg-sendaoroi-sand/20 p-4">
+        <h3 class="font-semibold text-sendaoroi-blue">{% trans "Empatía y conciencia social del daño" %}</h3>
+        <p class="mt-2 text-sm text-sendaoroi-gray">{% trans "Comprendemos que cada proceso está marcado por un contexto social profundo que requiere una mirada sensible." %}</p>
+      </li>
+      <li class="rounded-lg border border-sendaoroi-gray/20 bg-sendaoroi-sand/20 p-4">
+        <h3 class="font-semibold text-sendaoroi-blue">{% trans "Escucha y vínculo" %}</h3>
+        <p class="mt-2 text-sm text-sendaoroi-gray">{% trans "Construimos una relación basada en la confianza, el elemento clave para el acompañamiento." %}</p>
+      </li>
+    </ul>
+  </article>
+
+  <article class="card-sendaoroi">
+    <h2 class="text-2xl font-bold text-sendaoroi-blue">{% trans "Nuestra metodología: tú eres protagonista" %}</h2>
+    <ul class="mt-5 grid gap-4 md:grid-cols-3">
+      <li class="rounded-lg border border-sendaoroi-gray/20 bg-white p-4">
+        <h3 class="font-semibold text-sendaoroi-blue">{% trans "Voluntariedad y co-construcción del proceso" %}</h3>
+        <p class="mt-2 text-sm text-sendaoroi-gray">{% trans "Defendemos el control de la persona sobre su propio camino; nada ocurre sin su voluntad y confiamos en su propia sabiduría." %}</p>
+      </li>
+      <li class="rounded-lg border border-sendaoroi-gray/20 bg-white p-4">
+        <h3 class="font-semibold text-sendaoroi-blue">{% trans "Acompañamiento individualizado" %}</h3>
+        <p class="mt-2 text-sm text-sendaoroi-gray">{% trans "Adaptamos nuestros recursos y nuestra presencia a las necesidades específicas de cada caso." %}</p>
+      </li>
+      <li class="rounded-lg border border-sendaoroi-gray/20 bg-white p-4">
+        <h3 class="font-semibold text-sendaoroi-blue">{% trans "Respeto a los tiempos" %}</h3>
+        <p class="mt-2 text-sm text-sendaoroi-gray">{% trans "Entendemos que transitar el propio dolor requiere sus propios ritmos, y nuestra responsabilidad es respetarlos sin presiones." %}</p>
+      </li>
+    </ul>
+  </article>
+
+  <article class="card-sendaoroi">
+    <h2 class="text-2xl font-bold text-sendaoroi-blue">{% trans "Nuestro compromiso: seguridad y profesionalidad" %}</h2>
+    <ul class="mt-5 grid gap-4 md:grid-cols-3">
+      <li class="rounded-lg border border-sendaoroi-gray/20 bg-white p-4">
+        <h3 class="font-semibold text-sendaoroi-blue">{% trans "Enfoque no revictimizante y prevención del daño" %}</h3>
+        <p class="mt-2 text-sm text-sendaoroi-gray">{% trans "Diseñamos nuestras intervenciones para evitar cualquier impacto negativo adicional." %}</p>
+      </li>
+      <li class="rounded-lg border border-sendaoroi-gray/20 bg-white p-4">
+        <h3 class="font-semibold text-sendaoroi-blue">{% trans "Cuidado de la información y confidencialidad" %}</h3>
+        <p class="mt-2 text-sm text-sendaoroi-gray">{% trans "La protección de tu privacidad es nuestra prioridad absoluta." %}</p>
+      </li>
+      <li class="rounded-lg border border-sendaoroi-gray/20 bg-white p-4">
+        <h3 class="font-semibold text-sendaoroi-blue">{% trans "Independencia y trabajo en red" %}</h3>
+        <p class="mt-2 text-sm text-sendaoroi-gray">{% trans "Mantenemos la autonomía necesaria para actuar sin corsés, colaborando siempre con otros agentes para ofrecer un soporte integral." %}</p>
+      </li>
+    </ul>
+  </article>
+</section>
+
+<section class="mt-10">
+  <a href="{% url 'process' %}" class="btn-sendaoroi">{% trans "Ver acompañamiento como proceso" %}</a>
 </section>
 {% endblock %}

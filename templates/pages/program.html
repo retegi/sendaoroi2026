@@ -4,18 +4,45 @@
 {% block title %}{% trans "Programa Sendaoroi" %} | Sendaoroi.org{% endblock %}
 
 {% block content %}
-<section class="grid gap-6 md:grid-cols-2">
-  <div class="rounded-xl bg-white p-8 shadow-sm">
-    <p class="text-sm font-semibold uppercase tracking-wide text-brand-moss">{% trans "Programa" %}</p>
-    <h1 class="mt-3 text-3xl font-bold text-brand-teal">{% trans "Programa Sendaoroi" %}</h1>
-    <p class="mt-3 text-brand-gray">
-      {% trans "Vista general del programa y su estructura en fases y servicios." %}
+<section class="overflow-hidden rounded-2xl bg-gradient-to-r from-sendaoroi-blue to-sendaoroi-green px-6 py-10 text-white shadow-lg md:px-10 md:py-12">
+  <div class="max-w-3xl">
+    <p class="text-sm font-semibold uppercase tracking-widest text-white/80">{% trans "Programa" %}</p>
+    <h1 class="mt-3 text-4xl font-bold md:text-5xl">{% trans "Programa Sendaoroi" %}</h1>
+    <p class="mt-4 text-base leading-relaxed text-white/90 md:text-lg">
+      {% trans "Un programa de acompañamiento psicosocial desde la dignidad, la escucha y los derechos humanos." %}
+    </p>
+    <p class="mt-4 text-sm leading-relaxed text-white/85 md:text-base">
+      {% blocktrans %}
+      Sendaoroi nace para acompañar a personas afectadas por vulneraciones de derechos humanos en el contexto vasco, ofreciendo espacios seguros donde poder poner palabras a la experiencia vivida, cuidar las heridas invisibles y reconstruir vínculos personales, familiares y comunitarios.
+      {% endblocktrans %}
     </p>
   </div>
-  <div class="rounded-xl border border-brand-stone/30 bg-brand-moss/10 p-8">
-    <h2 class="text-lg font-semibold text-brand-teal">{% trans "Mapa de contenidos en preparación" %}</h2>
-    <p class="mt-2 text-sm text-brand-gray">{% trans "Aquí se incorporará el contenido definitivo de programa." %}</p>
-    <div class="mt-6 h-40 rounded-lg border-2 border-dashed border-brand-stone/50 bg-white/70"></div>
-  </div>
+</section>
+
+<section class="mt-10 grid gap-5 sm:grid-cols-2">
+  <a href="{% url 'what_we_do' %}" class="card-sendaoroi block transition hover:-translate-y-0.5 hover:shadow-md">
+    <h2 class="text-xl font-semibold text-sendaoroi-blue">{% trans "Qué hacemos" %}</h2>
+    <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
+      {% trans "Acompañamos procesos personales y comunitarios que no siempre encuentran respuesta en los marcos institucionales." %}
+    </p>
+  </a>
+  <a href="{% url 'compass' %}" class="card-sendaoroi block transition hover:-translate-y-0.5 hover:shadow-md">
+    <h2 class="text-xl font-semibold text-sendaoroi-blue">{% trans "Nuestra brújula" %}</h2>
+    <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
+      {% trans "Conoce los principios que orientan nuestro modo de acompañar: dignidad, cuidado, voluntariedad, confidencialidad y trabajo en red." %}
+    </p>
+  </a>
+  <a href="{% url 'process' %}" class="card-sendaoroi block transition hover:-translate-y-0.5 hover:shadow-md">
+    <h2 class="text-xl font-semibold text-sendaoroi-blue">{% trans "El acompañamiento como proceso" %}</h2>
+    <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
+      {% trans "Entendemos el acompañamiento como un itinerario flexible, co-construido con cada persona y respetuoso con sus tiempos." %}
+    </p>
+  </a>
+  <a href="{% url 'services' %}" class="card-sendaoroi block transition hover:-translate-y-0.5 hover:shadow-md">
+    <h2 class="text-xl font-semibold text-sendaoroi-blue">{% trans "Pasos y servicios" %}</h2>
+    <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
+      {% trans "Descubre los posibles pasos del proceso y los itinerarios de apoyo que pueden activarse según cada situación." %}
+    </p>
+  </a>
 </section>
 {% endblock %}
