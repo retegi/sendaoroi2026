@@ -1,0 +1,52 @@
+{% load i18n %}
+<header class="sticky top-0 z-50 border-b border-white/15 bg-brand-teal text-white shadow-md">
+  <div class="mx-auto max-w-6xl px-4 py-4">
+    <div class="flex items-center justify-between gap-3">
+      <a href="{% url 'home' %}" class="text-xl font-semibold tracking-tight">Sendaoroi.org</a>
+      <div class="hidden items-center gap-2 text-xs uppercase md:flex md:text-sm">
+        <a href="/eu/" class="rounded border border-white px-2 py-1 transition hover:bg-white/10">EUS</a>
+        <a href="/es/" class="rounded border border-white px-2 py-1 transition hover:bg-white/10">CAS</a>
+      </div>
+    </div>
+
+    <nav class="mt-4 hidden items-center gap-5 text-sm lg:flex">
+      <a href="{% url 'home' %}" class="transition hover:text-brand-sand">{% trans "Página principal" %}</a>
+      <a href="{% url 'roots' %}" class="transition hover:text-brand-sand">{% trans "Nuestras raíces" %}</a>
+      <div class="group relative">
+        <a href="{% url 'program' %}" class="inline-flex items-center gap-1 transition hover:text-brand-sand">
+          {% trans "Programa Sendaoroi" %}
+          <span aria-hidden="true">▾</span>
+        </a>
+        <div class="absolute left-0 mt-2 hidden min-w-64 rounded-md bg-white p-2 text-sm text-brand-teal shadow-lg group-hover:block">
+          <a href="{% url 'what_we_do' %}" class="block rounded px-3 py-2 hover:bg-brand-sand/40">{% trans "Qué hacemos" %}</a>
+          <a href="{% url 'compass' %}" class="block rounded px-3 py-2 hover:bg-brand-sand/40">{% trans "Nuestra brújula" %}</a>
+          <a href="{% url 'process' %}" class="block rounded px-3 py-2 hover:bg-brand-sand/40">{% trans "El acompañamiento como proceso" %}</a>
+          <a href="{% url 'services' %}" class="block rounded px-3 py-2 hover:bg-brand-sand/40">{% trans "Pasos y servicios" %}</a>
+        </div>
+      </div>
+      <a href="{% url 'is_it_for_me' %}" class="transition hover:text-brand-sand">{% trans "¿Sendaoroi es para mí?" %}</a>
+      <a href="{% url 'team' %}" class="transition hover:text-brand-sand">{% trans "Equipo Sendaoroi" %}</a>
+      <a href="{% url 'contact' %}" class="transition hover:text-brand-sand">{% trans "Contactar" %}</a>
+    </nav>
+
+    <details class="mt-4 rounded-md bg-white/10 p-3 lg:hidden">
+      <summary class="cursor-pointer text-sm font-medium">{% trans "Menú" %}</summary>
+      <div class="mt-3 grid gap-2 text-sm">
+        <a href="{% url 'home' %}" class="rounded px-2 py-1 hover:bg-white/10">{% trans "Página principal" %}</a>
+        <a href="{% url 'roots' %}" class="rounded px-2 py-1 hover:bg-white/10">{% trans "Nuestras raíces" %}</a>
+        <a href="{% url 'program' %}" class="rounded px-2 py-1 hover:bg-white/10">{% trans "Programa Sendaoroi" %}</a>
+        <a href="{% url 'what_we_do' %}" class="ml-3 rounded px-2 py-1 text-brand-sand hover:bg-white/10">{% trans "Qué hacemos" %}</a>
+        <a href="{% url 'compass' %}" class="ml-3 rounded px-2 py-1 text-brand-sand hover:bg-white/10">{% trans "Nuestra brújula" %}</a>
+        <a href="{% url 'process' %}" class="ml-3 rounded px-2 py-1 text-brand-sand hover:bg-white/10">{% trans "El acompañamiento como proceso" %}</a>
+        <a href="{% url 'services' %}" class="ml-3 rounded px-2 py-1 text-brand-sand hover:bg-white/10">{% trans "Pasos y servicios" %}</a>
+        <a href="{% url 'is_it_for_me' %}" class="rounded px-2 py-1 hover:bg-white/10">{% trans "¿Sendaoroi es para mí?" %}</a>
+        <a href="{% url 'team' %}" class="rounded px-2 py-1 hover:bg-white/10">{% trans "Equipo Sendaoroi" %}</a>
+        <a href="{% url 'contact' %}" class="rounded px-2 py-1 hover:bg-white/10">{% trans "Contactar" %}</a>
+        <div class="mt-2 flex items-center gap-2 text-xs uppercase">
+          <a href="/eu/" class="rounded border border-white px-2 py-1">EUS</a>
+          <a href="/es/" class="rounded border border-white px-2 py-1">CAS</a>
+        </div>
+      </div>
+    </details>
+  </div>
+</header>

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Contactar" %} | Sendaoroi.org{% endblock %}
+
+{% block content %}
+<section class="grid gap-6 md:grid-cols-2">
+  <div class="rounded-xl bg-white p-8 shadow-sm">
+    <p class="text-sm font-semibold uppercase tracking-wide text-brand-moss">{% trans "Contacto" %}</p>
+    <h1 class="mt-3 text-3xl font-bold text-brand-teal">{% trans "Contactar" %}</h1>
+    <p class="mt-3 text-brand-gray">{% trans "Canal directo para resolver dudas y solicitar información inicial." %}</p>
+    <div class="mt-6 space-y-1 text-brand-teal">
+      <p><a href="mailto:info@sendaoroi.org">info@sendaoroi.org</a></p>
+      <p><a href="tel:+34688611573">688 611 573</a></p>
+    </div>
+  </div>
+  <div class="rounded-xl border border-brand-stone/30 bg-brand-moss/10 p-8">
+    <h2 class="text-lg font-semibold text-brand-teal">{% trans "Formulario en preparación" %}</h2>
+    <p class="mt-2 text-sm text-brand-gray">
+      {% trans "Aquí irá el formulario definitivo de contacto en la siguiente iteración." %}
+    </p>
+    <div class="mt-6 h-40 rounded-lg border-2 border-dashed border-brand-stone/50 bg-white/70"></div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,21 @@
+services:
+  web:
+    build: .
+    env_file:
+      - .env
+    depends_on:
+      - db
+    volumes:
+      - static_data:/app/staticfiles
+    command: gunicorn config.wsgi:application --bind 0.0.0.0:8000
+
+  db:
+    image: postgres:16-alpine
+    env_file:
+      - .env
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
+  static_data:
