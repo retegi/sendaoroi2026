@@ -4,18 +4,75 @@
 {% block title %}{% trans "Nuestras raíces" %} | Sendaoroi.org{% endblock %}
 
 {% block content %}
-<section class="grid gap-6 md:grid-cols-2">
-  <div class="rounded-xl bg-white p-8 shadow-sm">
-    <p class="text-sm font-semibold uppercase tracking-wide text-brand-moss">{% trans "Identidad" %}</p>
-    <h1 class="mt-3 text-3xl font-bold text-brand-teal">{% trans "Nuestras raíces" %}</h1>
-    <p class="mt-3 text-brand-gray">
-      {% trans "Presentación breve de la base, enfoque y origen de la propuesta Sendaoroi." %}
+<section class="overflow-hidden rounded-2xl bg-gradient-to-r from-sendaoroi-blue to-sendaoroi-green px-6 py-10 text-white shadow-lg md:px-10 md:py-12">
+  <div class="max-w-3xl">
+    <p class="text-sm font-semibold uppercase tracking-widest text-white/80">{% trans "Origen y sentido" %}</p>
+    <h1 class="mt-3 text-4xl font-bold md:text-5xl">{% trans "Nuestras raíces" %}</h1>
+    <p class="mt-4 text-base leading-relaxed text-white/90 md:text-lg">
+      {% blocktrans %}
+      El origen de Sendaoroi está unido a Berridatzi Elkartea y a la voluntad de transformar el dolor en cuidado, convivencia y esperanza.
+      {% endblocktrans %}
     </p>
   </div>
-  <div class="rounded-xl border border-brand-stone/30 bg-brand-moss/10 p-8">
-    <h2 class="text-lg font-semibold text-brand-teal">{% trans "Contenido completo próximamente" %}</h2>
-    <p class="mt-2 text-sm text-brand-gray">{% trans "Bloque visual reservado para el contenido largo definitivo." %}</p>
-    <div class="mt-6 h-40 rounded-lg border-2 border-dashed border-brand-stone/50 bg-white/70"></div>
+</section>
+
+<section class="mt-10 grid gap-6">
+  <article class="card-sendaoroi">
+    <h2 class="text-2xl font-bold text-sendaoroi-blue md:text-3xl">{% trans "Berridatzi Elkartea" %}</h2>
+    <div class="mt-5 space-y-4 text-base leading-relaxed text-sendaoroi-gray">
+      <p>
+        {% blocktrans %}
+        Berridatzi Bizikidetza Josteko Elkartea nace de una necesidad vital: transformar en esperanza el trauma que marcó a muchas familias. Esa experiencia personal fue el germen de nuestra asociación sin ánimo de lucro, constituida en 2019 con la misión fundamental de consolidar la paz y tejer la convivencia.
+        {% endblocktrans %}
+      </p>
+      <p>
+        {% blocktrans %}
+        Desde nuestros inicios, trabajamos para sanar heridas —personales y colectivas— y prestar un apoyo digno a víctimas, personas olvidadas y colectivos oprimidos. Exploramos itinerarios de justicia transicional y asistencia integral, convencidas de que la verdadera paz solo es posible si atendemos el dolor con empatía y un firme compromiso con la no repetición.
+        {% endblocktrans %}
+      </p>
+      <p>
+        {% blocktrans %}
+        Sendaoroi es la materialización de esa voluntad y el principal proyecto de Berridatzi. Actuamos allí donde las respuestas convencionales no llegan, priorizando la escucha activa, la estabilidad emocional y el fortalecimiento de la resiliencia colectiva.
+        {% endblocktrans %}
+      </p>
+    </div>
+  </article>
+
+  <article class="card-sendaoroi">
+    <h2 class="text-2xl font-bold text-sendaoroi-blue md:text-3xl">{% trans "Qué significa Sendaoroi" %}</h2>
+    <div class="mt-5 space-y-4 text-base leading-relaxed text-sendaoroi-gray">
+      <p>
+        {% blocktrans %}
+        Sendaoroi no habita en los diccionarios; es una palabra que hemos imaginado para poder nombrar nuestro espacio seguro de cuidado y acompañamiento.
+        {% endblocktrans %}
+      </p>
+      <p>
+        {% blocktrans %}
+        En euskera, enlaza sendatu, sanar, y oroimena, memoria: el deseo profundo de sanar los recuerdos y aliviar ese dolor sordo que, a menudo, el paso del tiempo deja estancado en el alma.
+        {% endblocktrans %}
+      </p>
+      <p>
+        {% blocktrans %}
+        Al mirarlo en castellano, el nombre se dibuja como una senda. Y de nuevo en euskera, oroi nos susurra también un horizonte: a todas, a todos.
+        {% endblocktrans %}
+      </p>
+      <p>
+        {% blocktrans %}
+        Sendaoroi es, por lo tanto, ese camino abierto que busca dignificar las memorias, sin asimetrías y desde el respeto absoluto a la palabra, al relato y a los tiempos de cada persona.
+        {% endblocktrans %}
+      </p>
+    </div>
+    <div class="placeholder-sendaoroi"></div>
+  </article>
+</section>
+
+<section class="mt-10 rounded-2xl border border-sendaoroi-green/30 bg-sendaoroi-green/10 p-6 md:p-8">
+  <h3 class="text-xl font-semibold text-sendaoroi-blue">{% trans "Seguimos construyendo" %}</h3>
+  <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray md:text-base">
+    {% trans "En la siguiente fase incorporaremos más detalles históricos, hitos y materiales complementarios." %}
+  </p>
+  <div class="mt-5">
+    <a href="{% url 'program' %}" class="btn-sendaoroi">{% trans "Ver Programa Sendaoroi" %}</a>
   </div>
 </section>
 {% endblock %}
