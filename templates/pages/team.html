@@ -4,18 +4,153 @@
 {% block title %}{% trans "Equipo Sendaoroi" %} | Sendaoroi.org{% endblock %}
 
 {% block content %}
-<section class="grid gap-6 md:grid-cols-2">
-  <div class="rounded-xl bg-white p-8 shadow-sm">
-    <p class="text-sm font-semibold uppercase tracking-wide text-brand-moss">{% trans "Equipo" %}</p>
-    <h1 class="mt-3 text-3xl font-bold text-brand-teal">{% trans "Equipo Sendaoroi" %}</h1>
-    <p class="mt-3 text-brand-gray">
-      {% trans "Espacio de presentación breve de las personas y perfiles que forman Sendaoroi." %}
+<section class="overflow-hidden rounded-2xl bg-gradient-to-r from-sendaoroi-blue to-sendaoroi-green px-6 py-10 text-white shadow-lg md:px-10 md:py-12">
+  <div class="max-w-3xl">
+    <h1 class="text-4xl font-bold md:text-5xl">{% trans "Equipo Sendaoroi" %}</h1>
+    <p class="mt-4 text-base leading-relaxed text-white/90 md:text-lg">
+      {% trans "Personas y entidades que hacen posible el programa de acompañamiento." %}
+    </p>
+    <p class="mt-4 text-sm leading-relaxed text-white/85 md:text-base">
+      {% trans "Sendaoroi es un proyecto colectivo que reúne miradas vinculadas a la convivencia, la memoria, la salud comunitaria, los derechos humanos, las prácticas restaurativas y el acompañamiento psicosocial." %}
     </p>
   </div>
-  <div class="rounded-xl border border-brand-stone/30 bg-brand-moss/10 p-8">
-    <h2 class="text-lg font-semibold text-brand-teal">{% trans "Perfiles completos próximamente" %}</h2>
-    <p class="mt-2 text-sm text-brand-gray">{% trans "Bloque temporal a la espera de biografías y fotografías definitivas." %}</p>
-    <div class="mt-6 h-40 rounded-lg border-2 border-dashed border-brand-stone/50 bg-white/70"></div>
+</section>
+
+<section class="mt-10">
+  <h2 class="text-2xl font-bold text-sendaoroi-blue">{% trans "Grupo de trabajo del programa" %}</h2>
+  <div class="mt-5 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+    <article class="card-sendaoroi">
+      <div class="flex items-start gap-4">
+        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-sendaoroi-blue text-lg font-bold text-white">PZ</div>
+        <div>
+          <h3 class="text-lg font-semibold text-sendaoroi-blue">Pili Zabala Artano</h3>
+          <p class="text-sm text-sendaoroi-green">{% trans "Vicepresidenta de Berridatzi Elkartea" %}</p>
+        </div>
+      </div>
+      <div class="mt-4 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">
+        <p>
+          {% blocktrans %}
+          La imaginación moral me ha permitido soñar que es posible cocrear y construir, junto a otras personas, una comunidad de apoyo, acompañamiento y solidaridad expansiva que nos permita confiar en los demás y reconstruir los vínculos dañados, fragmentados, deteriorados o destruidos por la violencia padecida.
+          {% endblocktrans %}
+        </p>
+        <p>
+          {% blocktrans %}
+          Esa necesidad e inquietud compartida de habitar espacios sociales de diálogo respetuoso para asentar, impulsar y promover condiciones de no repetición intenta ser Sendaoroi, es decir, un programa de salud comunitaria y derechos humanos.
+          {% endblocktrans %}
+        </p>
+      </div>
+    </article>
+
+    <article class="card-sendaoroi">
+      <div class="flex items-start gap-4">
+        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-sendaoroi-blue text-lg font-bold text-white">JG</div>
+        <div>
+          <h3 class="text-lg font-semibold text-sendaoroi-blue">Jesus Mari Garate Urruzola “Txisus”</h3>
+          <p class="text-sm text-sendaoroi-green">{% trans "Secretario y tesorero de Berridatzi Elkartea" %}</p>
+        </div>
+      </div>
+      <div class="mt-4 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">
+        <p>
+          {% blocktrans %}
+          Además de máster en Memoria Social y Derechos Humanos, soy el secretario y tesorero de Berridatzi Elkartea.
+          {% endblocktrans %}
+        </p>
+        <p>
+          {% blocktrans %}
+          Aunque Sendaoroi nació como mi TFM, hoy es un proyecto colectivo con el que buscamos atender las hendiduras que la violencia ha dejado en nuestra tierra.
+          {% endblocktrans %}
+        </p>
+        <p>
+          {% blocktrans %}
+          No existen técnicas mágicas para sanar esta erosión, sino el compromiso de estar presentes, de cuidar y abrir surcos con paciencia para que la vida poco a poco vuelva a florecer, incluso cuando las raíces están muy dañadas.
+          {% endblocktrans %}
+        </p>
+        <p>
+          {% blocktrans %}
+          No negaré que me subyuga meterme en jardines; bueno, más bien en huertas que piden manos para que no queden baldías. Espero que la que tenemos en casa me sirva para algo, aunque mis vecinos seguramente dirán que soy mejor haciendo números que con la azada.
+          {% endblocktrans %}
+        </p>
+      </div>
+    </article>
+
+    <article class="card-sendaoroi md:col-span-2 xl:col-span-1">
+      <div class="flex items-start gap-4">
+        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-sendaoroi-blue text-lg font-bold text-white">MP</div>
+        <div>
+          <h3 class="text-lg font-semibold text-sendaoroi-blue">Mar Puga</h3>
+          <p class="text-sm text-sendaoroi-green">{% trans "Facilitadora de procesos restaurativos" %}</p>
+        </div>
+      </div>
+      <div class="mt-4 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">
+        <p>
+          {% blocktrans %}
+          Me dedico a generar espacios de escucha y de diálogo desde un paradigma restaurativo desde hace unos años en diferentes contextos.
+          {% endblocktrans %}
+        </p>
+        <p>
+          {% blocktrans %}
+          Tengo el privilegio de formar parte de este proyecto porque resuena profundamente con mis valores y con mi visión de cómo debemos sostener y acompañar a quienes atraviesan historias de dolor inmerecido.
+          {% endblocktrans %}
+        </p>
+        <p>
+          {% blocktrans %}
+          Creo en un acompañamiento con alma, que se construye desde un respeto absoluto hacia la experiencia del otro. Mi compromiso aquí es acompañar a las personas afectadas facilitando un espacio seguro, donde el cuidado y la escucha sirvan para que cada persona recupere su propia agencia y vuelva a adueñarse de su voz.
+          {% endblocktrans %}
+        </p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="mt-10">
+  <h2 class="text-2xl font-bold text-sendaoroi-blue">{% trans "Personas colaboradoras" %}</h2>
+  <div class="mt-5 grid gap-5 md:grid-cols-2">
+    <article class="card-sendaoroi">
+      <div class="flex items-start gap-4">
+        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-sendaoroi-blue text-lg font-bold text-white">IM</div>
+        <div>
+          <h3 class="text-lg font-semibold text-sendaoroi-blue">Iñaki Markez</h3>
+          <p class="text-sm text-sendaoroi-green">{% trans "Psiquiatra e investigador social" %}</p>
+        </div>
+      </div>
+      <p class="mt-4 text-sm leading-relaxed text-sendaoroi-gray">
+        {% trans "Psiquiatra e investigador social, colaborador del programa Sendaoroi desde una mirada vinculada a la salud mental, la memoria, los derechos humanos y el acompañamiento a personas afectadas por experiencias de violencia." %}
+      </p>
+    </article>
+  </div>
+</section>
+
+<section class="mt-10">
+  <h2 class="text-2xl font-bold text-sendaoroi-blue">{% trans "Entidades colaboradoras" %}</h2>
+  <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray md:text-base">
+    {% trans "Sendaoroi cuenta con la colaboración de entidades y profesionales que refuerzan el acompañamiento psicológico, comunitario y restaurativo del programa." %}
+  </p>
+  <div class="mt-5 grid gap-5 md:grid-cols-2">
+    <article class="card-sendaoroi">
+      <div class="flex items-start gap-4">
+        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-sendaoroi-blue text-lg font-bold text-white">EE</div>
+        <div>
+          <h3 class="text-lg font-semibold text-sendaoroi-blue">Ekimen Elkartea</h3>
+          <p class="text-sm text-sendaoroi-green">{% trans "Entidad colaboradora" %}</p>
+        </div>
+      </div>
+      <p class="mt-4 text-sm leading-relaxed text-sendaoroi-gray">
+        {% trans "Entidad colaboradora en el acompañamiento psicológico y comunitario del programa." %}
+      </p>
+    </article>
+  </div>
+</section>
+
+<!-- Estructura preparada para perfiles adicionales cuando exista contenido público confirmado -->
+
+<section class="mt-10 rounded-2xl border border-sendaoroi-green/30 bg-sendaoroi-green/10 p-6 md:p-8">
+  <h2 class="text-2xl font-bold text-sendaoroi-blue">{% trans "¿Quieres hablar con Sendaoroi?" %}</h2>
+  <p class="mt-4 text-sm leading-relaxed text-sendaoroi-gray md:text-base">
+    {% trans "Si sientes que el programa puede acompañarte, puedes escribirnos o llamarnos. No necesitas tener todas las respuestas antes de dar el paso." %}
+  </p>
+  <div class="mt-6 flex flex-wrap gap-3">
+    <a href="{% url 'contact' %}" class="btn-sendaoroi">{% trans "Contactar" %}</a>
+    <a href="{% url 'is_it_for_me' %}" class="btn-sendaoroi bg-sendaoroi-green hover:bg-sendaoroi-blue">{% trans "¿Sendaoroi es para mí?" %}</a>
   </div>
 </section>
 {% endblock %}

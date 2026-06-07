@@ -61,7 +61,8 @@
   </article>
 </section>
 
-<section class="mt-10">
-  <a href="{% url 'compass' %}" class="btn-sendaoroi">{% trans "Conocer nuestra brújula" %}</a>
+<section class="mt-10 flex flex-wrap gap-3">
+  <a href="{% url 'compass' %}" class="btn-sendaoroi">{% trans "Ver nuestra brújula" %}</a>
+  <a href="{% url 'is_it_for_me' %}" class="btn-sendaoroi bg-sendaoroi-green hover:bg-sendaoroi-blue">{% trans "¿Sendaoroi es para mí?" %}</a>
 </section>
 {% endblock %}

@@ -45,4 +45,15 @@
     </p>
   </a>
 </section>
+
+<section class="mt-10 rounded-2xl border border-sendaoroi-green/30 bg-sendaoroi-green/10 p-6 md:p-8">
+  <h2 class="text-2xl font-bold text-sendaoroi-blue">{% trans "¿Damos el siguiente paso?" %}</h2>
+  <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray md:text-base">
+    {% trans "Puedes conocer cómo se concreta el itinerario o escribirnos directamente para valorar tu situación con calma." %}
+  </p>
+  <div class="mt-6 flex flex-wrap gap-3">
+    <a href="{% url 'services' %}" class="btn-sendaoroi">{% trans "Ver pasos y servicios" %}</a>
+    <a href="{% url 'contact' %}" class="btn-sendaoroi bg-sendaoroi-green hover:bg-sendaoroi-blue">{% trans "Contactar" %}</a>
+  </div>
+</section>
 {% endblock %}

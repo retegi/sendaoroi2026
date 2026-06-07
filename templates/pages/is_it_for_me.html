@@ -4,18 +4,99 @@
 {% block title %}{% trans "¿Sendaoroi es para mí?" %} | Sendaoroi.org{% endblock %}
 
 {% block content %}
-<section class="grid gap-6 md:grid-cols-2">
-  <div class="rounded-xl bg-white p-8 shadow-sm">
-    <p class="text-sm font-semibold uppercase tracking-wide text-brand-moss">{% trans "Orientación" %}</p>
-    <h1 class="mt-3 text-3xl font-bold text-brand-teal">{% trans "¿Sendaoroi es para mí?" %}</h1>
-    <p class="mt-3 text-brand-gray">
-      {% trans "Página inicial para ayudar a identificar el encaje con el programa." %}
+<section class="overflow-hidden rounded-2xl bg-gradient-to-r from-sendaoroi-blue to-sendaoroi-green px-6 py-10 text-white shadow-lg md:px-10 md:py-12">
+  <div class="max-w-3xl">
+    <h1 class="text-4xl font-bold md:text-5xl">{% trans "¿Sendaoroi es para mí?" %}</h1>
+    <p class="mt-4 text-base leading-relaxed text-white/90 md:text-lg">
+      {% trans "Te invitamos a leer estas situaciones; si alguna se parece a tu caso, puedes escribirnos. Estamos aquí para empezar a caminar contigo." %}
     </p>
   </div>
-  <div class="rounded-xl border border-brand-stone/30 bg-brand-moss/10 p-8">
-    <h2 class="text-lg font-semibold text-brand-teal">{% trans "Guía de decisión en preparación" %}</h2>
-    <p class="mt-2 text-sm text-brand-gray">{% trans "Contenido provisional hasta añadir los criterios y casos de referencia." %}</p>
-    <div class="mt-6 h-40 rounded-lg border-2 border-dashed border-brand-stone/50 bg-white/70"></div>
+</section>
+
+<section class="mt-10 grid gap-5 md:grid-cols-2">
+  <article class="card-sendaoroi">
+    <h2 class="text-xl font-semibold text-sendaoroi-blue">{% trans "He sufrido graves vulneraciones de derechos humanos en primera persona" %}</h2>
+    <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
+      {% trans "Si has vivido graves vulneraciones de derechos humanos en primera persona, o si te arrebataron a un ser querido, te ofrecemos un espacio de acompañamiento profesional." %}
+    </p>
+    <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
+      {% trans "Te ayudamos a poner palabras a tu historia, trabajar el duelo y las consecuencias de lo vivido, para recuperar el equilibrio a tu propio ritmo." %}
+    </p>
+  </article>
+  <article class="card-sendaoroi">
+    <h2 class="text-xl font-semibold text-sendaoroi-blue">{% trans "Mantengo un vínculo cercano con una persona que ha vivido estos impactos" %}</h2>
+    <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
+      {% trans "Si te une un lazo estrecho con alguien que ha padecido el impacto de la violencia, entendemos que tú también puedes experimentar sus consecuencias." %}
+    </p>
+    <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
+      {% trans "Estamos aquí para ayudarte a cuidar de tu bienestar y a gestionar esa realidad emocional que compartís." %}
+    </p>
+  </article>
+  <article class="card-sendaoroi">
+    <h2 class="text-xl font-semibold text-sendaoroi-blue">{% trans "El pasado de mi familia me condiciona" %}</h2>
+    <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
+      {% trans "Si eres descendiente de personas marcadas por estos impactos y sientes que el silencio, la historia familiar o los traumas heredados condicionan tu vida actual, te ofrecemos un espacio para integrar ese legado y entender cómo influye en quién eres hoy." %}
+    </p>
+  </article>
+  <article class="card-sendaoroi">
+    <h2 class="text-xl font-semibold text-sendaoroi-blue">{% trans "Quiero ayudar a alguien de mi entorno" %}</h2>
+    <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
+      {% trans "Si has detectado que una persona de tu círculo cercano —amistad, vecindad o familia— necesita acompañamiento pero no sabe cómo pedirlo, te asesoramos personalmente para que puedas acercarte de manera útil, respetuosa y eficaz." %}
+    </p>
+  </article>
+</section>
+
+<section class="mt-10 card-sendaoroi">
+  <h2 class="text-2xl font-bold text-sendaoroi-blue">{% trans "Preguntas frecuentes" %}</h2>
+  <div class="mt-6 space-y-3">
+    <details class="rounded-lg border border-sendaoroi-gray/20 bg-white p-4">
+      <summary class="cursor-pointer font-medium text-sendaoroi-blue">{% trans "¿La comunicación es estrictamente confidencial?" %}</summary>
+      <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
+        {% trans "Sí. Todo lo que nos transmitas, ya sea sobre tu propia experiencia o la de alguien cercano, se gestiona bajo absoluta privacidad y con el máximo respeto a tu intimidad." %}
+      </p>
+    </details>
+    <details class="rounded-lg border border-sendaoroi-gray/20 bg-white p-4">
+      <summary class="cursor-pointer font-medium text-sendaoroi-blue">{% trans "¿Es necesario que sepa exactamente qué necesito antes de escribir?" %}</summary>
+      <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
+        {% trans "No. Puedes contactar para expresar cómo te sientes o qué observas en tu entorno, y nosotras te ayudaremos a identificar el itinerario de acompañamiento que mejor encaje contigo." %}
+      </p>
+    </details>
+    <details class="rounded-lg border border-sendaoroi-gray/20 bg-white p-4">
+      <summary class="cursor-pointer font-medium text-sendaoroi-blue">{% trans "¿Debo tener un reconocimiento oficial para acogerme al programa?" %}</summary>
+      <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
+        {% trans "En absoluto. Nuestro acompañamiento no requiere ninguna certificación ni reconocimiento administrativo previo. Si sientes que necesitas apoyo o escucha, ese es el único requisito para contactar con nosotras." %}
+      </p>
+    </details>
+    <details class="rounded-lg border border-sendaoroi-gray/20 bg-white p-4">
+      <summary class="cursor-pointer font-medium text-sendaoroi-blue">{% trans "¿Puedo contactar en nombre de otra persona?" %}</summary>
+      <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
+        {% trans "Por supuesto. Si conoces a alguien que podría beneficiarse de este acompañamiento, escríbenos y te guiaremos sobre cómo abordar el contacto o cómo tender ese puente de manera segura y eficaz." %}
+      </p>
+    </details>
+    <details class="rounded-lg border border-sendaoroi-gray/20 bg-white p-4">
+      <summary class="cursor-pointer font-medium text-sendaoroi-blue">{% trans "¿Cuál es el coste del acompañamiento?" %}</summary>
+      <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
+        {% trans "Sendaoroi es un proyecto de acompañamiento totalmente gratuito. No hay costes asociados a ninguno de nuestros servicios." %}
+      </p>
+    </details>
+  </div>
+</section>
+
+<section class="mt-10 rounded-2xl border border-sendaoroi-green/30 bg-sendaoroi-green/10 p-6 md:p-8">
+  <h2 class="text-2xl font-bold text-sendaoroi-blue">{% trans "¿Empezamos a hablar?" %}</h2>
+  <p class="mt-4 text-sm leading-relaxed text-sendaoroi-gray md:text-base">
+    {% trans "En Sendaoroi, no trabajamos con diagnósticos cerrados ni etiquetas. Entendemos que cada persona y cada historia es única, y por eso nuestra prioridad es ofrecerte un espacio humano donde el ritmo lo marcas tú." %}
+  </p>
+  <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray md:text-base">
+    {% trans "No necesitas tener todas las respuestas antes de dar el paso; este es el lugar para empezar a hablar." %}
+  </p>
+  <div class="mt-6 flex flex-wrap gap-3">
+    <a href="{% url 'contact' %}" class="btn-sendaoroi">{% trans "Contactar" %}</a>
+    <a href="tel:688611573" class="btn-sendaoroi bg-sendaoroi-green hover:bg-sendaoroi-blue">{% trans "Llamar" %}</a>
+  </div>
+  <div class="mt-5 text-sm text-sendaoroi-gray">
+    <p><a class="hover:text-sendaoroi-blue" href="mailto:info@sendaoroi.org">info@sendaoroi.org</a></p>
+    <p><a class="hover:text-sendaoroi-blue" href="tel:688611573">688 611 573</a></p>
   </div>
 </section>
 {% endblock %}

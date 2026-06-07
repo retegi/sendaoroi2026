@@ -4,22 +4,90 @@
 {% block title %}{% trans "Contactar" %} | Sendaoroi.org{% endblock %}
 
 {% block content %}
-<section class="grid gap-6 md:grid-cols-2">
-  <div class="rounded-xl bg-white p-8 shadow-sm">
-    <p class="text-sm font-semibold uppercase tracking-wide text-brand-moss">{% trans "Contacto" %}</p>
-    <h1 class="mt-3 text-3xl font-bold text-brand-teal">{% trans "Contactar" %}</h1>
-    <p class="mt-3 text-brand-gray">{% trans "Canal directo para resolver dudas y solicitar información inicial." %}</p>
-    <div class="mt-6 space-y-1 text-brand-teal">
-      <p><a href="mailto:info@sendaoroi.org">info@sendaoroi.org</a></p>
-      <p><a href="tel:+34688611573">688 611 573</a></p>
-    </div>
-  </div>
-  <div class="rounded-xl border border-brand-stone/30 bg-brand-moss/10 p-8">
-    <h2 class="text-lg font-semibold text-brand-teal">{% trans "Formulario en preparación" %}</h2>
-    <p class="mt-2 text-sm text-brand-gray">
-      {% trans "Aquí irá el formulario definitivo de contacto en la siguiente iteración." %}
+<section class="overflow-hidden rounded-2xl bg-gradient-to-r from-sendaoroi-blue to-sendaoroi-green px-6 py-10 text-white shadow-lg md:px-10 md:py-12">
+  <div class="max-w-3xl">
+    <h1 class="text-4xl font-bold md:text-5xl">{% trans "Contactar" %}</h1>
+    <p class="mt-4 text-base leading-relaxed text-white/90 md:text-lg">
+      {% trans "Puedes escribirnos o llamarnos. No necesitas tener claro qué necesitas; podemos empezar simplemente por hablar." %}
     </p>
-    <div class="mt-6 h-40 rounded-lg border-2 border-dashed border-brand-stone/50 bg-white/70"></div>
+  </div>
+</section>
+
+{% if messages %}
+<section class="mt-6 space-y-3">
+  {% for message in messages %}
+    <div class="rounded-lg border px-4 py-3 text-sm {% if message.tags == 'success' %}border-sendaoroi-green/40 bg-sendaoroi-green/10 text-sendaoroi-blue{% else %}border-red-300 bg-red-50 text-red-700{% endif %}">
+      {{ message }}
+    </div>
+  {% endfor %}
+</section>
+{% endif %}
+
+<section class="mt-8 grid gap-6 lg:grid-cols-2">
+  <div class="card-sendaoroi">
+    <h2 class="text-2xl font-bold text-sendaoroi-blue">{% trans "Hablemos con calma" %}</h2>
+    <p class="mt-4 text-sm leading-relaxed text-sendaoroi-gray md:text-base">
+      {% trans "Si sientes que Sendaoroi puede acompañarte, o si quieres consultar en nombre de una persona cercana, puedes contactar con nosotras. Toda comunicación será tratada con confidencialidad y respeto." %}
+    </p>
+    <div class="mt-6 space-y-1 text-sm text-sendaoroi-gray">
+      <p><span class="font-semibold text-sendaoroi-blue">{% trans "Email:" %}</span> <a class="hover:text-sendaoroi-blue" href="mailto:info@sendaoroi.org">info@sendaoroi.org</a></p>
+      <p><span class="font-semibold text-sendaoroi-blue">{% trans "Teléfono:" %}</span> <a class="hover:text-sendaoroi-blue" href="tel:688611573">688 611 573</a></p>
+      <p><span class="font-semibold text-sendaoroi-blue">{% trans "Canales:" %}</span> {% trans "Llamada, WhatsApp, Telegram y SMS." %}</p>
+    </div>
+    <div class="mt-6 flex flex-wrap gap-3">
+      <a href="tel:688611573" class="btn-sendaoroi">{% trans "Llamar" %}</a>
+      <a href="https://wa.me/34688611573" class="btn-sendaoroi bg-sendaoroi-green hover:bg-sendaoroi-blue">WhatsApp</a>
+      <a href="mailto:info@sendaoroi.org" class="btn-sendaoroi bg-sendaoroi-green hover:bg-sendaoroi-blue">{% trans "Enviar email" %}</a>
+      <a href="sms:+34688611573" class="btn-sendaoroi bg-sendaoroi-green hover:bg-sendaoroi-blue">SMS</a>
+    </div>
+    <p class="mt-5 text-sm text-sendaoroi-gray">
+      {% trans "También puedes escribirnos por Telegram usando el número 688 611 573." %}
+    </p>
+  </div>
+
+  <div class="card-sendaoroi">
+    <h2 class="text-2xl font-bold text-sendaoroi-blue">{% trans "Formulario de contacto" %}</h2>
+    <form method="post" class="mt-6 space-y-4">
+      {% csrf_token %}
+      <div>
+        <label for="{{ form.name.id_for_label }}" class="text-sm font-medium text-sendaoroi-blue">{{ form.name.label }}</label>
+        {{ form.name }}
+        {% if form.name.errors %}<p class="mt-1 text-xs text-red-700">{{ form.name.errors|striptags }}</p>{% endif %}
+      </div>
+      <div>
+        <label for="{{ form.email.id_for_label }}" class="text-sm font-medium text-sendaoroi-blue">{{ form.email.label }}</label>
+        {{ form.email }}
+        {% if form.email.errors %}<p class="mt-1 text-xs text-red-700">{{ form.email.errors|striptags }}</p>{% endif %}
+      </div>
+      <div>
+        <label for="{{ form.phone.id_for_label }}" class="text-sm font-medium text-sendaoroi-blue">{{ form.phone.label }}</label>
+        {{ form.phone }}
+        {% if form.phone.errors %}<p class="mt-1 text-xs text-red-700">{{ form.phone.errors|striptags }}</p>{% endif %}
+      </div>
+      <div>
+        <label for="{{ form.preferred_contact_method.id_for_label }}" class="text-sm font-medium text-sendaoroi-blue">{{ form.preferred_contact_method.label }}</label>
+        {{ form.preferred_contact_method }}
+        {% if form.preferred_contact_method.errors %}<p class="mt-1 text-xs text-red-700">{{ form.preferred_contact_method.errors|striptags }}</p>{% endif %}
+      </div>
+      <div>
+        <label for="{{ form.message.id_for_label }}" class="text-sm font-medium text-sendaoroi-blue">{{ form.message.label }}</label>
+        {{ form.message }}
+        {% if form.message.errors %}<p class="mt-1 text-xs text-red-700">{{ form.message.errors|striptags }}</p>{% endif %}
+      </div>
+      <div class="flex items-start gap-3 rounded-md border border-sendaoroi-gray/25 bg-sendaoroi-sand/20 p-3">
+        {{ form.privacy_accepted }}
+        <label for="{{ form.privacy_accepted.id_for_label }}" class="text-sm leading-relaxed text-sendaoroi-gray">
+          {{ form.privacy_accepted.label }}
+        </label>
+      </div>
+      {% if form.privacy_accepted.errors %}<p class="mt-1 text-xs text-red-700">{{ form.privacy_accepted.errors|striptags }}</p>{% endif %}
+      <button type="submit" class="btn-sendaoroi">{% trans "Enviar mensaje" %}</button>
+    </form>
+    {% if form.non_field_errors %}
+      <p class="mt-4 rounded-md border border-red-300 bg-red-50 px-3 py-2 text-sm text-red-700">
+        {{ form.non_field_errors|striptags }}
+      </p>
+    {% endif %}
   </div>
 </section>
 {% endblock %}

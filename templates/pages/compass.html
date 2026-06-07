@@ -78,7 +78,8 @@
   </article>
 </section>
 
-<section class="mt-10">
-  <a href="{% url 'process' %}" class="btn-sendaoroi">{% trans "Ver acompañamiento como proceso" %}</a>
+<section class="mt-10 flex flex-wrap gap-3">
+  <a href="{% url 'process' %}" class="btn-sendaoroi">{% trans "Ver el proceso" %}</a>
+  <a href="{% url 'contact' %}" class="btn-sendaoroi bg-sendaoroi-green hover:bg-sendaoroi-blue">{% trans "Contactar" %}</a>
 </section>
 {% endblock %}

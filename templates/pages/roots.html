@@ -67,12 +67,13 @@
 </section>
 
 <section class="mt-10 rounded-2xl border border-sendaoroi-green/30 bg-sendaoroi-green/10 p-6 md:p-8">
-  <h3 class="text-xl font-semibold text-sendaoroi-blue">{% trans "Seguimos construyendo" %}</h3>
+  <h3 class="text-xl font-semibold text-sendaoroi-blue">{% trans "¿Empezamos a caminar juntas?" %}</h3>
   <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray md:text-base">
-    {% trans "En la siguiente fase incorporaremos más detalles históricos, hitos y materiales complementarios." %}
+    {% trans "Conocer nuestras raíces es también una forma de acercarse al sentido del programa y al acompañamiento que ofrecemos." %}
   </p>
-  <div class="mt-5">
-    <a href="{% url 'program' %}" class="btn-sendaoroi">{% trans "Ver Programa Sendaoroi" %}</a>
+  <div class="mt-5 flex flex-wrap gap-3">
+    <a href="{% url 'program' %}" class="btn-sendaoroi">{% trans "Conocer el programa" %}</a>
+    <a href="{% url 'contact' %}" class="btn-sendaoroi bg-sendaoroi-green hover:bg-sendaoroi-blue">{% trans "Contactar" %}</a>
   </div>
 </section>
 {% endblock %}
