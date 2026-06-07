@@ -2,6 +2,7 @@ from django.conf import settings
 from django.contrib import messages
 from django.core.mail import send_mail
 from django.urls import reverse_lazy
+from django.utils.translation import gettext as _
 from django.views.generic import FormView, TemplateView
 
 from .forms import ContactForm
@@ -72,13 +73,13 @@ class ContactView(FormView):
 
         messages.success(
             self.request,
-            "Gracias por escribirnos. Hemos recibido tu mensaje y te responderemos con el mayor cuidado posible.",
+            _("Gracias por escribirnos. Hemos recibido tu mensaje y te responderemos con el mayor cuidado posible."),
         )
         return super().form_valid(form)
 
     def form_invalid(self, form):
         messages.error(
             self.request,
-            "No hemos podido enviar el mensaje. Revisa los campos o inténtalo de nuevo más tarde.",
+            _("No hemos podido enviar el mensaje. Revisa los campos o inténtalo de nuevo más tarde."),
         )
         return super().form_invalid(form)

@@ -1,0 +1,1362 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-08 00:39+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: config/settings.py:102
+msgid "Castellano"
+msgstr "Gaztelania"
+
+#: config/settings.py:103
+msgid "Euskara"
+msgstr "Euskara"
+
+#: pages/admin.py:16
+msgid "Marcar seleccionados como leidos"
+msgstr "Hautatutakoak irakurrita gisa markatu"
+
+#: pages/forms.py:30 pages/forms.py:44
+msgid "Nombre"
+msgstr "Izena"
+
+#: pages/forms.py:33 pages/forms.py:45 pages/models.py:7
+msgid "Email"
+msgstr "Emaila"
+
+#: pages/forms.py:36 pages/forms.py:46 pages/models.py:8
+msgid "Telefono"
+msgstr "Telefonoa"
+
+#: pages/forms.py:40 pages/forms.py:48
+msgid "Mensaje"
+msgstr "Mezua"
+
+#: pages/forms.py:47
+msgid "Preferencia de contacto"
+msgstr "Harremanetarako lehentasuna"
+
+#: pages/forms.py:49
+msgid ""
+"Acepto que Sendaoroi utilice estos datos únicamente para responder a mi "
+"consulta."
+msgstr ""
+"Onartzen dut Sendaoroi-k datu hauek nire kontsultari erantzuteko soilik "
+"erabiltzen dituela."
+
+#: pages/forms.py:55
+msgid "Debes aceptar la política de privacidad para continuar."
+msgstr "Pribatutasun-politika onartu behar duzu jarraitzeko."
+
+#: pages/models.py:9 templates/pages/contact.html:39
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: pages/models.py:10
+msgid "Telegram"
+msgstr "Telegrama"
+
+#: pages/models.py:11 templates/pages/contact.html:41
+msgid "SMS"
+msgstr "SMS"
+
+#: pages/views.py:76
+msgid ""
+"Gracias por escribirnos. Hemos recibido tu mensaje y te responderemos con el"
+" mayor cuidado posible."
+msgstr ""
+"Eskerrik asko guri idazteagatik. Zure mezua jaso dugu eta ahalik eta arreta "
+"handien erantzungo dizugu."
+
+#: pages/views.py:83
+msgid ""
+"No hemos podido enviar el mensaje. Revisa los campos o inténtalo de nuevo "
+"más tarde."
+msgstr ""
+"Ezin izan dugu mezua bidali. Berrikusi eremuak edo saiatu berriro geroago."
+
+#: templates/includes/footer.html:4 templates/includes/header.html:6
+msgid "Sendaoroi.org"
+msgstr "Sendaoroi.org"
+
+#: templates/includes/header.html:9 templates/includes/header.html:48
+msgid "EUS"
+msgstr "EUS"
+
+#: templates/includes/header.html:10 templates/includes/header.html:49
+msgid "CAS"
+msgstr "CAS"
+
+#: templates/includes/header.html:15 templates/includes/header.html:37
+msgid "Página principal"
+msgstr "Hasiera"
+
+#: templates/includes/header.html:16 templates/includes/header.html:38
+#: templates/pages/home.html:70 templates/pages/roots.html:4
+#: templates/pages/roots.html:10
+msgid "Nuestras raíces"
+msgstr "Gure sustraiak"
+
+#: templates/includes/header.html:19 templates/includes/header.html:39
+#: templates/pages/compass.html:9 templates/pages/home.html:10
+#: templates/pages/home.html:76 templates/pages/process.html:9
+#: templates/pages/program.html:4 templates/pages/program.html:10
+#: templates/pages/services.html:9 templates/pages/what_we_do.html:9
+msgid "Programa Sendaoroi"
+msgstr "Sendaoroi programa"
+
+#: templates/includes/header.html:23 templates/includes/header.html:40
+#: templates/pages/program.html:24 templates/pages/what_we_do.html:4
+#: templates/pages/what_we_do.html:10
+msgid "Qué hacemos"
+msgstr "Zer egiten dugu"
+
+#: templates/includes/header.html:24 templates/includes/header.html:41
+#: templates/pages/compass.html:4 templates/pages/compass.html:10
+#: templates/pages/program.html:30
+msgid "Nuestra brújula"
+msgstr "Gure iparrorratza"
+
+#: templates/includes/header.html:25 templates/includes/header.html:42
+#: templates/pages/process.html:4 templates/pages/process.html:10
+#: templates/pages/program.html:36
+msgid "El acompañamiento como proceso"
+msgstr "Laguntza prozesu gisa"
+
+#: templates/includes/header.html:26 templates/includes/header.html:43
+#: templates/pages/program.html:42 templates/pages/services.html:4
+msgid "Pasos y servicios"
+msgstr "Urratsak eta zerbitzuak"
+
+#: templates/includes/header.html:29 templates/includes/header.html:44
+#: templates/pages/home.html:21 templates/pages/home.html:82
+#: templates/pages/is_it_for_me.html:4 templates/pages/is_it_for_me.html:9
+#: templates/pages/services.html:98 templates/pages/team.html:168
+#: templates/pages/what_we_do.html:66
+msgid "¿Sendaoroi es para mí?"
+msgstr "Sendaoroi niretzat al da?"
+
+#: templates/includes/header.html:30 templates/includes/header.html:45
+#: templates/pages/team.html:4 templates/pages/team.html:9
+msgid "Equipo Sendaoroi"
+msgstr "Sendaoroi taldea"
+
+#: templates/includes/header.html:31 templates/includes/header.html:46
+#: templates/pages/compass.html:83 templates/pages/contact.html:4
+#: templates/pages/contact.html:9 templates/pages/home.html:88
+#: templates/pages/is_it_for_me.html:94 templates/pages/process.html:50
+#: templates/pages/program.html:56 templates/pages/roots.html:76
+#: templates/pages/services.html:99 templates/pages/team.html:167
+msgid "Contactar"
+msgstr "Harremanetan jarri"
+
+#: templates/includes/header.html:35
+msgid "Menú"
+msgstr "Menua"
+
+#: templates/pages/compass.html:12
+msgid "Los principios que orientan el acompañamiento de Sendaoroi."
+msgstr "Sendaoroi-ren laguntza gidatzen duten printzipioak."
+
+#: templates/pages/compass.html:17
+msgid "Dirección compartida y cuidado sostenido"
+msgstr "Kudeaketa partekatua eta arreta iraunkorra"
+
+#: templates/pages/compass.html:23
+msgid "Nuestra esencia: el compromiso con la persona"
+msgstr "Gure funtsa: pertsonarekiko konpromisoa"
+
+#: templates/pages/compass.html:26
+msgid "Dignidad y humanidad"
+msgstr "Duintasuna eta gizatasuna"
+
+#: templates/pages/compass.html:27
+msgid ""
+"Ponemos a la persona en el centro, reconociendo su valor único y su "
+"historia."
+msgstr ""
+"Pertsona erdigunean jartzen dugu, bere balio eta historia berezia aitortuz."
+
+#: templates/pages/compass.html:30
+msgid "Cuidado y respeto"
+msgstr "Zaintza eta errespetua"
+
+#: templates/pages/compass.html:31
+msgid ""
+"Establecemos un trato humano que sostiene y protege la integridad de quien "
+"acompañamos."
+msgstr ""
+"Laguntzen ditugun pertsonen osotasuna mantendu eta babesten duen tratu "
+"gizatiarra ezartzen dugu."
+
+#: templates/pages/compass.html:34
+msgid "Empatía y conciencia social del daño"
+msgstr "Enpatia eta kalteen kontzientzia soziala"
+
+#: templates/pages/compass.html:35
+msgid ""
+"Comprendemos que cada proceso está marcado por un contexto social profundo "
+"que requiere una mirada sensible."
+msgstr ""
+"Prozesu bakoitza ikuspegi sentikorra eskatzen duen testuinguru sozial sakon "
+"batek markatzen duela ulertzen dugu."
+
+#: templates/pages/compass.html:38
+msgid "Escucha y vínculo"
+msgstr "Entzun eta lotu"
+
+#: templates/pages/compass.html:39
+msgid ""
+"Construimos una relación basada en la confianza, el elemento clave para el "
+"acompañamiento."
+msgstr ""
+"Konfiantzan oinarritutako harremana eraikitzen dugu, laguntzarako funtsezko "
+"elementua."
+
+#: templates/pages/compass.html:45
+msgid "Nuestra metodología: tú eres protagonista"
+msgstr "Gure metodologia: zu zara protagonista"
+
+#: templates/pages/compass.html:48
+msgid "Voluntariedad y co-construcción del proceso"
+msgstr "Prozesuaren borondatezkotasuna eta ko-eraikuntza"
+
+#: templates/pages/compass.html:49
+msgid ""
+"Defendemos el control de la persona sobre su propio camino; nada ocurre sin "
+"su voluntad y confiamos en su propia sabiduría."
+msgstr ""
+"Pertsonak bere bidearen gaineko kontrola defendatzen dugu; ez da ezer "
+"gertatzen bere borondaterik gabe eta bere jakiturian fidatzen gara."
+
+#: templates/pages/compass.html:52
+msgid "Acompañamiento individualizado"
+msgstr "Laguntza indibidualizatua"
+
+#: templates/pages/compass.html:53
+msgid ""
+"Adaptamos nuestros recursos y nuestra presencia a las necesidades "
+"específicas de cada caso."
+msgstr ""
+"Gure baliabideak eta gure presentzia kasu bakoitzaren behar zehatzetara "
+"egokitzen ditugu."
+
+#: templates/pages/compass.html:56
+msgid "Respeto a los tiempos"
+msgstr "Garaiekiko errespetua"
+
+#: templates/pages/compass.html:57
+msgid ""
+"Entendemos que transitar el propio dolor requiere sus propios ritmos, y "
+"nuestra responsabilidad es respetarlos sin presiones."
+msgstr ""
+"Norberaren minetik mugitzeak bere erritmoak eskatzen dituela ulertzen dugu, "
+"eta gure ardura presiorik gabe errespetatzea da."
+
+#: templates/pages/compass.html:63
+msgid "Nuestro compromiso: seguridad y profesionalidad"
+msgstr "Gure konpromisoa: segurtasuna eta profesionaltasuna"
+
+#: templates/pages/compass.html:66
+msgid "Enfoque no revictimizante y prevención del daño"
+msgstr "Berbiktimizatzen ez duten ikuspegia eta kalteen prebentzioa"
+
+#: templates/pages/compass.html:67
+msgid ""
+"Diseñamos nuestras intervenciones para evitar cualquier impacto negativo "
+"adicional."
+msgstr ""
+"Gure esku-hartzeak diseinatzen ditugu eragin negatibo gehigarririk "
+"ekiditeko."
+
+#: templates/pages/compass.html:70
+msgid "Cuidado de la información y confidencialidad"
+msgstr "Informazioa eta konfidentzialtasuna zaintzea"
+
+#: templates/pages/compass.html:71
+msgid "La protección de tu privacidad es nuestra prioridad absoluta."
+msgstr "Zure pribatutasuna babestea gure lehentasuna da."
+
+#: templates/pages/compass.html:74
+msgid "Independencia y trabajo en red"
+msgstr "Independentzia eta sare-lana"
+
+#: templates/pages/compass.html:75
+msgid ""
+"Mantenemos la autonomía necesaria para actuar sin corsés, colaborando "
+"siempre con otros agentes para ofrecer un soporte integral."
+msgstr ""
+"Kortserik gabe jarduteko beharrezko autonomiari eusten diogu, beti ere beste"
+" eragile batzuekin elkarlanean laguntza integrala eskaintzeko."
+
+#: templates/pages/compass.html:82
+msgid "Ver el proceso"
+msgstr "Prozesua ikusi"
+
+#: templates/pages/contact.html:11
+msgid ""
+"Puedes escribirnos o llamarnos. No necesitas tener claro qué necesitas; "
+"podemos empezar simplemente por hablar."
+msgstr ""
+"Idatz diezagukezu edo deitu. Ez duzu zer behar duzun argi izan behar; "
+"Besterik gabe, hitz egiten has gaitezke."
+
+#: templates/pages/contact.html:28
+msgid "Hablemos con calma"
+msgstr "Lasai hitz egin dezagun"
+
+#: templates/pages/contact.html:30
+msgid ""
+"Si sientes que Sendaoroi puede acompañarte, o si quieres consultar en nombre"
+" de una persona cercana, puedes contactar con nosotras. Toda comunicación "
+"será tratada con confidencialidad y respeto."
+msgstr ""
+"Sendaoroi zurekin lagun dezakeela uste baduzu, edo hurbileko pertsona baten "
+"izenean kontsultatu nahi baduzu, jar zaitezke gurekin harremanetan. "
+"Komunikazio guztiak konfidentzialtasunez eta errespetuz tratatuko dira."
+
+#: templates/pages/contact.html:33
+msgid "Email:"
+msgstr "Emaila:"
+
+#: templates/pages/contact.html:34
+msgid "Teléfono:"
+msgstr "Telefonoa:"
+
+#: templates/pages/contact.html:35
+msgid "Canales:"
+msgstr "Kanalak:"
+
+#: templates/pages/contact.html:35
+msgid "Llamada, WhatsApp, Telegram y SMS."
+msgstr "Deia, WhatsApp, Telegram eta SMS."
+
+#: templates/pages/contact.html:38 templates/pages/is_it_for_me.html:95
+msgid "Llamar"
+msgstr "Deitu"
+
+#: templates/pages/contact.html:40
+msgid "Enviar email"
+msgstr "Emaila bidali"
+
+#: templates/pages/contact.html:44
+msgid "También puedes escribirnos por Telegram usando el número 688 611 573."
+msgstr "Telegramen ere idatz diezagukezu 688 611 573 zenbakia erabiliz."
+
+#: templates/pages/contact.html:49
+msgid "Formulario de contacto"
+msgstr "Harremanetarako formularioa"
+
+#: templates/pages/contact.html:84
+msgid "Enviar mensaje"
+msgstr "Mezua bidali"
+
+#: templates/pages/home.html:9
+msgid "Acompañamiento psicosocial"
+msgstr "Laguntza psikosoziala"
+
+#: templates/pages/home.html:12
+msgid ""
+"\n"
+"      Acompañamiento psicosocial a personas afectadas por vulneraciones de derechos humanos en el contexto vasco.\n"
+"      "
+msgstr ""
+"\n"
+"euskal testuinguruan giza eskubideen urraketak eragindako pertsonei laguntza psikosoziala."
+
+#: templates/pages/home.html:18 templates/pages/is_it_for_me.html:86
+msgid "¿Empezamos a hablar?"
+msgstr "Hitz egiten hasiko gara?"
+
+#: templates/pages/home.html:29
+msgid "Cuidado y dignidad"
+msgstr "Zaintza eta duintasuna"
+
+#: templates/pages/home.html:31
+msgid "Un espacio seguro de cuidado, escucha y acompañamiento"
+msgstr "Zaintzeko, entzuteko eta laguntzeko gune segurua"
+
+#: templates/pages/home.html:34
+msgid ""
+"\n"
+"      Sendaoroi nace para ofrecer un lugar donde descansar del peso del pasado, abrir espacios de escucha y acompañar procesos personales y comunitarios desde la dignidad, la confidencialidad y el respeto a los tiempos de cada persona.\n"
+"      "
+msgstr ""
+"\n"
+"Sendaoroi iraganaren pisutik atseden hartzeko lekua eskaintzeko jaio da, entzuteko gune irekiak eta prozesu pertsonal eta komunitarioak bideratzeko duintasunetik, konfidentzialtasunetik eta pertsona bakoitzaren denbora errespetuz."
+
+#: templates/pages/home.html:40
+msgid "Primeros pasos"
+msgstr "Lehen urratsak"
+
+#: templates/pages/home.html:42
+msgid ""
+"Si necesitas un primer contacto, puedes empezar por aquí y avanzar a tu "
+"ritmo."
+msgstr ""
+"Lehen kontaktua behar baduzu, hemen hasi eta zure erritmoan aurrera egin "
+"dezakezu."
+
+#: templates/pages/home.html:46
+msgid "1. Escríbenos o llámanos"
+msgstr "1. Idatzi iezaguzu edo deitu"
+
+#: templates/pages/home.html:47
+msgid ""
+"No necesitas tener claro qué necesitas. Podemos empezar simplemente por "
+"hablar."
+msgstr ""
+"Ez duzu zer behar duzun argi izan behar. Besterik gabe, hitz egiten has "
+"gaitezke."
+
+#: templates/pages/home.html:50
+msgid "2. Acogida en el programa"
+msgstr "2. Ongi etorri programara"
+
+#: templates/pages/home.html:51
+msgid ""
+"Escucha inicial, respeto de tus tiempos y orientación sobre posibles "
+"itinerarios."
+msgstr ""
+"Hasierako entzumena, zure denbora errespetatzea eta ibilbide posibleei "
+"buruzko orientazioa."
+
+#: templates/pages/home.html:54
+msgid "3. Acompañamiento flexible"
+msgstr "3. Akonpainamendu malgua"
+
+#: templates/pages/home.html:55
+msgid ""
+"Los servicios pueden activarse según tu situación, sin recorrido cerrado ni "
+"obligatorio."
+msgstr ""
+"Zerbitzuak zure egoeraren arabera aktibatu daitezke, ibilbide itxirik edo "
+"derrigorrezkorik gabe."
+
+#: templates/pages/home.html:59 templates/pages/process.html:49
+#: templates/pages/program.html:55
+msgid "Ver pasos y servicios"
+msgstr "Urratsak eta zerbitzuak ikusi"
+
+#: templates/pages/home.html:66
+msgid "Explora Sendaoroi"
+msgstr "Sendaoroi ezagutu"
+
+#: templates/pages/home.html:72
+msgid ""
+"Conoce el origen de Berridatzi Elkartea y el sentido del nombre Sendaoroi."
+msgstr ""
+"Ezagutu Berridatzi Elkartearen jatorria eta Sendaoroi izenaren esanahia."
+
+#: templates/pages/home.html:78
+msgid ""
+"Descubre qué hacemos, cuáles son nuestros principios y cómo entendemos el "
+"acompañamiento."
+msgstr ""
+"Ezagutu zer egiten dugun, zeintzuk diren gure printzipioak eta nola ulertzen"
+" dugun laguntza."
+
+#: templates/pages/home.html:84
+msgid ""
+"Lee algunas situaciones en las que este programa puede ofrecer apoyo y "
+"orientación."
+msgstr ""
+"Irakurri programa honek laguntza eta orientazioa eskain ditzakeen egoera "
+"batzuk."
+
+#: templates/pages/home.html:90
+msgid ""
+"Puedes escribirnos o llamarnos. No necesitas tener todas las respuestas "
+"antes de dar el paso."
+msgstr ""
+"Idatz diezagukezu edo deitu. Ez duzu erantzun guztiak eduki behar urratsa "
+"eman aurretik."
+
+#: templates/pages/is_it_for_me.html:11
+msgid ""
+"Te invitamos a leer estas situaciones; si alguna se parece a tu caso, puedes"
+" escribirnos. Estamos aquí para empezar a caminar contigo."
+msgstr ""
+"Egoera hauek irakurtzera gonbidatzen zaituztegu; Horietakoren bat zure "
+"kasuaren antzekoa bada, idatz diezagukezu. Hemen gaude zurekin ibiltzen "
+"hasteko."
+
+#: templates/pages/is_it_for_me.html:18
+msgid "He sufrido graves vulneraciones de derechos humanos en primera persona"
+msgstr "Giza eskubideen urraketa larriak jasan ditut zuzenean"
+
+#: templates/pages/is_it_for_me.html:20
+msgid ""
+"Si has vivido graves vulneraciones de derechos humanos en primera persona, o"
+" si te arrebataron a un ser querido, te ofrecemos un espacio de "
+"acompañamiento profesional."
+msgstr ""
+"Giza eskubideen urraketa larriak zuzenean bizi izan badituzu, edo pertsona "
+"maite bat kendu bazaizu, laguntza profesionalerako espazio bat eskaintzen "
+"dizugu."
+
+#: templates/pages/is_it_for_me.html:23
+msgid ""
+"Te ayudamos a poner palabras a tu historia, trabajar el duelo y las "
+"consecuencias de lo vivido, para recuperar el equilibrio a tu propio ritmo."
+msgstr ""
+"Zure istorioari hitzak jartzen laguntzen dizugu, dolua eta bizitakoaren "
+"ondorioak lantzen, zure erritmoan oreka berreskuratzeko."
+
+#: templates/pages/is_it_for_me.html:27
+msgid ""
+"Mantengo un vínculo cercano con una persona que ha vivido estos impactos"
+msgstr ""
+"Inpaktu hauek jasan dituen pertsona batekin lotura estua mantentzen dut"
+
+#: templates/pages/is_it_for_me.html:29
+msgid ""
+"Si te une un lazo estrecho con alguien que ha padecido el impacto de la "
+"violencia, entendemos que tú también puedes experimentar sus consecuencias."
+msgstr ""
+"Indarkeriaren eragina jasan duen norbaitekin lotura estua baduzu, ulertzen "
+"dugu zuk ere jasan ditzakezula horren ondorioak."
+
+#: templates/pages/is_it_for_me.html:32
+msgid ""
+"Estamos aquí para ayudarte a cuidar de tu bienestar y a gestionar esa "
+"realidad emocional que compartís."
+msgstr ""
+"Hemen gaude zure ongizatea zaintzen eta partekatzen duzun errealitate "
+"emozional hori kudeatzen laguntzeko."
+
+#: templates/pages/is_it_for_me.html:36
+msgid "El pasado de mi familia me condiciona"
+msgstr "Nire familiaren iraganak baldintzatzen nau"
+
+#: templates/pages/is_it_for_me.html:38
+msgid ""
+"Si eres descendiente de personas marcadas por estos impactos y sientes que "
+"el silencio, la historia familiar o los traumas heredados condicionan tu "
+"vida actual, te ofrecemos un espacio para integrar ese legado y entender "
+"cómo influye en quién eres hoy."
+msgstr ""
+"Inpaktu hauek markatutako pertsonen ondorengoa bazara eta isiltasunak, "
+"familia-historiak edo herentziazko traumek zure egungo bizitza baldintzatzen"
+" dutela sentitzen baduzu, ondare hori integratzeko eta gaur egun zarenari "
+"nola eragiten dion ulertzeko espazio bat eskaintzen dizugu."
+
+#: templates/pages/is_it_for_me.html:42
+msgid "Quiero ayudar a alguien de mi entorno"
+msgstr "Nire inguruko norbait lagundu nahi dut"
+
+#: templates/pages/is_it_for_me.html:44
+msgid ""
+"Si has detectado que una persona de tu círculo cercano —amistad, vecindad o "
+"familia— necesita acompañamiento pero no sabe cómo pedirlo, te asesoramos "
+"personalmente para que puedas acercarte de manera útil, respetuosa y eficaz."
+msgstr ""
+"Zure zirkulu hurbileko pertsona batek -laguna, auzoa edo familia- laguntza "
+"behar duela antzeman baduzu baina ez dakizu nola eskatu, pertsonalki "
+"aholkatuko dizugu, modu baliagarri, errespetuz eta eraginkorrean hurbil "
+"dezazun."
+
+#: templates/pages/is_it_for_me.html:50
+msgid "Preguntas frecuentes"
+msgstr "Ohiko galderak"
+
+#: templates/pages/is_it_for_me.html:53
+msgid "¿La comunicación es estrictamente confidencial?"
+msgstr "Komunikazioa erabat konfidentziala al da?"
+
+#: templates/pages/is_it_for_me.html:55
+msgid ""
+"Sí. Todo lo que nos transmitas, ya sea sobre tu propia experiencia o la de "
+"alguien cercano, se gestiona bajo absoluta privacidad y con el máximo "
+"respeto a tu intimidad."
+msgstr ""
+"Bai. Igortzen diguzun guztia, zure esperientziari buruzkoa edo zure inguruko"
+" norbaitena, erabateko pribatutasunean eta zure pribatutasunarekiko "
+"errespetu handienarekin kudeatzen da."
+
+#: templates/pages/is_it_for_me.html:59
+msgid "¿Es necesario que sepa exactamente qué necesito antes de escribir?"
+msgstr "Idatzi aurretik zer behar dudan zehatz-mehatz jakin behar al dut?"
+
+#: templates/pages/is_it_for_me.html:61
+msgid ""
+"No. Puedes contactar para expresar cómo te sientes o qué observas en tu "
+"entorno, y nosotras te ayudaremos a identificar el itinerario de "
+"acompañamiento que mejor encaje contigo."
+msgstr ""
+"Ez. Gurekin harremanetan jar zaitezke zure ingurunean nola sentitzen zaren "
+"edo zer behatzen duzun adierazteko, eta hobekien egokitzen zaizun "
+"akonpainamendu-ibilbidea identifikatzen lagunduko dizugu."
+
+#: templates/pages/is_it_for_me.html:65
+msgid "¿Debo tener un reconocimiento oficial para acogerme al programa?"
+msgstr "Aitorpen ofiziala izan behar al dut programan sartzeko?"
+
+#: templates/pages/is_it_for_me.html:67
+msgid ""
+"En absoluto. Nuestro acompañamiento no requiere ninguna certificación ni "
+"reconocimiento administrativo previo. Si sientes que necesitas apoyo o "
+"escucha, ese es el único requisito para contactar con nosotras."
+msgstr ""
+"Batere. Gure laguntzak ez du inolako ziurtagiririk edo aldez aurretik "
+"administrazio-aitorpenik behar. Laguntza edo entzutea behar duzula uste "
+"baduzu, hori da gurekin harremanetan jartzeko baldintza bakarra."
+
+#: templates/pages/is_it_for_me.html:71
+msgid "¿Puedo contactar en nombre de otra persona?"
+msgstr "Jarri al naiz harremanetan beste pertsona baten izenean?"
+
+#: templates/pages/is_it_for_me.html:73
+msgid ""
+"Por supuesto. Si conoces a alguien que podría beneficiarse de este "
+"acompañamiento, escríbenos y te guiaremos sobre cómo abordar el contacto o "
+"cómo tender ese puente de manera segura y eficaz."
+msgstr ""
+"Noski. Laguntza honen onuradun izan daitekeen norbait ezagutzen baduzu, "
+"idatzi iezaguzu eta kontaktura nola hurbildu edo zubi hori modu seguruan eta"
+" eraginkorrean eraikitzen lagunduko dizugu."
+
+#: templates/pages/is_it_for_me.html:77
+msgid "¿Cuál es el coste del acompañamiento?"
+msgstr "Zein da akonpainamenduaren kostua?"
+
+#: templates/pages/is_it_for_me.html:79
+msgid ""
+"Sendaoroi es un proyecto de acompañamiento totalmente gratuito. No hay "
+"costes asociados a ninguno de nuestros servicios."
+msgstr ""
+"Sendaoroi guztiz doako proiektua da. Ez dago gure zerbitzuekin lotutako "
+"kosturik."
+
+#: templates/pages/is_it_for_me.html:88
+msgid ""
+"En Sendaoroi, no trabajamos con diagnósticos cerrados ni etiquetas. "
+"Entendemos que cada persona y cada historia es única, y por eso nuestra "
+"prioridad es ofrecerte un espacio humano donde el ritmo lo marcas tú."
+msgstr ""
+"Sendaoroi-n, ez dugu diagnostiko edo etiketa itxiekin lan egiten. Pertsona "
+"bakoitza eta istorio bakoitza bakarra dela ulertzen dugu, eta horregatik "
+"gure lehentasuna erritmoa jartzen duzun giza espazio bat eskaintzea da."
+
+#: templates/pages/is_it_for_me.html:91
+msgid ""
+"No necesitas tener todas las respuestas antes de dar el paso; este es el "
+"lugar para empezar a hablar."
+msgstr ""
+"Ez duzu erantzun guztiak izan behar urratsa eman aurretik; Hau da hitz "
+"egiten hasteko lekua."
+
+#: templates/pages/process.html:12
+msgid ""
+"Un itinerario flexible, co-construido y respetuoso con los tiempos de cada "
+"persona."
+msgstr ""
+"Ibilbide malgua, elkarrekin eraikia eta bakoitzaren denbora errespetua."
+
+#: templates/pages/process.html:15
+msgid ""
+"Es un proceso que pone en el centro a la persona y su dignidad, en el que "
+"profesionales en el ámbito de las prácticas restaurativas y la terapia "
+"psicológica acompañan el itinerario co-construido con cada persona."
+msgstr ""
+"Pertsona eta bere duintasuna erdigunean jartzen dituen prozesua da, zeinean "
+"praktika zaharberritzaileen eta terapia psikologikoko profesionalek pertsona"
+" bakoitzarekin batera eraikitako ibilbidearekin batera."
+
+#: templates/pages/process.html:21
+msgid "Camino de acompañamiento"
+msgstr "Laguntzaren bidea"
+
+#: templates/pages/process.html:24
+msgid "Persona en el centro"
+msgstr "Pertsona erdigunean"
+
+#: templates/pages/process.html:27
+msgid "Dignidad"
+msgstr "Duintasuna"
+
+#: templates/pages/process.html:30
+msgid "Escucha"
+msgstr "Entzutea"
+
+#: templates/pages/process.html:33
+msgid "Itinerario co-construido"
+msgstr "Elkarrekin eraikitako ibilbidea"
+
+#: templates/pages/process.html:36
+msgid "Acompañamiento profesional"
+msgstr "Laguntza profesionala"
+
+#: templates/pages/process.html:39
+msgid "Proceso flexible"
+msgstr "Prozesu malgua"
+
+#: templates/pages/process.html:46
+msgid ""
+"El acompañamiento no se plantea como un recorrido lineal ni cerrado. Cada "
+"persona marca su ritmo, sus necesidades y los límites del proceso, siempre "
+"desde la voluntariedad, la confidencialidad y el cuidado."
+msgstr ""
+"Akonpainamendua ez da bide lineal edo itxi gisa aurkezten. Bakoitzak bere "
+"erritmoa, bere beharrak eta prozesuaren mugak ezartzen ditu, beti ere "
+"borondatezkotasunean, konfidentzialtasunean eta zaintzan oinarrituta."
+
+#: templates/pages/program.html:9
+msgid "Programa"
+msgstr "Programa"
+
+#: templates/pages/program.html:12
+msgid ""
+"Un programa de acompañamiento psicosocial desde la dignidad, la escucha y "
+"los derechos humanos."
+msgstr ""
+"Duintasunean, entzutean eta giza eskubideetan oinarritutako laguntza "
+"psikosozialeko programa."
+
+#: templates/pages/program.html:15
+msgid ""
+"\n"
+"      Sendaoroi nace para acompañar a personas afectadas por vulneraciones de derechos humanos en el contexto vasco, ofreciendo espacios seguros donde poder poner palabras a la experiencia vivida, cuidar las heridas invisibles y reconstruir vínculos personales, familiares y comunitarios.\n"
+"      "
+msgstr ""
+"\n"
+"Sendaoroi euskal testuinguruan giza eskubideen urraketen ondorioz kaltetutako pertsonei laguntzeko sortu zen, bizitako esperientziari hitzak jartzeko, zauri ikusezinak zaintzeko eta harreman pertsonal, familiar eta komunitarioak berreraikitzeko espazio seguruak eskainiz."
+
+#: templates/pages/program.html:26
+msgid ""
+"Acompañamos procesos personales y comunitarios que no siempre encuentran "
+"respuesta en los marcos institucionales."
+msgstr ""
+"Erakunde-esparruetan beti erantzunik aurkitzen ez duten prozesu pertsonal "
+"eta komunitarioei laguntzen diegu."
+
+#: templates/pages/program.html:32
+msgid ""
+"Conoce los principios que orientan nuestro modo de acompañar: dignidad, "
+"cuidado, voluntariedad, confidencialidad y trabajo en red."
+msgstr ""
+"Ezagutu gure bidelagun izateko modua gidatzen duten printzipioak: "
+"duintasuna, zaintza, borondatezkotasuna, konfidentzialtasuna eta sarean lan "
+"egitea."
+
+#: templates/pages/program.html:38
+msgid ""
+"Entendemos el acompañamiento como un itinerario flexible, co-construido con "
+"cada persona y respetuoso con sus tiempos."
+msgstr ""
+"Akonpainamendua ibilbide malgu gisa ulertzen dugu, pertsona bakoitzarekin "
+"batera eraikia eta bere denbora errespetatuz."
+
+#: templates/pages/program.html:44
+msgid ""
+"Descubre los posibles pasos del proceso y los itinerarios de apoyo que "
+"pueden activarse según cada situación."
+msgstr ""
+"Ezagutu prozesuaren urrats posibleak eta egoera bakoitzaren arabera aktibatu"
+" daitezkeen laguntza-ibilbideak."
+
+#: templates/pages/program.html:50
+msgid "¿Damos el siguiente paso?"
+msgstr "Hurrengo urratsa emango dugu?"
+
+#: templates/pages/program.html:52
+msgid ""
+"Puedes conocer cómo se concreta el itinerario o escribirnos directamente "
+"para valorar tu situación con calma."
+msgstr ""
+"Ibilbidea nola zehazten den jakin dezakezu edo zuzenean idatzi diguzu zure "
+"egoera lasaitasunez baloratzeko."
+
+#: templates/pages/roots.html:9
+msgid "Origen y sentido"
+msgstr "Jatorria eta esanahia"
+
+#: templates/pages/roots.html:12
+msgid ""
+"\n"
+"      El origen de Sendaoroi está unido a Berridatzi Elkartea y a la voluntad de transformar el dolor en cuidado, convivencia y esperanza.\n"
+"      "
+msgstr ""
+"\n"
+"Sendaoroi-ren jatorria Berridatzi Elkartearekin eta mina zainketa, bizikidetza eta itxaropen bihurtzeko borondatearekin lotuta dago."
+
+#: templates/pages/roots.html:21
+msgid "Berridatzi Elkartea"
+msgstr "Berridatzi Elkartea"
+
+#: templates/pages/roots.html:24
+msgid ""
+"\n"
+"        Berridatzi Bizikidetza Josteko Elkartea nace de una necesidad vital: transformar en esperanza el trauma que marcó a muchas familias. Esa experiencia personal fue el germen de nuestra asociación sin ánimo de lucro, constituida en 2019 con la misión fundamental de consolidar la paz y tejer la convivencia.\n"
+"        "
+msgstr ""
+"\n"
+"Berridatzi Bizikidetza Josteko Elkartea ezinbesteko behar batetik jaio zen: familia asko markatu zituen trauma itxaropen bihurtzea. Esperientzia pertsonal hori gure irabazi asmorik gabeko elkartearen hazia izan zen, 2019an bakea sendotzeko eta elkarbizitza ehuntzeko oinarrizko misioarekin sortu zen."
+
+#: templates/pages/roots.html:29
+msgid ""
+"\n"
+"        Desde nuestros inicios, trabajamos para sanar heridas —personales y colectivas— y prestar un apoyo digno a víctimas, personas olvidadas y colectivos oprimidos. Exploramos itinerarios de justicia transicional y asistencia integral, convencidas de que la verdadera paz solo es posible si atendemos el dolor con empatía y un firme compromiso con la no repetición.\n"
+"        "
+msgstr ""
+"\n"
+"Gure hasieratik zauriak —pertsonalak eta kolektiboak— sendatzeko eta biktimei, ahaztutakoei eta talde zapalduei laguntza duina emateko lan egin dugu. Justizia trantsizionalaren eta laguntza integralaren ibilbideak aztertzen ditugu, egiazko bakea bakarrik posible dela mina enpatiaz eta ez errepikatzearen aldeko konpromiso irmoarekin aurre egiten badiogu."
+
+#: templates/pages/roots.html:34
+msgid ""
+"\n"
+"        Sendaoroi es la materialización de esa voluntad y el principal proyecto de Berridatzi. Actuamos allí donde las respuestas convencionales no llegan, priorizando la escucha activa, la estabilidad emocional y el fortalecimiento de la resiliencia colectiva.\n"
+"        "
+msgstr ""
+"\n"
+"Sendaoroi borondate horren materializazioa da eta Berridatziren proiektu nagusia. Ohiko erantzunak iristen ez diren tokian jarduten dugu, entzute aktiboa, egonkortasun emozionala eta erresilientzia kolektiboa indartuz."
+
+#: templates/pages/roots.html:42
+msgid "Qué significa Sendaoroi"
+msgstr "Zer esan nahi du Sendaoroi-k"
+
+#: templates/pages/roots.html:45
+msgid ""
+"\n"
+"        Sendaoroi no habita en los diccionarios; es una palabra que hemos imaginado para poder nombrar nuestro espacio seguro de cuidado y acompañamiento.\n"
+"        "
+msgstr ""
+"\n"
+"Sendaoroi ez da hiztegietan bizi; Gure zaintza eta akonpainamendu espazio segurua izendatzeko asmatu dugun hitza da."
+
+#: templates/pages/roots.html:50
+msgid ""
+"\n"
+"        En euskera, enlaza sendatu, sanar, y oroimena, memoria: el deseo profundo de sanar los recuerdos y aliviar ese dolor sordo que, a menudo, el paso del tiempo deja estancado en el alma.\n"
+"        "
+msgstr ""
+"\n"
+"Euskaraz sendatu, sendatu, eta oroimena, oroimena lotzen ditu: oroitzapenak sendatu eta denboraren joanak ariman sarri geldirik uzten duen min triste hori arintzeko gogo sakona."
+
+#: templates/pages/roots.html:55
+msgid ""
+"\n"
+"        Al mirarlo en castellano, el nombre se dibuja como una senda. Y de nuevo en euskera, oroi nos susurra también un horizonte: a todas, a todos.\n"
+"        "
+msgstr ""
+"\n"
+"Gaztelaniaz begiratzean, izena bide bat bezala marraztuta dago. Eta berriz ere euskaraz oroi-k horizonte bat ere xuxurlatzen digu: guztioi, guztioi."
+
+#: templates/pages/roots.html:60
+msgid ""
+"\n"
+"        Sendaoroi es, por lo tanto, ese camino abierto que busca dignificar las memorias, sin asimetrías y desde el respeto absoluto a la palabra, al relato y a los tiempos de cada persona.\n"
+"        "
+msgstr ""
+"\n"
+"Sendaoroi da, beraz, oroitzapenak duintzea bilatzen duen bide ireki hori, asimetriarik gabe eta pertsona bakoitzaren hitza, istorioa eta garaiekiko erabateko errespetuz."
+
+#: templates/pages/roots.html:70
+msgid "¿Empezamos a caminar juntas?"
+msgstr "Elkarrekin ibiltzen hasiko gara?"
+
+#: templates/pages/roots.html:72
+msgid ""
+"Conocer nuestras raíces es también una forma de acercarse al sentido del "
+"programa y al acompañamiento que ofrecemos."
+msgstr ""
+"Gure sustraiak ezagutzea programaren zentzura eta eskaintzen dugun "
+"laguntzara hurbiltzeko modua ere bada."
+
+#: templates/pages/roots.html:75
+msgid "Conocer el programa"
+msgstr "Programa ezagutu"
+
+#: templates/pages/services.html:10
+msgid "Pasos del proceso y servicios"
+msgstr "Prozesuko urratsak eta zerbitzuak"
+
+#: templates/pages/services.html:12
+msgid ""
+"Los servicios pueden activarse de forma independiente o simultánea, según "
+"las necesidades y el momento de cada persona."
+msgstr ""
+"Zerbitzuak modu independentean edo aldi berean aktibatu daitezke, pertsona "
+"bakoitzaren beharren eta denboraren arabera."
+
+#: templates/pages/services.html:19
+msgid ""
+"El itinerario no es lineal ni jerárquico. Los servicios pueden activarse de "
+"forma independiente o simultánea, según las necesidades y el momento de cada"
+" persona."
+msgstr ""
+"Ibilbidea ez da lineala edo hierarkikoa. Zerbitzuak modu independentean edo "
+"aldi berean aktibatu daitezke, pertsona bakoitzaren beharren eta denboraren "
+"arabera."
+
+#: templates/pages/services.html:25
+msgid "Paso 1"
+msgstr "1. urratsa"
+
+#: templates/pages/services.html:26
+msgid "Contáctanos"
+msgstr "Jarri gurekin harremanetan"
+
+#: templates/pages/services.html:28
+msgid ""
+"El primer paso es escribirnos o llamarnos. No necesitas tener claro qué "
+"necesitas ni saber exactamente qué itinerario seguir. Basta con querer "
+"empezar a hablar."
+msgstr ""
+"Lehen urratsa gurekin idaztea edo deitzea da. Ez duzu zer behar duzun argi "
+"izan edo zehatz-mehatz zer ibilbide jarraitu behar duzun. Nahikoa da hitz "
+"egiten hasi nahi izatea."
+
+#: templates/pages/services.html:33
+msgid "Paso 2"
+msgstr "2. urratsa"
+
+#: templates/pages/services.html:34
+msgid "Acogida en el programa"
+msgstr "Programako harrera"
+
+#: templates/pages/services.html:36
+msgid ""
+"Encuentro presencial con la responsable del programa. Escucha profunda, "
+"entrevista personal e inicio del vínculo."
+msgstr ""
+"Aurrez aurre bilera programaren arduradunarekin. Entzute sakona, "
+"elkarrizketa pertsonala eta loturaren hasiera."
+
+#: templates/pages/services.html:37
+msgid ""
+"Se respetan los tiempos de la persona que contacta con Sendaoroi, "
+"manteniendo siempre su sensación de control sobre los posibles servicios a "
+"los que pueda acogerse."
+msgstr ""
+"Sendaoroi harremanetan jartzen den pertsonaren orduak errespetatzen dira, "
+"beti ere onura ditzakeen zerbitzu posibleen gaineko kontrola mantenduz."
+
+#: templates/pages/services.html:38
+msgid ""
+"Existe la posibilidad de realizar una o varias entrevistas iniciales si la "
+"persona lo necesita para comprender y elegir, en su caso, los itinerarios "
+"que se ofrecen. No se plantea necesariamente desde un marco clínico."
+msgstr ""
+"Hasierako elkarrizketa bat edo gehiago egiteko aukera dago, pertsonak behar "
+"badu ulertu eta, hala badagokio, eskaintzen diren ibilbideak aukeratzeko. Ez"
+" da zertan esparru kliniko batetik planteatu."
+
+#: templates/pages/services.html:43
+msgid "Paso 3"
+msgstr "3. urratsa"
+
+#: templates/pages/services.html:44
+msgid "Posibles itinerarios"
+msgstr "Ibilbide posibleak"
+
+#: templates/pages/services.html:46
+msgid ""
+"El proceso puede abrir distintos itinerarios de acompañamiento, que se "
+"activan según cada situación."
+msgstr ""
+"Prozesuak akonpainamendu-ibilbide desberdinak ireki ditzake, egoera "
+"bakoitzaren arabera aktibatzen direnak."
+
+#: templates/pages/services.html:50
+msgid "A. Acompañamiento en la cotidianidad"
+msgstr "A. Eguneroko laguntza"
+
+#: templates/pages/services.html:52
+msgid ""
+"Facilitamos momentos compartidos —un paseo, un café o un tiempo de "
+"presencia— donde el vínculo y la escucha activa son los protagonistas."
+msgstr ""
+"Partekatutako uneak errazten ditugu —ibilaldi bat, kafe bat edo presentzia "
+"denbora—, non lotura eta entzute aktiboa diren protagonista."
+
+#: templates/pages/services.html:55
+msgid ""
+"Se trata de un punto de apoyo basado en la presencia mutua, donde la palabra"
+" y la reflexión fluyen con naturalidad en un entorno informal pero seguro."
+msgstr ""
+"Elkarrekiko presentzian oinarritutako euskarri puntu bat da, non hitzak eta "
+"hausnarketa modu naturalean isurtzen diren ingurune informal baina seguru "
+"batean."
+
+#: templates/pages/services.html:59
+msgid "B. Procesos restaurativos"
+msgstr "B. Prozesu errestauratiboak"
+
+#: templates/pages/services.html:61
+msgid ""
+"Espacios de reparación individuales, grupales o familiares. Cada proceso "
+"nace con un objetivo claro y, cuando existe un acompañamiento terapéutico "
+"paralelo, coordinamos ambos enfoques para asegurar una intervención "
+"personalizada, unitaria y coherente con nuestros valores."
+msgstr ""
+"Banakako, taldeko edo familiako konponketa espazioak. Prozesu bakoitza "
+"helburu argi batekin jaiotzen da eta, laguntza terapeutiko paraleloa "
+"dagoenean, bi ikuspegiak koordinatzen ditugu gure balioekin bat datorren "
+"esku-hartze pertsonalizatu eta unitarioa bermatzeko."
+
+#: templates/pages/services.html:65
+msgid "C. Acompañamiento psicoterapéutico/psiquiátrico"
+msgstr "C. Laguntza psikoterapeutikoa/psikiatrikoa"
+
+#: templates/pages/services.html:67
+msgid ""
+"Contamos con un equipo de profesionales con amplia trayectoria y "
+"experiencia, que ejerce su labor desde la absoluta independencia."
+msgstr ""
+"Esperientzia eta eskarmentu handiko profesional talde bat dugu, bere lana "
+"burujabetasun osoz burutzen duena."
+
+#: templates/pages/services.html:71
+msgid "D. Apoyo legal/administrativo"
+msgstr "D. Lege/administrazio laguntza"
+
+#: templates/pages/services.html:73
+msgid ""
+"Orientación técnica para navegar procedimientos y facilitar el ejercicio de "
+"derechos, reduciendo la carga burocrática."
+msgstr ""
+"Prozeduretan nabigatzeko eta eskubideen erabilera errazteko orientabide "
+"teknikoa, zama burokratikoa murriztuz."
+
+#: templates/pages/services.html:77
+msgid "E. Conexión con redes comunitarias"
+msgstr "E. Komunitate-sareekin lotura"
+
+#: templates/pages/services.html:79
+msgid ""
+"Facilitamos el puente hacia redes de apoyo social y otros procesos grupales,"
+" fortaleciendo el tejido compartido."
+msgstr ""
+"Gizarte laguntza sareetarako eta taldekako beste prozesu batzuetarako zubia "
+"errazten dugu, ehun partekatua indartuz."
+
+#: templates/pages/services.html:86
+msgid "Paso 4"
+msgstr "4. urratsa"
+
+#: templates/pages/services.html:87
+msgid "Seguimiento y cierre flexible"
+msgstr "Jarraipena eta itxiera malgua"
+
+#: templates/pages/services.html:89
+msgid ""
+"Apostamos por cierres saludables, que pueden incluir un ritual o gesto si la"
+" persona lo desea."
+msgstr ""
+"Itxiera osasuntsuen aldeko apustua egiten dugu, erritual edo keinuren bat "
+"izan dezaketen pertsonak nahi badu."
+
+#: templates/pages/services.html:92
+msgid ""
+"Mantenemos un seguimiento flexible y la posibilidad de reabrir itinerarios "
+"en cualquier otro momento."
+msgstr ""
+"Jarraipen malgua eta ibilbideak beste edozein unetan berriro irekitzeko "
+"aukera mantentzen dugu."
+
+#: templates/pages/team.html:11
+msgid "Personas y entidades que hacen posible el programa de acompañamiento."
+msgstr "Laguntza programa posible egiten duten pertsonak eta entitateak."
+
+#: templates/pages/team.html:14
+msgid ""
+"Sendaoroi es un proyecto colectivo que reúne miradas vinculadas a la "
+"convivencia, la memoria, la salud comunitaria, los derechos humanos, las "
+"prácticas restaurativas y el acompañamiento psicosocial."
+msgstr ""
+"Sendaoroi elkarbizitzarekin, memoriarekin, komunitateko osasunarekin, giza "
+"eskubideekin, praktika zaharberritzaileekin eta laguntza psikosozialari "
+"lotutako ikuspegiak biltzen dituen proiektu kolektiboa da."
+
+#: templates/pages/team.html:20
+msgid "Grupo de trabajo del programa"
+msgstr "Programako lan-taldea"
+
+#: templates/pages/team.html:27
+msgid "Vicepresidenta de Berridatzi Elkartea"
+msgstr "Berridatzi Elkartea-ko presidenteordea"
+
+#: templates/pages/team.html:32
+msgid ""
+"\n"
+"          La imaginación moral me ha permitido soñar que es posible cocrear y construir, junto a otras personas, una comunidad de apoyo, acompañamiento y solidaridad expansiva que nos permita confiar en los demás y reconstruir los vínculos dañados, fragmentados, deteriorados o destruidos por la violencia padecida.\n"
+"          "
+msgstr ""
+"\n"
+"Irudimen moralari esker, amets egin dut posible dela beste pertsonekin batera sortzea eta eraikitzea, jasandako indarkeriaren ondorioz kaltetu, zatikatu, hondatu edo suntsitu diren besteengan konfiantza izateko eta jasandako indarkeriaren ondorioz hondatu, zatikatu, hondatu edo suntsitu diren besteekin konfiantza izateko eta berregiteko aukera emango digun laguntza, akonpainamendu eta elkartasun zabaleko komunitate bat sortzea eta eraikitzea."
+
+#: templates/pages/team.html:37
+msgid ""
+"\n"
+"          Esa necesidad e inquietud compartida de habitar espacios sociales de diálogo respetuoso para asentar, impulsar y promover condiciones de no repetición intenta ser Sendaoroi, es decir, un programa de salud comunitaria y derechos humanos.\n"
+"          "
+msgstr ""
+"\n"
+"Errepikapenik gabeko baldintzak ezartzeko, sustatzeko eta sustatzeko errespetuzko elkarrizketa-espazio sozialak bizitzeko behar eta kezka partekatu hori Sendaoroi izan nahi du, hau da, komunitateko osasun eta giza eskubideen programa bat."
+
+#: templates/pages/team.html:49
+msgid "Secretario y tesorero de Berridatzi Elkartea"
+msgstr "Berridatzi Elkartea-ko idazkaria eta diruzaina"
+
+#: templates/pages/team.html:54
+msgid ""
+"\n"
+"          Además de máster en Memoria Social y Derechos Humanos, soy el secretario y tesorero de Berridatzi Elkartea.\n"
+"          "
+msgstr ""
+"\n"
+"Gizarte Memoria eta Giza Eskubideen masterra izateaz gain, Berridatzi Elkarteko idazkaria eta diruzaina naiz."
+
+#: templates/pages/team.html:59
+msgid ""
+"\n"
+"          Aunque Sendaoroi nació como mi TFM, hoy es un proyecto colectivo con el que buscamos atender las hendiduras que la violencia ha dejado en nuestra tierra.\n"
+"          "
+msgstr ""
+"\n"
+"Sendaoroi nire TFM bezala jaio bazen ere, gaur egun, indarkeriak gure lurretan utzi dituen hutsuneei aurre egin nahi diegun proiektu kolektiboa da."
+
+#: templates/pages/team.html:64
+msgid ""
+"\n"
+"          No existen técnicas mágicas para sanar esta erosión, sino el compromiso de estar presentes, de cuidar y abrir surcos con paciencia para que la vida poco a poco vuelva a florecer, incluso cuando las raíces están muy dañadas.\n"
+"          "
+msgstr ""
+"\n"
+"Ez dago higadura hori sendatzeko teknika magikorik, baizik eta presente egoteko konpromisoa, pazientziaz zaindu eta ildoak irekitzeko, bizitza pixkanaka berriro lor dadin, sustraiak oso kaltetuta daudenean ere."
+
+#: templates/pages/team.html:69
+msgid ""
+"\n"
+"          No negaré que me subyuga meterme en jardines; bueno, más bien en huertas que piden manos para que no queden baldías. Espero que la que tenemos en casa me sirva para algo, aunque mis vecinos seguramente dirán que soy mejor haciendo números que con la azada.\n"
+"          "
+msgstr ""
+"\n"
+"Ez dut ukatuko lorategietan sartzeak menperatzen nauela; Bada, gehiago eskuak eskatzen dituzten baratzetan bezala, basamorturik egon ez dadin. Etxean daukagunak zertxobait balioko didala espero dut, nahiz eta auzokideek ziur asko zenbakiekin aitzurrarekin baino hobeto nagoela esango duten."
+
+#: templates/pages/team.html:81
+msgid "Facilitadora de procesos restaurativos"
+msgstr "Prozesu errestauratiboen dinamizatzailea"
+
+#: templates/pages/team.html:86
+msgid ""
+"\n"
+"          Me dedico a generar espacios de escucha y de diálogo desde un paradigma restaurativo desde hace unos años en diferentes contextos.\n"
+"          "
+msgstr ""
+"\n"
+"Paradigma zaharberritzaile batetik entzuteko eta elkarrizketarako espazioak sortzen aritu naiz urte batzuk testuinguru ezberdinetan."
+
+#: templates/pages/team.html:91
+msgid ""
+"\n"
+"          Tengo el privilegio de formar parte de este proyecto porque resuena profundamente con mis valores y con mi visión de cómo debemos sostener y acompañar a quienes atraviesan historias de dolor inmerecido.\n"
+"          "
+msgstr ""
+"\n"
+"Pribilegioa naiz proiektu honen parte izateak oihartzun handia duelako nire balioekin eta merezi gabeko minaren istorioak bizi dituztenei nola eutsi eta lagundu behar genien ikuspegiarekin."
+
+#: templates/pages/team.html:96
+msgid ""
+"\n"
+"          Creo en un acompañamiento con alma, que se construye desde un respeto absoluto hacia la experiencia del otro. Mi compromiso aquí es acompañar a las personas afectadas facilitando un espacio seguro, donde el cuidado y la escucha sirvan para que cada persona recupere su propia agencia y vuelva a adueñarse de su voz.\n"
+"          "
+msgstr ""
+"\n"
+"Arimarekin akonpainamenduan sinesten dut, bestearen bizipenarekiko erabateko errespetutik eraikitzen dena. Nire konpromisoa hemen kaltetutako pertsonei laguntzea da, espazio seguru bat erraztuz, non arretak eta entzuteak pertsona bakoitzak bere agentzia berreskuratzen eta bere ahotsaren jabetza berreskuratzen laguntzen baitu."
+
+#: templates/pages/team.html:106
+msgid "Personas colaboradoras"
+msgstr "Pertsona laguntzaileak"
+
+#: templates/pages/team.html:113
+msgid "Psiquiatra e investigador social"
+msgstr "Psikiatra eta gizarte-ikertzailea"
+
+#: templates/pages/team.html:117
+msgid ""
+"Psiquiatra e investigador social, colaborador del programa Sendaoroi desde "
+"una mirada vinculada a la salud mental, la memoria, los derechos humanos y "
+"el acompañamiento a personas afectadas por experiencias de violencia."
+msgstr ""
+"Psikiatra eta gizarte-ikertzailea, Sendaoroi programaren kolaboratzailea "
+"osasun mentalarekin, memoriarekin, giza eskubideekin eta indarkeria-"
+"esperientziaren eraginpean dauden pertsonen laguntzarekin lotutako "
+"ikuspegitik."
+
+#: templates/pages/team.html:125
+msgid "Desarrollo web y apoyo tecnológico"
+msgstr "Web garapena eta laguntza teknologikoa"
+
+#: templates/pages/team.html:129
+msgid ""
+"Formar parte de Sendaoroi tiene sentido porque el proyecto une comunidad, "
+"memoria, derechos humanos y tecnología para crear espacios de apoyo, escucha"
+" y acompañamiento que ayuden a cuidar mejor a las personas y reconstruir "
+"vínculos dañados."
+msgstr ""
+"Sendaoroi-ren parte izateak zentzua du, proiektuak komunitatea, memoria, "
+"giza eskubideak eta teknologia batzen dituelako, pertsonak hobeto zaintzen "
+"eta kaltetutako loturak berreraikitzen laguntzen duten laguntza, entzute eta"
+" akonpainamendu guneak sortzeko."
+
+#: templates/pages/team.html:132
+msgid ""
+"Además, desde el desarrollo web y la parte técnica, mi aportación es ayudar "
+"a que Sendaoroi tenga una presencia digital clara, accesible, segura y "
+"preparada para llegar a quienes puedan necesitar el programa."
+msgstr ""
+"Gainera, web garapenetik eta atal teknikotik, nire ekarpena Sendaoroi "
+"programaren behar izan dezaketenengana iristeko prest dagoen presentzia "
+"digital argia, eskuragarria eta segurua izaten laguntzea da."
+
+#: templates/pages/team.html:139
+msgid "Entidades colaboradoras"
+msgstr "Erakunde laguntzaileak"
+
+#: templates/pages/team.html:141
+msgid ""
+"Sendaoroi cuenta con la colaboración de entidades y profesionales que "
+"refuerzan el acompañamiento psicológico, comunitario y restaurativo del "
+"programa."
+msgstr ""
+"Sendaoroi programaren laguntza psikologikoa, komunitarioa eta "
+"zaharberritzailea indartzen duten entitate eta profesionalen lankidetza du."
+
+#: templates/pages/team.html:149
+msgid "Entidad colaboradora"
+msgstr "Erakunde laguntzailea"
+
+#: templates/pages/team.html:153
+msgid ""
+"Entidad colaboradora en el acompañamiento psicológico y comunitario del "
+"programa."
+msgstr ""
+"Erakunde laguntzailea programaren laguntza psikologiko eta komunitarioan."
+
+#: templates/pages/team.html:162
+msgid "¿Quieres hablar con Sendaoroi?"
+msgstr "Sendaoroi-rekin hitz egin nahi duzu?"
+
+#: templates/pages/team.html:164
+msgid ""
+"Si sientes que el programa puede acompañarte, puedes escribirnos o "
+"llamarnos. No necesitas tener todas las respuestas antes de dar el paso."
+msgstr ""
+"Programak lagun zaitzakeela uste baduzu, idatz diezagukezu edo deitu. Ez "
+"duzu erantzun guztiak eduki behar urratsa eman aurretik."
+
+#: templates/pages/what_we_do.html:12
+msgid ""
+"Acompañamos heridas invisibles que siguen presentes en la vida de muchas "
+"personas, familias y comunidades."
+msgstr ""
+"Pertsona, familia eta komunitate askoren bizitzan oraindik presente dauden "
+"zauri ikusezinekin laguntzen diegu."
+
+#: templates/pages/what_we_do.html:20
+msgid ""
+"\n"
+"      Las heridas invisibles no se borran solo con el invierno de los años. Aunque las vulneraciones más graves de los derechos humanos ligadas al contexto vasco cesaron tiempo atrás, el sufrimiento, el trauma y las secuelas psicosociales siguen pesando en silencio en la intimidad de muchas personas y en sus entornos afectivos y comunitarios.\n"
+"      "
+msgstr ""
+"\n"
+"Zauri ikusezinak ez dira urteetako neguarekin bakarrik ezabatzen. Euskal testuinguruari loturiko giza eskubideen urraketa larrienak duela denbora batzuk eten baziren ere, sufrimenduak, traumek eta ondorio psikosozialek isilean hazten jarraitzen dute pertsona askoren intimitatean eta haien ingurune afektibo eta komunitarioan."
+
+#: templates/pages/what_we_do.html:25
+msgid ""
+"\n"
+"      Los procesos institucionales de reconocimiento y reparación cumplen una función fundamental y necesaria. Sin embargo, la sanación emocional y comunitaria es una tarea humana que requiere otro tipo de espacios complementarios.\n"
+"      "
+msgstr ""
+"\n"
+"Aitorpen eta erreparazio prozesu instituzionalek funtsezko eta beharrezko funtzioa betetzen dute. Hala ere, sendaketa emozionala eta komunitarioa beste espazio osagarri mota batzuk behar dituen giza zeregina da."
+
+#: templates/pages/what_we_do.html:30
+msgid ""
+"\n"
+"      Sendaoroi nace para ser esa comunidad de cuidados que complementa los marcos existentes: un lugar donde descansar del peso del pasado, un suelo firme para el trabajo personal y un ágora donde tejer de nuevo, paso a paso, los lazos que un día se desgastaron.\n"
+"      "
+msgstr ""
+"\n"
+"Sendaoroi lehendik zeuden esparruak osatzen dituen zainketa komunitate hori izateko jaio zen: iraganaren pisutik atseden hartzeko lekua, lan pertsonalerako lur sendoa eta agora bat non berriro, pausoz pauso, egun batean higatu ziren loturak ehuntzeko."
+
+#: templates/pages/what_we_do.html:39
+msgid "El dolor no responde a plazos ni a leyes"
+msgstr "Minak ez die epeei ezta legeei ere erantzuten"
+
+#: templates/pages/what_we_do.html:41
+msgid ""
+"El sufrimiento derivado de lo vivido es una realidad viva hoy. Palpita en el"
+" presente y necesita atención diaria, más allá del estado de los trámites "
+"oficiales, los expedientes o las acreditaciones de cada persona."
+msgstr ""
+"Bizi izandakotik eratorritako sufrimendua errealitate bizia da gaur egun. "
+"Gaur egun pultsatzen du eta eguneroko arreta behar du, pertsona bakoitzaren "
+"prozedura, espediente edo akreditazio ofizialen egoeraz harago."
+
+#: templates/pages/what_we_do.html:45
+msgid "Sanar es un camino íntimo y compartido"
+msgstr "Sendatzea bide intimo eta partekatua da"
+
+#: templates/pages/what_we_do.html:47
+msgid ""
+"Este proceso requiere paciencia, esfuerzo personal y valentía para transitar"
+" la herida, poner palabras a la propia historia y respetar los tiempos y "
+"necesidades. A veces necesita privacidad; otras, encuentro con otras "
+"realidades y abrazo colectivo para romper el aislamiento y sanar en común."
+msgstr ""
+"Prozesu honek pazientzia, ahalegin pertsonala eta ausardia eskatzen du "
+"zauritik mugitzeko, norberaren istorioari hitzak jartzeko eta garaiak eta "
+"beharrak errespetatzeko. Batzuetan pribatutasuna behar duzu; beste batzuk, "
+"beste errealitate batzuekin topaketak eta isolamendua hautsi eta elkarrekin "
+"sendatzeko besarkada kolektiboa."
+
+#: templates/pages/what_we_do.html:51
+msgid "El impacto viaja en el silencio de los hogares"
+msgstr "Eragina etxeen isiltasunean barrena doa"
+
+#: templates/pages/what_we_do.html:53
+msgid ""
+"El trauma no se limita a quien sufrió la violencia en primera persona; se "
+"transmite, como un peso invisible, a los entornos familiares y afectivos, "
+"que a menudo quedan desdibujados en los relatos públicos."
+msgstr ""
+"Trauma ez da bortizkeria zuzenean pairatu zutenetara mugatzen; Pisu ikusezin"
+" bat bezala transmititzen da ingurune familiar eta emozionaletara, askotan "
+"lausotuta dauden istorio publikoetan."
+
+#: templates/pages/what_we_do.html:57
+msgid "Acompañar es sostener la raíz"
+msgstr "Laguntzea sustraia eustea da"
+
+#: templates/pages/what_we_do.html:59
+msgid ""
+"Para que la luz y la primavera retornen al corazón de cada persona y de sus "
+"hogares, primero es imprescindible escuchar sin condiciones, caminar al lado"
+" de cada una y cuidar con delicadeza las raíces que quedaron dañadas bajo la"
+" tierra."
+msgstr ""
+"Argia eta udaberria pertsona bakoitzaren eta bere etxeen bihotzetara "
+"itzultzeko, ezinbestekoa da lehenik eta behin baldintzarik gabe entzutea, "
+"pertsona bakoitzaren ondoan ibiltzea eta lur azpian kaltetutako sustraiak "
+"fintasunez zaintzea."
+
+#: templates/pages/what_we_do.html:65
+msgid "Ver nuestra brújula"
+msgstr "Gure iparrorratza ikusi"

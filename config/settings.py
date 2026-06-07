@@ -1,13 +1,25 @@
 import os
 from pathlib import Path
 
+from django.utils.translation import gettext_lazy as _
 
 BASE_DIR = Path(__file__).resolve().parent.parent
+
+def split_csv(value: str) -> list[str]:
+    return [item.strip() for item in value.split(",") if item.strip()]
+
 
 SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "change-me-in-production")
 DEBUG = os.getenv("DJANGO_DEBUG", "True").lower() == "true"
 
-ALLOWED_HOSTS = [host.strip() for host in os.getenv("DJANGO_ALLOWED_HOSTS", "*").split(",")]
+ALLOWED_HOSTS = split_csv(os.getenv("DJANGO_ALLOWED_HOSTS", "*"))
+CSRF_TRUSTED_ORIGINS = split_csv(
+    os.getenv(
+        "DJANGO_CSRF_TRUSTED_ORIGINS",
+        "https://sendaoroi.org,https://www.sendaoroi.org",
+    )
+)
+SECURE_PROXY_SSL_HEADER = ("HTTP_X_FORWARDED_PROTO", "https")
 
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -32,6 +44,7 @@ AUTHENTICATION_BACKENDS = [
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.locale.LocaleMiddleware",
     "django.middleware.common.CommonMiddleware",
@@ -86,8 +99,8 @@ USE_I18N = True
 USE_TZ = True
 
 LANGUAGES = [
-    ("es", "Castellano"),
-    ("eu", "Euskara"),
+    ("es", _("Castellano")),
+    ("eu", _("Euskara")),
 ]
 
 LOCALE_PATHS = [BASE_DIR / "locale"]
@@ -95,6 +108,16 @@ LOCALE_PATHS = [BASE_DIR / "locale"]
 STATIC_URL = "/static/"
 STATIC_ROOT = BASE_DIR / "staticfiles"
 STATICFILES_DIRS = [BASE_DIR / "static"]
+MEDIA_URL = "/media/"
+MEDIA_ROOT = BASE_DIR / "media"
+STORAGES = {
+    "default": {
+        "BACKEND": "django.core.files.storage.FileSystemStorage",
+    },
+    "staticfiles": {
+        "BACKEND": "whitenoise.storage.CompressedManifestStaticFilesStorage",
+    },
+}
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 SITE_ID = int(os.getenv("DJANGO_SITE_ID", "1"))
@@ -106,6 +129,7 @@ EMAIL_PORT = int(os.getenv("EMAIL_PORT", "25") or "25")
 EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER", "")
 EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", "")
 EMAIL_USE_TLS = os.getenv("EMAIL_USE_TLS", "True").lower() == "true"
+ROSETTA_ACCESS_CONTROL_FUNCTION = "config.permissions.can_access_rosetta"
 
 LOGIN_REDIRECT_URL = "/"
 ACCOUNT_EMAIL_VERIFICATION = "none"

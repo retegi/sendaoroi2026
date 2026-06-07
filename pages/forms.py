@@ -1,4 +1,5 @@
 from django import forms
+from django.utils.translation import gettext_lazy as _
 
 from .models import ContactMessage
 
@@ -26,30 +27,30 @@ class ContactForm(forms.ModelForm):
         ]
         widgets = {
             "name": forms.TextInput(
-                attrs={"placeholder": "Nombre"}
+                attrs={"placeholder": _("Nombre")}
             ),
             "email": forms.EmailInput(
-                attrs={"placeholder": "Email"}
+                attrs={"placeholder": _("Email")}
             ),
             "phone": forms.TextInput(
-                attrs={"placeholder": "Telefono"}
+                attrs={"placeholder": _("Telefono")}
             ),
             "preferred_contact_method": forms.Select(),
             "message": forms.Textarea(
-                attrs={"rows": 5, "placeholder": "Mensaje"}
+                attrs={"rows": 5, "placeholder": _("Mensaje")}
             ),
         }
         labels = {
-            "name": "Nombre",
-            "email": "Email",
-            "phone": "Telefono",
-            "preferred_contact_method": "Preferencia de contacto",
-            "message": "Mensaje",
-            "privacy_accepted": "Acepto que Sendaoroi utilice estos datos únicamente para responder a mi consulta.",
+            "name": _("Nombre"),
+            "email": _("Email"),
+            "phone": _("Telefono"),
+            "preferred_contact_method": _("Preferencia de contacto"),
+            "message": _("Mensaje"),
+            "privacy_accepted": _("Acepto que Sendaoroi utilice estos datos únicamente para responder a mi consulta."),
         }
 
     def clean_privacy_accepted(self) -> bool:
         accepted = self.cleaned_data["privacy_accepted"]
         if not accepted:
-            raise forms.ValidationError("Debes aceptar la política de privacidad para continuar.")
+            raise forms.ValidationError(_("Debes aceptar la política de privacidad para continuar."))
         return accepted

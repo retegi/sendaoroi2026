@@ -1,4 +1,5 @@
 from django.contrib import admin
+from django.utils.translation import gettext_lazy as _
 
 from .models import ContactMessage
 
@@ -12,6 +13,6 @@ class ContactMessageAdmin(admin.ModelAdmin):
     actions = ("mark_as_read",)
     ordering = ("-created_at",)
 
-    @admin.action(description="Marcar seleccionados como leidos")
+    @admin.action(description=_("Marcar seleccionados como leidos"))
     def mark_as_read(self, request, queryset):
         queryset.update(is_read=True)

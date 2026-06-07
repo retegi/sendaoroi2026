@@ -1,13 +1,14 @@
 from django.db import models
+from django.utils.translation import gettext_lazy as _
 
 
 class ContactMessage(models.Model):
     class PreferredContactMethod(models.TextChoices):
-        EMAIL = "email", "Email"
-        PHONE = "phone", "Telefono"
-        WHATSAPP = "whatsapp", "WhatsApp"
-        TELEGRAM = "telegram", "Telegram"
-        SMS = "sms", "SMS"
+        EMAIL = "email", _("Email")
+        PHONE = "phone", _("Telefono")
+        WHATSAPP = "whatsapp", _("WhatsApp")
+        TELEGRAM = "telegram", _("Telegram")
+        SMS = "sms", _("SMS")
 
     name = models.CharField(max_length=120)
     email = models.EmailField()

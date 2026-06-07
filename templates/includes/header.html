@@ -1,11 +1,13 @@
-{% load i18n %}
+{% load i18n static %}
 <header class="sticky top-0 z-50 border-b border-white/15 bg-brand-teal text-white shadow-md">
   <div class="mx-auto max-w-6xl px-4 py-4">
     <div class="flex items-center justify-between gap-3">
-      <a href="{% url 'home' %}" class="text-xl font-semibold tracking-tight">Sendaoroi.org</a>
+      <a href="{% url 'home' %}" class="inline-flex items-center">
+        <img src="{% static 'img/sendaoroi_logo_blanco_org_sin_slogan.svg' %}" alt="{% trans 'Sendaoroi.org' %}" class="h-14 w-auto md:h-16">
+      </a>
       <div class="hidden items-center gap-2 text-xs uppercase md:flex md:text-sm">
-        <a href="/eu/" class="rounded border border-white px-2 py-1 transition hover:bg-white/10">EUS</a>
-        <a href="/es/" class="rounded border border-white px-2 py-1 transition hover:bg-white/10">CAS</a>
+        <a href="/eu/" class="rounded border border-white px-2 py-1 transition hover:bg-white/10">{% trans "EUS" %}</a>
+        <a href="/es/" class="rounded border border-white px-2 py-1 transition hover:bg-white/10">{% trans "CAS" %}</a>
       </div>
     </div>
 
@@ -43,8 +45,8 @@
         <a href="{% url 'team' %}" class="rounded px-2 py-1 hover:bg-white/10">{% trans "Equipo Sendaoroi" %}</a>
         <a href="{% url 'contact' %}" class="rounded px-2 py-1 hover:bg-white/10">{% trans "Contactar" %}</a>
         <div class="mt-2 flex items-center gap-2 text-xs uppercase">
-          <a href="/eu/" class="rounded border border-white px-2 py-1">EUS</a>
-          <a href="/es/" class="rounded border border-white px-2 py-1">CAS</a>
+          <a href="/eu/" class="rounded border border-white px-2 py-1">{% trans "EUS" %}</a>
+          <a href="/es/" class="rounded border border-white px-2 py-1">{% trans "CAS" %}</a>
         </div>
       </div>
     </details>

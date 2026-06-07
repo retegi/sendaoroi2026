@@ -1,0 +1,1386 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-06-08 00:39+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: config/settings.py:102
+msgid "Castellano"
+msgstr "Castellano"
+
+#: config/settings.py:103
+msgid "Euskara"
+msgstr "Euskara"
+
+#: pages/admin.py:16
+msgid "Marcar seleccionados como leidos"
+msgstr "Marcar seleccionados como leidos"
+
+#: pages/forms.py:30 pages/forms.py:44
+msgid "Nombre"
+msgstr "Nombre"
+
+#: pages/forms.py:33 pages/forms.py:45 pages/models.py:7
+msgid "Email"
+msgstr "Email"
+
+#: pages/forms.py:36 pages/forms.py:46 pages/models.py:8
+msgid "Telefono"
+msgstr "Telefono"
+
+#: pages/forms.py:40 pages/forms.py:48
+msgid "Mensaje"
+msgstr "Mensaje"
+
+#: pages/forms.py:47
+msgid "Preferencia de contacto"
+msgstr "Preferencia de contacto"
+
+#: pages/forms.py:49
+msgid ""
+"Acepto que Sendaoroi utilice estos datos únicamente para responder a mi "
+"consulta."
+msgstr ""
+"Acepto que Sendaoroi utilice estos datos únicamente para responder a mi "
+"consulta."
+
+#: pages/forms.py:55
+msgid "Debes aceptar la política de privacidad para continuar."
+msgstr "Debes aceptar la política de privacidad para continuar."
+
+#: pages/models.py:9 templates/pages/contact.html:39
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: pages/models.py:10
+msgid "Telegram"
+msgstr "Telegram"
+
+#: pages/models.py:11 templates/pages/contact.html:41
+msgid "SMS"
+msgstr "SMS"
+
+#: pages/views.py:76
+msgid ""
+"Gracias por escribirnos. Hemos recibido tu mensaje y te responderemos con el"
+" mayor cuidado posible."
+msgstr ""
+"Gracias por escribirnos. Hemos recibido tu mensaje y te responderemos con el"
+" mayor cuidado posible."
+
+#: pages/views.py:83
+msgid ""
+"No hemos podido enviar el mensaje. Revisa los campos o inténtalo de nuevo "
+"más tarde."
+msgstr ""
+"No hemos podido enviar el mensaje. Revisa los campos o inténtalo de nuevo "
+"más tarde."
+
+#: templates/includes/footer.html:4 templates/includes/header.html:6
+msgid "Sendaoroi.org"
+msgstr "Sendaoroi.org"
+
+#: templates/includes/header.html:9 templates/includes/header.html:48
+msgid "EUS"
+msgstr "EUS"
+
+#: templates/includes/header.html:10 templates/includes/header.html:49
+msgid "CAS"
+msgstr "CAS"
+
+#: templates/includes/header.html:15 templates/includes/header.html:37
+msgid "Página principal"
+msgstr "Página principal"
+
+#: templates/includes/header.html:16 templates/includes/header.html:38
+#: templates/pages/home.html:70 templates/pages/roots.html:4
+#: templates/pages/roots.html:10
+msgid "Nuestras raíces"
+msgstr "Nuestras raíces"
+
+#: templates/includes/header.html:19 templates/includes/header.html:39
+#: templates/pages/compass.html:9 templates/pages/home.html:10
+#: templates/pages/home.html:76 templates/pages/process.html:9
+#: templates/pages/program.html:4 templates/pages/program.html:10
+#: templates/pages/services.html:9 templates/pages/what_we_do.html:9
+msgid "Programa Sendaoroi"
+msgstr "Programa Sendaoroi"
+
+#: templates/includes/header.html:23 templates/includes/header.html:40
+#: templates/pages/program.html:24 templates/pages/what_we_do.html:4
+#: templates/pages/what_we_do.html:10
+msgid "Qué hacemos"
+msgstr "Qué hacemos"
+
+#: templates/includes/header.html:24 templates/includes/header.html:41
+#: templates/pages/compass.html:4 templates/pages/compass.html:10
+#: templates/pages/program.html:30
+msgid "Nuestra brújula"
+msgstr "Nuestra brújula"
+
+#: templates/includes/header.html:25 templates/includes/header.html:42
+#: templates/pages/process.html:4 templates/pages/process.html:10
+#: templates/pages/program.html:36
+msgid "El acompañamiento como proceso"
+msgstr "El acompañamiento como proceso"
+
+#: templates/includes/header.html:26 templates/includes/header.html:43
+#: templates/pages/program.html:42 templates/pages/services.html:4
+msgid "Pasos y servicios"
+msgstr "Pasos y servicios"
+
+#: templates/includes/header.html:29 templates/includes/header.html:44
+#: templates/pages/home.html:21 templates/pages/home.html:82
+#: templates/pages/is_it_for_me.html:4 templates/pages/is_it_for_me.html:9
+#: templates/pages/services.html:98 templates/pages/team.html:168
+#: templates/pages/what_we_do.html:66
+msgid "¿Sendaoroi es para mí?"
+msgstr "¿Sendaoroi es para mí?"
+
+#: templates/includes/header.html:30 templates/includes/header.html:45
+#: templates/pages/team.html:4 templates/pages/team.html:9
+msgid "Equipo Sendaoroi"
+msgstr "Equipo Sendaoroi"
+
+#: templates/includes/header.html:31 templates/includes/header.html:46
+#: templates/pages/compass.html:83 templates/pages/contact.html:4
+#: templates/pages/contact.html:9 templates/pages/home.html:88
+#: templates/pages/is_it_for_me.html:94 templates/pages/process.html:50
+#: templates/pages/program.html:56 templates/pages/roots.html:76
+#: templates/pages/services.html:99 templates/pages/team.html:167
+msgid "Contactar"
+msgstr "Contactar"
+
+#: templates/includes/header.html:35
+msgid "Menú"
+msgstr "Menú"
+
+#: templates/pages/compass.html:12
+msgid "Los principios que orientan el acompañamiento de Sendaoroi."
+msgstr "Los principios que orientan el acompañamiento de Sendaoroi."
+
+#: templates/pages/compass.html:17
+msgid "Dirección compartida y cuidado sostenido"
+msgstr "Dirección compartida y cuidado sostenido"
+
+#: templates/pages/compass.html:23
+msgid "Nuestra esencia: el compromiso con la persona"
+msgstr "Nuestra esencia: el compromiso con la persona"
+
+#: templates/pages/compass.html:26
+msgid "Dignidad y humanidad"
+msgstr "Dignidad y humanidad"
+
+#: templates/pages/compass.html:27
+msgid ""
+"Ponemos a la persona en el centro, reconociendo su valor único y su "
+"historia."
+msgstr ""
+"Ponemos a la persona en el centro, reconociendo su valor único y su "
+"historia."
+
+#: templates/pages/compass.html:30
+msgid "Cuidado y respeto"
+msgstr "Cuidado y respeto"
+
+#: templates/pages/compass.html:31
+msgid ""
+"Establecemos un trato humano que sostiene y protege la integridad de quien "
+"acompañamos."
+msgstr ""
+"Establecemos un trato humano que sostiene y protege la integridad de quien "
+"acompañamos."
+
+#: templates/pages/compass.html:34
+msgid "Empatía y conciencia social del daño"
+msgstr "Empatía y conciencia social del daño"
+
+#: templates/pages/compass.html:35
+msgid ""
+"Comprendemos que cada proceso está marcado por un contexto social profundo "
+"que requiere una mirada sensible."
+msgstr ""
+"Comprendemos que cada proceso está marcado por un contexto social profundo "
+"que requiere una mirada sensible."
+
+#: templates/pages/compass.html:38
+msgid "Escucha y vínculo"
+msgstr "Escucha y vínculo"
+
+#: templates/pages/compass.html:39
+msgid ""
+"Construimos una relación basada en la confianza, el elemento clave para el "
+"acompañamiento."
+msgstr ""
+"Construimos una relación basada en la confianza, el elemento clave para el "
+"acompañamiento."
+
+#: templates/pages/compass.html:45
+msgid "Nuestra metodología: tú eres protagonista"
+msgstr "Nuestra metodología: tú eres protagonista"
+
+#: templates/pages/compass.html:48
+msgid "Voluntariedad y co-construcción del proceso"
+msgstr "Voluntariedad y co-construcción del proceso"
+
+#: templates/pages/compass.html:49
+msgid ""
+"Defendemos el control de la persona sobre su propio camino; nada ocurre sin "
+"su voluntad y confiamos en su propia sabiduría."
+msgstr ""
+"Defendemos el control de la persona sobre su propio camino; nada ocurre sin "
+"su voluntad y confiamos en su propia sabiduría."
+
+#: templates/pages/compass.html:52
+msgid "Acompañamiento individualizado"
+msgstr "Acompañamiento individualizado"
+
+#: templates/pages/compass.html:53
+msgid ""
+"Adaptamos nuestros recursos y nuestra presencia a las necesidades "
+"específicas de cada caso."
+msgstr ""
+"Adaptamos nuestros recursos y nuestra presencia a las necesidades "
+"específicas de cada caso."
+
+#: templates/pages/compass.html:56
+msgid "Respeto a los tiempos"
+msgstr "Respeto a los tiempos"
+
+#: templates/pages/compass.html:57
+msgid ""
+"Entendemos que transitar el propio dolor requiere sus propios ritmos, y "
+"nuestra responsabilidad es respetarlos sin presiones."
+msgstr ""
+"Entendemos que transitar el propio dolor requiere sus propios ritmos, y "
+"nuestra responsabilidad es respetarlos sin presiones."
+
+#: templates/pages/compass.html:63
+msgid "Nuestro compromiso: seguridad y profesionalidad"
+msgstr "Nuestro compromiso: seguridad y profesionalidad"
+
+#: templates/pages/compass.html:66
+msgid "Enfoque no revictimizante y prevención del daño"
+msgstr "Enfoque no revictimizante y prevención del daño"
+
+#: templates/pages/compass.html:67
+msgid ""
+"Diseñamos nuestras intervenciones para evitar cualquier impacto negativo "
+"adicional."
+msgstr ""
+"Diseñamos nuestras intervenciones para evitar cualquier impacto negativo "
+"adicional."
+
+#: templates/pages/compass.html:70
+msgid "Cuidado de la información y confidencialidad"
+msgstr "Cuidado de la información y confidencialidad"
+
+#: templates/pages/compass.html:71
+msgid "La protección de tu privacidad es nuestra prioridad absoluta."
+msgstr "La protección de tu privacidad es nuestra prioridad absoluta."
+
+#: templates/pages/compass.html:74
+msgid "Independencia y trabajo en red"
+msgstr "Independencia y trabajo en red"
+
+#: templates/pages/compass.html:75
+msgid ""
+"Mantenemos la autonomía necesaria para actuar sin corsés, colaborando "
+"siempre con otros agentes para ofrecer un soporte integral."
+msgstr ""
+"Mantenemos la autonomía necesaria para actuar sin corsés, colaborando "
+"siempre con otros agentes para ofrecer un soporte integral."
+
+#: templates/pages/compass.html:82
+msgid "Ver el proceso"
+msgstr "Ver el proceso"
+
+#: templates/pages/contact.html:11
+msgid ""
+"Puedes escribirnos o llamarnos. No necesitas tener claro qué necesitas; "
+"podemos empezar simplemente por hablar."
+msgstr ""
+"Puedes escribirnos o llamarnos. No necesitas tener claro qué necesitas; "
+"podemos empezar simplemente por hablar."
+
+#: templates/pages/contact.html:28
+msgid "Hablemos con calma"
+msgstr "Hablemos con calma"
+
+#: templates/pages/contact.html:30
+msgid ""
+"Si sientes que Sendaoroi puede acompañarte, o si quieres consultar en nombre"
+" de una persona cercana, puedes contactar con nosotras. Toda comunicación "
+"será tratada con confidencialidad y respeto."
+msgstr ""
+"Si sientes que Sendaoroi puede acompañarte, o si quieres consultar en nombre"
+" de una persona cercana, puedes contactar con nosotras. Toda comunicación "
+"será tratada con confidencialidad y respeto."
+
+#: templates/pages/contact.html:33
+msgid "Email:"
+msgstr "Email:"
+
+#: templates/pages/contact.html:34
+msgid "Teléfono:"
+msgstr "Teléfono:"
+
+#: templates/pages/contact.html:35
+msgid "Canales:"
+msgstr "Canales:"
+
+#: templates/pages/contact.html:35
+msgid "Llamada, WhatsApp, Telegram y SMS."
+msgstr "Llamada, WhatsApp, Telegram y SMS."
+
+#: templates/pages/contact.html:38 templates/pages/is_it_for_me.html:95
+msgid "Llamar"
+msgstr "Llamar"
+
+#: templates/pages/contact.html:40
+msgid "Enviar email"
+msgstr "Enviar email"
+
+#: templates/pages/contact.html:44
+msgid "También puedes escribirnos por Telegram usando el número 688 611 573."
+msgstr "También puedes escribirnos por Telegram usando el número 688 611 573."
+
+#: templates/pages/contact.html:49
+msgid "Formulario de contacto"
+msgstr "Formulario de contacto"
+
+#: templates/pages/contact.html:84
+msgid "Enviar mensaje"
+msgstr "Enviar mensaje"
+
+#: templates/pages/home.html:9
+msgid "Acompañamiento psicosocial"
+msgstr "Acompañamiento psicosocial"
+
+#: templates/pages/home.html:12
+msgid ""
+"\n"
+"      Acompañamiento psicosocial a personas afectadas por vulneraciones de derechos humanos en el contexto vasco.\n"
+"      "
+msgstr ""
+"\n"
+"      Acompañamiento psicosocial a personas afectadas por vulneraciones de derechos humanos en el contexto vasco.\n"
+"      "
+
+#: templates/pages/home.html:18 templates/pages/is_it_for_me.html:86
+msgid "¿Empezamos a hablar?"
+msgstr "¿Empezamos a hablar?"
+
+#: templates/pages/home.html:29
+msgid "Cuidado y dignidad"
+msgstr "Cuidado y dignidad"
+
+#: templates/pages/home.html:31
+msgid "Un espacio seguro de cuidado, escucha y acompañamiento"
+msgstr "Un espacio seguro de cuidado, escucha y acompañamiento"
+
+#: templates/pages/home.html:34
+msgid ""
+"\n"
+"      Sendaoroi nace para ofrecer un lugar donde descansar del peso del pasado, abrir espacios de escucha y acompañar procesos personales y comunitarios desde la dignidad, la confidencialidad y el respeto a los tiempos de cada persona.\n"
+"      "
+msgstr ""
+"\n"
+"      Sendaoroi nace para ofrecer un lugar donde descansar del peso del pasado, abrir espacios de escucha y acompañar procesos personales y comunitarios desde la dignidad, la confidencialidad y el respeto a los tiempos de cada persona.\n"
+"      "
+
+#: templates/pages/home.html:40
+msgid "Primeros pasos"
+msgstr "Primeros pasos"
+
+#: templates/pages/home.html:42
+msgid ""
+"Si necesitas un primer contacto, puedes empezar por aquí y avanzar a tu "
+"ritmo."
+msgstr ""
+"Si necesitas un primer contacto, puedes empezar por aquí y avanzar a tu "
+"ritmo."
+
+#: templates/pages/home.html:46
+msgid "1. Escríbenos o llámanos"
+msgstr "1. Escríbenos o llámanos"
+
+#: templates/pages/home.html:47
+msgid ""
+"No necesitas tener claro qué necesitas. Podemos empezar simplemente por "
+"hablar."
+msgstr ""
+"No necesitas tener claro qué necesitas. Podemos empezar simplemente por "
+"hablar."
+
+#: templates/pages/home.html:50
+msgid "2. Acogida en el programa"
+msgstr "2. Acogida en el programa"
+
+#: templates/pages/home.html:51
+msgid ""
+"Escucha inicial, respeto de tus tiempos y orientación sobre posibles "
+"itinerarios."
+msgstr ""
+"Escucha inicial, respeto de tus tiempos y orientación sobre posibles "
+"itinerarios."
+
+#: templates/pages/home.html:54
+msgid "3. Acompañamiento flexible"
+msgstr "3. Acompañamiento flexible"
+
+#: templates/pages/home.html:55
+msgid ""
+"Los servicios pueden activarse según tu situación, sin recorrido cerrado ni "
+"obligatorio."
+msgstr ""
+"Los servicios pueden activarse según tu situación, sin recorrido cerrado ni "
+"obligatorio."
+
+#: templates/pages/home.html:59 templates/pages/process.html:49
+#: templates/pages/program.html:55
+msgid "Ver pasos y servicios"
+msgstr "Ver pasos y servicios"
+
+#: templates/pages/home.html:66
+msgid "Explora Sendaoroi"
+msgstr "Explora Sendaoroi"
+
+#: templates/pages/home.html:72
+msgid ""
+"Conoce el origen de Berridatzi Elkartea y el sentido del nombre Sendaoroi."
+msgstr ""
+"Conoce el origen de Berridatzi Elkartea y el sentido del nombre Sendaoroi."
+
+#: templates/pages/home.html:78
+msgid ""
+"Descubre qué hacemos, cuáles son nuestros principios y cómo entendemos el "
+"acompañamiento."
+msgstr ""
+"Descubre qué hacemos, cuáles son nuestros principios y cómo entendemos el "
+"acompañamiento."
+
+#: templates/pages/home.html:84
+msgid ""
+"Lee algunas situaciones en las que este programa puede ofrecer apoyo y "
+"orientación."
+msgstr ""
+"Lee algunas situaciones en las que este programa puede ofrecer apoyo y "
+"orientación."
+
+#: templates/pages/home.html:90
+msgid ""
+"Puedes escribirnos o llamarnos. No necesitas tener todas las respuestas "
+"antes de dar el paso."
+msgstr ""
+"Puedes escribirnos o llamarnos. No necesitas tener todas las respuestas "
+"antes de dar el paso."
+
+#: templates/pages/is_it_for_me.html:11
+msgid ""
+"Te invitamos a leer estas situaciones; si alguna se parece a tu caso, puedes"
+" escribirnos. Estamos aquí para empezar a caminar contigo."
+msgstr ""
+"Te invitamos a leer estas situaciones; si alguna se parece a tu caso, puedes"
+" escribirnos. Estamos aquí para empezar a caminar contigo."
+
+#: templates/pages/is_it_for_me.html:18
+msgid "He sufrido graves vulneraciones de derechos humanos en primera persona"
+msgstr ""
+"He sufrido graves vulneraciones de derechos humanos en primera persona"
+
+#: templates/pages/is_it_for_me.html:20
+msgid ""
+"Si has vivido graves vulneraciones de derechos humanos en primera persona, o"
+" si te arrebataron a un ser querido, te ofrecemos un espacio de "
+"acompañamiento profesional."
+msgstr ""
+"Si has vivido graves vulneraciones de derechos humanos en primera persona, o"
+" si te arrebataron a un ser querido, te ofrecemos un espacio de "
+"acompañamiento profesional."
+
+#: templates/pages/is_it_for_me.html:23
+msgid ""
+"Te ayudamos a poner palabras a tu historia, trabajar el duelo y las "
+"consecuencias de lo vivido, para recuperar el equilibrio a tu propio ritmo."
+msgstr ""
+"Te ayudamos a poner palabras a tu historia, trabajar el duelo y las "
+"consecuencias de lo vivido, para recuperar el equilibrio a tu propio ritmo."
+
+#: templates/pages/is_it_for_me.html:27
+msgid ""
+"Mantengo un vínculo cercano con una persona que ha vivido estos impactos"
+msgstr ""
+"Mantengo un vínculo cercano con una persona que ha vivido estos impactos"
+
+#: templates/pages/is_it_for_me.html:29
+msgid ""
+"Si te une un lazo estrecho con alguien que ha padecido el impacto de la "
+"violencia, entendemos que tú también puedes experimentar sus consecuencias."
+msgstr ""
+"Si te une un lazo estrecho con alguien que ha padecido el impacto de la "
+"violencia, entendemos que tú también puedes experimentar sus consecuencias."
+
+#: templates/pages/is_it_for_me.html:32
+msgid ""
+"Estamos aquí para ayudarte a cuidar de tu bienestar y a gestionar esa "
+"realidad emocional que compartís."
+msgstr ""
+"Estamos aquí para ayudarte a cuidar de tu bienestar y a gestionar esa "
+"realidad emocional que compartís."
+
+#: templates/pages/is_it_for_me.html:36
+msgid "El pasado de mi familia me condiciona"
+msgstr "El pasado de mi familia me condiciona"
+
+#: templates/pages/is_it_for_me.html:38
+msgid ""
+"Si eres descendiente de personas marcadas por estos impactos y sientes que "
+"el silencio, la historia familiar o los traumas heredados condicionan tu "
+"vida actual, te ofrecemos un espacio para integrar ese legado y entender "
+"cómo influye en quién eres hoy."
+msgstr ""
+"Si eres descendiente de personas marcadas por estos impactos y sientes que "
+"el silencio, la historia familiar o los traumas heredados condicionan tu "
+"vida actual, te ofrecemos un espacio para integrar ese legado y entender "
+"cómo influye en quién eres hoy."
+
+#: templates/pages/is_it_for_me.html:42
+msgid "Quiero ayudar a alguien de mi entorno"
+msgstr "Quiero ayudar a alguien de mi entorno"
+
+#: templates/pages/is_it_for_me.html:44
+msgid ""
+"Si has detectado que una persona de tu círculo cercano —amistad, vecindad o "
+"familia— necesita acompañamiento pero no sabe cómo pedirlo, te asesoramos "
+"personalmente para que puedas acercarte de manera útil, respetuosa y eficaz."
+msgstr ""
+"Si has detectado que una persona de tu círculo cercano —amistad, vecindad o "
+"familia— necesita acompañamiento pero no sabe cómo pedirlo, te asesoramos "
+"personalmente para que puedas acercarte de manera útil, respetuosa y eficaz."
+
+#: templates/pages/is_it_for_me.html:50
+msgid "Preguntas frecuentes"
+msgstr "Preguntas frecuentes"
+
+#: templates/pages/is_it_for_me.html:53
+msgid "¿La comunicación es estrictamente confidencial?"
+msgstr "¿La comunicación es estrictamente confidencial?"
+
+#: templates/pages/is_it_for_me.html:55
+msgid ""
+"Sí. Todo lo que nos transmitas, ya sea sobre tu propia experiencia o la de "
+"alguien cercano, se gestiona bajo absoluta privacidad y con el máximo "
+"respeto a tu intimidad."
+msgstr ""
+"Sí. Todo lo que nos transmitas, ya sea sobre tu propia experiencia o la de "
+"alguien cercano, se gestiona bajo absoluta privacidad y con el máximo "
+"respeto a tu intimidad."
+
+#: templates/pages/is_it_for_me.html:59
+msgid "¿Es necesario que sepa exactamente qué necesito antes de escribir?"
+msgstr "¿Es necesario que sepa exactamente qué necesito antes de escribir?"
+
+#: templates/pages/is_it_for_me.html:61
+msgid ""
+"No. Puedes contactar para expresar cómo te sientes o qué observas en tu "
+"entorno, y nosotras te ayudaremos a identificar el itinerario de "
+"acompañamiento que mejor encaje contigo."
+msgstr ""
+"No. Puedes contactar para expresar cómo te sientes o qué observas en tu "
+"entorno, y nosotras te ayudaremos a identificar el itinerario de "
+"acompañamiento que mejor encaje contigo."
+
+#: templates/pages/is_it_for_me.html:65
+msgid "¿Debo tener un reconocimiento oficial para acogerme al programa?"
+msgstr "¿Debo tener un reconocimiento oficial para acogerme al programa?"
+
+#: templates/pages/is_it_for_me.html:67
+msgid ""
+"En absoluto. Nuestro acompañamiento no requiere ninguna certificación ni "
+"reconocimiento administrativo previo. Si sientes que necesitas apoyo o "
+"escucha, ese es el único requisito para contactar con nosotras."
+msgstr ""
+"En absoluto. Nuestro acompañamiento no requiere ninguna certificación ni "
+"reconocimiento administrativo previo. Si sientes que necesitas apoyo o "
+"escucha, ese es el único requisito para contactar con nosotras."
+
+#: templates/pages/is_it_for_me.html:71
+msgid "¿Puedo contactar en nombre de otra persona?"
+msgstr "¿Puedo contactar en nombre de otra persona?"
+
+#: templates/pages/is_it_for_me.html:73
+msgid ""
+"Por supuesto. Si conoces a alguien que podría beneficiarse de este "
+"acompañamiento, escríbenos y te guiaremos sobre cómo abordar el contacto o "
+"cómo tender ese puente de manera segura y eficaz."
+msgstr ""
+"Por supuesto. Si conoces a alguien que podría beneficiarse de este "
+"acompañamiento, escríbenos y te guiaremos sobre cómo abordar el contacto o "
+"cómo tender ese puente de manera segura y eficaz."
+
+#: templates/pages/is_it_for_me.html:77
+msgid "¿Cuál es el coste del acompañamiento?"
+msgstr "¿Cuál es el coste del acompañamiento?"
+
+#: templates/pages/is_it_for_me.html:79
+msgid ""
+"Sendaoroi es un proyecto de acompañamiento totalmente gratuito. No hay "
+"costes asociados a ninguno de nuestros servicios."
+msgstr ""
+"Sendaoroi es un proyecto de acompañamiento totalmente gratuito. No hay "
+"costes asociados a ninguno de nuestros servicios."
+
+#: templates/pages/is_it_for_me.html:88
+msgid ""
+"En Sendaoroi, no trabajamos con diagnósticos cerrados ni etiquetas. "
+"Entendemos que cada persona y cada historia es única, y por eso nuestra "
+"prioridad es ofrecerte un espacio humano donde el ritmo lo marcas tú."
+msgstr ""
+"En Sendaoroi, no trabajamos con diagnósticos cerrados ni etiquetas. "
+"Entendemos que cada persona y cada historia es única, y por eso nuestra "
+"prioridad es ofrecerte un espacio humano donde el ritmo lo marcas tú."
+
+#: templates/pages/is_it_for_me.html:91
+msgid ""
+"No necesitas tener todas las respuestas antes de dar el paso; este es el "
+"lugar para empezar a hablar."
+msgstr ""
+"No necesitas tener todas las respuestas antes de dar el paso; este es el "
+"lugar para empezar a hablar."
+
+#: templates/pages/process.html:12
+msgid ""
+"Un itinerario flexible, co-construido y respetuoso con los tiempos de cada "
+"persona."
+msgstr ""
+"Un itinerario flexible, co-construido y respetuoso con los tiempos de cada "
+"persona."
+
+#: templates/pages/process.html:15
+msgid ""
+"Es un proceso que pone en el centro a la persona y su dignidad, en el que "
+"profesionales en el ámbito de las prácticas restaurativas y la terapia "
+"psicológica acompañan el itinerario co-construido con cada persona."
+msgstr ""
+"Es un proceso que pone en el centro a la persona y su dignidad, en el que "
+"profesionales en el ámbito de las prácticas restaurativas y la terapia "
+"psicológica acompañan el itinerario co-construido con cada persona."
+
+#: templates/pages/process.html:21
+msgid "Camino de acompañamiento"
+msgstr "Camino de acompañamiento"
+
+#: templates/pages/process.html:24
+msgid "Persona en el centro"
+msgstr "Persona en el centro"
+
+#: templates/pages/process.html:27
+msgid "Dignidad"
+msgstr "Dignidad"
+
+#: templates/pages/process.html:30
+msgid "Escucha"
+msgstr "Escucha"
+
+#: templates/pages/process.html:33
+msgid "Itinerario co-construido"
+msgstr "Itinerario co-construido"
+
+#: templates/pages/process.html:36
+msgid "Acompañamiento profesional"
+msgstr "Acompañamiento profesional"
+
+#: templates/pages/process.html:39
+msgid "Proceso flexible"
+msgstr "Proceso flexible"
+
+#: templates/pages/process.html:46
+msgid ""
+"El acompañamiento no se plantea como un recorrido lineal ni cerrado. Cada "
+"persona marca su ritmo, sus necesidades y los límites del proceso, siempre "
+"desde la voluntariedad, la confidencialidad y el cuidado."
+msgstr ""
+"El acompañamiento no se plantea como un recorrido lineal ni cerrado. Cada "
+"persona marca su ritmo, sus necesidades y los límites del proceso, siempre "
+"desde la voluntariedad, la confidencialidad y el cuidado."
+
+#: templates/pages/program.html:9
+msgid "Programa"
+msgstr "Programa"
+
+#: templates/pages/program.html:12
+msgid ""
+"Un programa de acompañamiento psicosocial desde la dignidad, la escucha y "
+"los derechos humanos."
+msgstr ""
+"Un programa de acompañamiento psicosocial desde la dignidad, la escucha y "
+"los derechos humanos."
+
+#: templates/pages/program.html:15
+msgid ""
+"\n"
+"      Sendaoroi nace para acompañar a personas afectadas por vulneraciones de derechos humanos en el contexto vasco, ofreciendo espacios seguros donde poder poner palabras a la experiencia vivida, cuidar las heridas invisibles y reconstruir vínculos personales, familiares y comunitarios.\n"
+"      "
+msgstr ""
+"\n"
+"      Sendaoroi nace para acompañar a personas afectadas por vulneraciones de derechos humanos en el contexto vasco, ofreciendo espacios seguros donde poder poner palabras a la experiencia vivida, cuidar las heridas invisibles y reconstruir vínculos personales, familiares y comunitarios.\n"
+"      "
+
+#: templates/pages/program.html:26
+msgid ""
+"Acompañamos procesos personales y comunitarios que no siempre encuentran "
+"respuesta en los marcos institucionales."
+msgstr ""
+"Acompañamos procesos personales y comunitarios que no siempre encuentran "
+"respuesta en los marcos institucionales."
+
+#: templates/pages/program.html:32
+msgid ""
+"Conoce los principios que orientan nuestro modo de acompañar: dignidad, "
+"cuidado, voluntariedad, confidencialidad y trabajo en red."
+msgstr ""
+"Conoce los principios que orientan nuestro modo de acompañar: dignidad, "
+"cuidado, voluntariedad, confidencialidad y trabajo en red."
+
+#: templates/pages/program.html:38
+msgid ""
+"Entendemos el acompañamiento como un itinerario flexible, co-construido con "
+"cada persona y respetuoso con sus tiempos."
+msgstr ""
+"Entendemos el acompañamiento como un itinerario flexible, co-construido con "
+"cada persona y respetuoso con sus tiempos."
+
+#: templates/pages/program.html:44
+msgid ""
+"Descubre los posibles pasos del proceso y los itinerarios de apoyo que "
+"pueden activarse según cada situación."
+msgstr ""
+"Descubre los posibles pasos del proceso y los itinerarios de apoyo que "
+"pueden activarse según cada situación."
+
+#: templates/pages/program.html:50
+msgid "¿Damos el siguiente paso?"
+msgstr "¿Damos el siguiente paso?"
+
+#: templates/pages/program.html:52
+msgid ""
+"Puedes conocer cómo se concreta el itinerario o escribirnos directamente "
+"para valorar tu situación con calma."
+msgstr ""
+"Puedes conocer cómo se concreta el itinerario o escribirnos directamente "
+"para valorar tu situación con calma."
+
+#: templates/pages/roots.html:9
+msgid "Origen y sentido"
+msgstr "Origen y sentido"
+
+#: templates/pages/roots.html:12
+msgid ""
+"\n"
+"      El origen de Sendaoroi está unido a Berridatzi Elkartea y a la voluntad de transformar el dolor en cuidado, convivencia y esperanza.\n"
+"      "
+msgstr ""
+"\n"
+"      El origen de Sendaoroi está unido a Berridatzi Elkartea y a la voluntad de transformar el dolor en cuidado, convivencia y esperanza.\n"
+"      "
+
+#: templates/pages/roots.html:21
+msgid "Berridatzi Elkartea"
+msgstr "Berridatzi Elkartea"
+
+#: templates/pages/roots.html:24
+msgid ""
+"\n"
+"        Berridatzi Bizikidetza Josteko Elkartea nace de una necesidad vital: transformar en esperanza el trauma que marcó a muchas familias. Esa experiencia personal fue el germen de nuestra asociación sin ánimo de lucro, constituida en 2019 con la misión fundamental de consolidar la paz y tejer la convivencia.\n"
+"        "
+msgstr ""
+"\n"
+"        Berridatzi Bizikidetza Josteko Elkartea nace de una necesidad vital: transformar en esperanza el trauma que marcó a muchas familias. Esa experiencia personal fue el germen de nuestra asociación sin ánimo de lucro, constituida en 2019 con la misión fundamental de consolidar la paz y tejer la convivencia.\n"
+"        "
+
+#: templates/pages/roots.html:29
+msgid ""
+"\n"
+"        Desde nuestros inicios, trabajamos para sanar heridas —personales y colectivas— y prestar un apoyo digno a víctimas, personas olvidadas y colectivos oprimidos. Exploramos itinerarios de justicia transicional y asistencia integral, convencidas de que la verdadera paz solo es posible si atendemos el dolor con empatía y un firme compromiso con la no repetición.\n"
+"        "
+msgstr ""
+"\n"
+"        Desde nuestros inicios, trabajamos para sanar heridas —personales y colectivas— y prestar un apoyo digno a víctimas, personas olvidadas y colectivos oprimidos. Exploramos itinerarios de justicia transicional y asistencia integral, convencidas de que la verdadera paz solo es posible si atendemos el dolor con empatía y un firme compromiso con la no repetición.\n"
+"        "
+
+#: templates/pages/roots.html:34
+msgid ""
+"\n"
+"        Sendaoroi es la materialización de esa voluntad y el principal proyecto de Berridatzi. Actuamos allí donde las respuestas convencionales no llegan, priorizando la escucha activa, la estabilidad emocional y el fortalecimiento de la resiliencia colectiva.\n"
+"        "
+msgstr ""
+"\n"
+"        Sendaoroi es la materialización de esa voluntad y el principal proyecto de Berridatzi. Actuamos allí donde las respuestas convencionales no llegan, priorizando la escucha activa, la estabilidad emocional y el fortalecimiento de la resiliencia colectiva.\n"
+"        "
+
+#: templates/pages/roots.html:42
+msgid "Qué significa Sendaoroi"
+msgstr "Qué significa Sendaoroi"
+
+#: templates/pages/roots.html:45
+msgid ""
+"\n"
+"        Sendaoroi no habita en los diccionarios; es una palabra que hemos imaginado para poder nombrar nuestro espacio seguro de cuidado y acompañamiento.\n"
+"        "
+msgstr ""
+"\n"
+"        Sendaoroi no habita en los diccionarios; es una palabra que hemos imaginado para poder nombrar nuestro espacio seguro de cuidado y acompañamiento.\n"
+"        "
+
+#: templates/pages/roots.html:50
+msgid ""
+"\n"
+"        En euskera, enlaza sendatu, sanar, y oroimena, memoria: el deseo profundo de sanar los recuerdos y aliviar ese dolor sordo que, a menudo, el paso del tiempo deja estancado en el alma.\n"
+"        "
+msgstr ""
+"\n"
+"        En euskera, enlaza sendatu, sanar, y oroimena, memoria: el deseo profundo de sanar los recuerdos y aliviar ese dolor sordo que, a menudo, el paso del tiempo deja estancado en el alma.\n"
+"        "
+
+#: templates/pages/roots.html:55
+msgid ""
+"\n"
+"        Al mirarlo en castellano, el nombre se dibuja como una senda. Y de nuevo en euskera, oroi nos susurra también un horizonte: a todas, a todos.\n"
+"        "
+msgstr ""
+"\n"
+"        Al mirarlo en castellano, el nombre se dibuja como una senda. Y de nuevo en euskera, oroi nos susurra también un horizonte: a todas, a todos.\n"
+"        "
+
+#: templates/pages/roots.html:60
+msgid ""
+"\n"
+"        Sendaoroi es, por lo tanto, ese camino abierto que busca dignificar las memorias, sin asimetrías y desde el respeto absoluto a la palabra, al relato y a los tiempos de cada persona.\n"
+"        "
+msgstr ""
+"\n"
+"        Sendaoroi es, por lo tanto, ese camino abierto que busca dignificar las memorias, sin asimetrías y desde el respeto absoluto a la palabra, al relato y a los tiempos de cada persona.\n"
+"        "
+
+#: templates/pages/roots.html:70
+msgid "¿Empezamos a caminar juntas?"
+msgstr "¿Empezamos a caminar juntas?"
+
+#: templates/pages/roots.html:72
+msgid ""
+"Conocer nuestras raíces es también una forma de acercarse al sentido del "
+"programa y al acompañamiento que ofrecemos."
+msgstr ""
+"Conocer nuestras raíces es también una forma de acercarse al sentido del "
+"programa y al acompañamiento que ofrecemos."
+
+#: templates/pages/roots.html:75
+msgid "Conocer el programa"
+msgstr "Conocer el programa"
+
+#: templates/pages/services.html:10
+msgid "Pasos del proceso y servicios"
+msgstr "Pasos del proceso y servicios"
+
+#: templates/pages/services.html:12
+msgid ""
+"Los servicios pueden activarse de forma independiente o simultánea, según "
+"las necesidades y el momento de cada persona."
+msgstr ""
+"Los servicios pueden activarse de forma independiente o simultánea, según "
+"las necesidades y el momento de cada persona."
+
+#: templates/pages/services.html:19
+msgid ""
+"El itinerario no es lineal ni jerárquico. Los servicios pueden activarse de "
+"forma independiente o simultánea, según las necesidades y el momento de cada"
+" persona."
+msgstr ""
+"El itinerario no es lineal ni jerárquico. Los servicios pueden activarse de "
+"forma independiente o simultánea, según las necesidades y el momento de cada"
+" persona."
+
+#: templates/pages/services.html:25
+msgid "Paso 1"
+msgstr "Paso 1"
+
+#: templates/pages/services.html:26
+msgid "Contáctanos"
+msgstr "Contáctanos"
+
+#: templates/pages/services.html:28
+msgid ""
+"El primer paso es escribirnos o llamarnos. No necesitas tener claro qué "
+"necesitas ni saber exactamente qué itinerario seguir. Basta con querer "
+"empezar a hablar."
+msgstr ""
+"El primer paso es escribirnos o llamarnos. No necesitas tener claro qué "
+"necesitas ni saber exactamente qué itinerario seguir. Basta con querer "
+"empezar a hablar."
+
+#: templates/pages/services.html:33
+msgid "Paso 2"
+msgstr "Paso 2"
+
+#: templates/pages/services.html:34
+msgid "Acogida en el programa"
+msgstr "Acogida en el programa"
+
+#: templates/pages/services.html:36
+msgid ""
+"Encuentro presencial con la responsable del programa. Escucha profunda, "
+"entrevista personal e inicio del vínculo."
+msgstr ""
+"Encuentro presencial con la responsable del programa. Escucha profunda, "
+"entrevista personal e inicio del vínculo."
+
+#: templates/pages/services.html:37
+msgid ""
+"Se respetan los tiempos de la persona que contacta con Sendaoroi, "
+"manteniendo siempre su sensación de control sobre los posibles servicios a "
+"los que pueda acogerse."
+msgstr ""
+"Se respetan los tiempos de la persona que contacta con Sendaoroi, "
+"manteniendo siempre su sensación de control sobre los posibles servicios a "
+"los que pueda acogerse."
+
+#: templates/pages/services.html:38
+msgid ""
+"Existe la posibilidad de realizar una o varias entrevistas iniciales si la "
+"persona lo necesita para comprender y elegir, en su caso, los itinerarios "
+"que se ofrecen. No se plantea necesariamente desde un marco clínico."
+msgstr ""
+"Existe la posibilidad de realizar una o varias entrevistas iniciales si la "
+"persona lo necesita para comprender y elegir, en su caso, los itinerarios "
+"que se ofrecen. No se plantea necesariamente desde un marco clínico."
+
+#: templates/pages/services.html:43
+msgid "Paso 3"
+msgstr "Paso 3"
+
+#: templates/pages/services.html:44
+msgid "Posibles itinerarios"
+msgstr "Posibles itinerarios"
+
+#: templates/pages/services.html:46
+msgid ""
+"El proceso puede abrir distintos itinerarios de acompañamiento, que se "
+"activan según cada situación."
+msgstr ""
+"El proceso puede abrir distintos itinerarios de acompañamiento, que se "
+"activan según cada situación."
+
+#: templates/pages/services.html:50
+msgid "A. Acompañamiento en la cotidianidad"
+msgstr "A. Acompañamiento en la cotidianidad"
+
+#: templates/pages/services.html:52
+msgid ""
+"Facilitamos momentos compartidos —un paseo, un café o un tiempo de "
+"presencia— donde el vínculo y la escucha activa son los protagonistas."
+msgstr ""
+"Facilitamos momentos compartidos —un paseo, un café o un tiempo de "
+"presencia— donde el vínculo y la escucha activa son los protagonistas."
+
+#: templates/pages/services.html:55
+msgid ""
+"Se trata de un punto de apoyo basado en la presencia mutua, donde la palabra"
+" y la reflexión fluyen con naturalidad en un entorno informal pero seguro."
+msgstr ""
+"Se trata de un punto de apoyo basado en la presencia mutua, donde la palabra"
+" y la reflexión fluyen con naturalidad en un entorno informal pero seguro."
+
+#: templates/pages/services.html:59
+msgid "B. Procesos restaurativos"
+msgstr "B. Procesos restaurativos"
+
+#: templates/pages/services.html:61
+msgid ""
+"Espacios de reparación individuales, grupales o familiares. Cada proceso "
+"nace con un objetivo claro y, cuando existe un acompañamiento terapéutico "
+"paralelo, coordinamos ambos enfoques para asegurar una intervención "
+"personalizada, unitaria y coherente con nuestros valores."
+msgstr ""
+"Espacios de reparación individuales, grupales o familiares. Cada proceso "
+"nace con un objetivo claro y, cuando existe un acompañamiento terapéutico "
+"paralelo, coordinamos ambos enfoques para asegurar una intervención "
+"personalizada, unitaria y coherente con nuestros valores."
+
+#: templates/pages/services.html:65
+msgid "C. Acompañamiento psicoterapéutico/psiquiátrico"
+msgstr "C. Acompañamiento psicoterapéutico/psiquiátrico"
+
+#: templates/pages/services.html:67
+msgid ""
+"Contamos con un equipo de profesionales con amplia trayectoria y "
+"experiencia, que ejerce su labor desde la absoluta independencia."
+msgstr ""
+"Contamos con un equipo de profesionales con amplia trayectoria y "
+"experiencia, que ejerce su labor desde la absoluta independencia."
+
+#: templates/pages/services.html:71
+msgid "D. Apoyo legal/administrativo"
+msgstr "D. Apoyo legal/administrativo"
+
+#: templates/pages/services.html:73
+msgid ""
+"Orientación técnica para navegar procedimientos y facilitar el ejercicio de "
+"derechos, reduciendo la carga burocrática."
+msgstr ""
+"Orientación técnica para navegar procedimientos y facilitar el ejercicio de "
+"derechos, reduciendo la carga burocrática."
+
+#: templates/pages/services.html:77
+msgid "E. Conexión con redes comunitarias"
+msgstr "E. Conexión con redes comunitarias"
+
+#: templates/pages/services.html:79
+msgid ""
+"Facilitamos el puente hacia redes de apoyo social y otros procesos grupales,"
+" fortaleciendo el tejido compartido."
+msgstr ""
+"Facilitamos el puente hacia redes de apoyo social y otros procesos grupales,"
+" fortaleciendo el tejido compartido."
+
+#: templates/pages/services.html:86
+msgid "Paso 4"
+msgstr "Paso 4"
+
+#: templates/pages/services.html:87
+msgid "Seguimiento y cierre flexible"
+msgstr "Seguimiento y cierre flexible"
+
+#: templates/pages/services.html:89
+msgid ""
+"Apostamos por cierres saludables, que pueden incluir un ritual o gesto si la"
+" persona lo desea."
+msgstr ""
+"Apostamos por cierres saludables, que pueden incluir un ritual o gesto si la"
+" persona lo desea."
+
+#: templates/pages/services.html:92
+msgid ""
+"Mantenemos un seguimiento flexible y la posibilidad de reabrir itinerarios "
+"en cualquier otro momento."
+msgstr ""
+"Mantenemos un seguimiento flexible y la posibilidad de reabrir itinerarios "
+"en cualquier otro momento."
+
+#: templates/pages/team.html:11
+msgid "Personas y entidades que hacen posible el programa de acompañamiento."
+msgstr "Personas y entidades que hacen posible el programa de acompañamiento."
+
+#: templates/pages/team.html:14
+msgid ""
+"Sendaoroi es un proyecto colectivo que reúne miradas vinculadas a la "
+"convivencia, la memoria, la salud comunitaria, los derechos humanos, las "
+"prácticas restaurativas y el acompañamiento psicosocial."
+msgstr ""
+"Sendaoroi es un proyecto colectivo que reúne miradas vinculadas a la "
+"convivencia, la memoria, la salud comunitaria, los derechos humanos, las "
+"prácticas restaurativas y el acompañamiento psicosocial."
+
+#: templates/pages/team.html:20
+msgid "Grupo de trabajo del programa"
+msgstr "Grupo de trabajo del programa"
+
+#: templates/pages/team.html:27
+msgid "Vicepresidenta de Berridatzi Elkartea"
+msgstr "Vicepresidenta de Berridatzi Elkartea"
+
+#: templates/pages/team.html:32
+msgid ""
+"\n"
+"          La imaginación moral me ha permitido soñar que es posible cocrear y construir, junto a otras personas, una comunidad de apoyo, acompañamiento y solidaridad expansiva que nos permita confiar en los demás y reconstruir los vínculos dañados, fragmentados, deteriorados o destruidos por la violencia padecida.\n"
+"          "
+msgstr ""
+"\n"
+"          La imaginación moral me ha permitido soñar que es posible cocrear y construir, junto a otras personas, una comunidad de apoyo, acompañamiento y solidaridad expansiva que nos permita confiar en los demás y reconstruir los vínculos dañados, fragmentados, deteriorados o destruidos por la violencia padecida.\n"
+"          "
+
+#: templates/pages/team.html:37
+msgid ""
+"\n"
+"          Esa necesidad e inquietud compartida de habitar espacios sociales de diálogo respetuoso para asentar, impulsar y promover condiciones de no repetición intenta ser Sendaoroi, es decir, un programa de salud comunitaria y derechos humanos.\n"
+"          "
+msgstr ""
+"\n"
+"          Esa necesidad e inquietud compartida de habitar espacios sociales de diálogo respetuoso para asentar, impulsar y promover condiciones de no repetición intenta ser Sendaoroi, es decir, un programa de salud comunitaria y derechos humanos.\n"
+"          "
+
+#: templates/pages/team.html:49
+msgid "Secretario y tesorero de Berridatzi Elkartea"
+msgstr "Secretario y tesorero de Berridatzi Elkartea"
+
+#: templates/pages/team.html:54
+msgid ""
+"\n"
+"          Además de máster en Memoria Social y Derechos Humanos, soy el secretario y tesorero de Berridatzi Elkartea.\n"
+"          "
+msgstr ""
+"\n"
+"          Además de máster en Memoria Social y Derechos Humanos, soy el secretario y tesorero de Berridatzi Elkartea.\n"
+"          "
+
+#: templates/pages/team.html:59
+msgid ""
+"\n"
+"          Aunque Sendaoroi nació como mi TFM, hoy es un proyecto colectivo con el que buscamos atender las hendiduras que la violencia ha dejado en nuestra tierra.\n"
+"          "
+msgstr ""
+"\n"
+"          Aunque Sendaoroi nació como mi TFM, hoy es un proyecto colectivo con el que buscamos atender las hendiduras que la violencia ha dejado en nuestra tierra.\n"
+"          "
+
+#: templates/pages/team.html:64
+msgid ""
+"\n"
+"          No existen técnicas mágicas para sanar esta erosión, sino el compromiso de estar presentes, de cuidar y abrir surcos con paciencia para que la vida poco a poco vuelva a florecer, incluso cuando las raíces están muy dañadas.\n"
+"          "
+msgstr ""
+"\n"
+"          No existen técnicas mágicas para sanar esta erosión, sino el compromiso de estar presentes, de cuidar y abrir surcos con paciencia para que la vida poco a poco vuelva a florecer, incluso cuando las raíces están muy dañadas.\n"
+"          "
+
+#: templates/pages/team.html:69
+msgid ""
+"\n"
+"          No negaré que me subyuga meterme en jardines; bueno, más bien en huertas que piden manos para que no queden baldías. Espero que la que tenemos en casa me sirva para algo, aunque mis vecinos seguramente dirán que soy mejor haciendo números que con la azada.\n"
+"          "
+msgstr ""
+"\n"
+"          No negaré que me subyuga meterme en jardines; bueno, más bien en huertas que piden manos para que no queden baldías. Espero que la que tenemos en casa me sirva para algo, aunque mis vecinos seguramente dirán que soy mejor haciendo números que con la azada.\n"
+"          "
+
+#: templates/pages/team.html:81
+msgid "Facilitadora de procesos restaurativos"
+msgstr "Facilitadora de procesos restaurativos"
+
+#: templates/pages/team.html:86
+msgid ""
+"\n"
+"          Me dedico a generar espacios de escucha y de diálogo desde un paradigma restaurativo desde hace unos años en diferentes contextos.\n"
+"          "
+msgstr ""
+"\n"
+"          Me dedico a generar espacios de escucha y de diálogo desde un paradigma restaurativo desde hace unos años en diferentes contextos.\n"
+"          "
+
+#: templates/pages/team.html:91
+msgid ""
+"\n"
+"          Tengo el privilegio de formar parte de este proyecto porque resuena profundamente con mis valores y con mi visión de cómo debemos sostener y acompañar a quienes atraviesan historias de dolor inmerecido.\n"
+"          "
+msgstr ""
+"\n"
+"          Tengo el privilegio de formar parte de este proyecto porque resuena profundamente con mis valores y con mi visión de cómo debemos sostener y acompañar a quienes atraviesan historias de dolor inmerecido.\n"
+"          "
+
+#: templates/pages/team.html:96
+msgid ""
+"\n"
+"          Creo en un acompañamiento con alma, que se construye desde un respeto absoluto hacia la experiencia del otro. Mi compromiso aquí es acompañar a las personas afectadas facilitando un espacio seguro, donde el cuidado y la escucha sirvan para que cada persona recupere su propia agencia y vuelva a adueñarse de su voz.\n"
+"          "
+msgstr ""
+"\n"
+"          Creo en un acompañamiento con alma, que se construye desde un respeto absoluto hacia la experiencia del otro. Mi compromiso aquí es acompañar a las personas afectadas facilitando un espacio seguro, donde el cuidado y la escucha sirvan para que cada persona recupere su propia agencia y vuelva a adueñarse de su voz.\n"
+"          "
+
+#: templates/pages/team.html:106
+msgid "Personas colaboradoras"
+msgstr "Personas colaboradoras"
+
+#: templates/pages/team.html:113
+msgid "Psiquiatra e investigador social"
+msgstr "Psiquiatra e investigador social"
+
+#: templates/pages/team.html:117
+msgid ""
+"Psiquiatra e investigador social, colaborador del programa Sendaoroi desde "
+"una mirada vinculada a la salud mental, la memoria, los derechos humanos y "
+"el acompañamiento a personas afectadas por experiencias de violencia."
+msgstr ""
+"Psiquiatra e investigador social, colaborador del programa Sendaoroi desde "
+"una mirada vinculada a la salud mental, la memoria, los derechos humanos y "
+"el acompañamiento a personas afectadas por experiencias de violencia."
+
+#: templates/pages/team.html:125
+msgid "Desarrollo web y apoyo tecnológico"
+msgstr "Desarrollo web y apoyo tecnológico"
+
+#: templates/pages/team.html:129
+msgid ""
+"Formar parte de Sendaoroi tiene sentido porque el proyecto une comunidad, "
+"memoria, derechos humanos y tecnología para crear espacios de apoyo, escucha"
+" y acompañamiento que ayuden a cuidar mejor a las personas y reconstruir "
+"vínculos dañados."
+msgstr ""
+"Formar parte de Sendaoroi tiene sentido porque el proyecto une comunidad, "
+"memoria, derechos humanos y tecnología para crear espacios de apoyo, escucha"
+" y acompañamiento que ayuden a cuidar mejor a las personas y reconstruir "
+"vínculos dañados."
+
+#: templates/pages/team.html:132
+msgid ""
+"Además, desde el desarrollo web y la parte técnica, mi aportación es ayudar "
+"a que Sendaoroi tenga una presencia digital clara, accesible, segura y "
+"preparada para llegar a quienes puedan necesitar el programa."
+msgstr ""
+"Además, desde el desarrollo web y la parte técnica, mi aportación es ayudar "
+"a que Sendaoroi tenga una presencia digital clara, accesible, segura y "
+"preparada para llegar a quienes puedan necesitar el programa."
+
+#: templates/pages/team.html:139
+msgid "Entidades colaboradoras"
+msgstr "Entidades colaboradoras"
+
+#: templates/pages/team.html:141
+msgid ""
+"Sendaoroi cuenta con la colaboración de entidades y profesionales que "
+"refuerzan el acompañamiento psicológico, comunitario y restaurativo del "
+"programa."
+msgstr ""
+"Sendaoroi cuenta con la colaboración de entidades y profesionales que "
+"refuerzan el acompañamiento psicológico, comunitario y restaurativo del "
+"programa."
+
+#: templates/pages/team.html:149
+msgid "Entidad colaboradora"
+msgstr "Entidad colaboradora"
+
+#: templates/pages/team.html:153
+msgid ""
+"Entidad colaboradora en el acompañamiento psicológico y comunitario del "
+"programa."
+msgstr ""
+"Entidad colaboradora en el acompañamiento psicológico y comunitario del "
+"programa."
+
+#: templates/pages/team.html:162
+msgid "¿Quieres hablar con Sendaoroi?"
+msgstr "¿Quieres hablar con Sendaoroi?"
+
+#: templates/pages/team.html:164
+msgid ""
+"Si sientes que el programa puede acompañarte, puedes escribirnos o "
+"llamarnos. No necesitas tener todas las respuestas antes de dar el paso."
+msgstr ""
+"Si sientes que el programa puede acompañarte, puedes escribirnos o "
+"llamarnos. No necesitas tener todas las respuestas antes de dar el paso."
+
+#: templates/pages/what_we_do.html:12
+msgid ""
+"Acompañamos heridas invisibles que siguen presentes en la vida de muchas "
+"personas, familias y comunidades."
+msgstr ""
+"Acompañamos heridas invisibles que siguen presentes en la vida de muchas "
+"personas, familias y comunidades."
+
+#: templates/pages/what_we_do.html:20
+msgid ""
+"\n"
+"      Las heridas invisibles no se borran solo con el invierno de los años. Aunque las vulneraciones más graves de los derechos humanos ligadas al contexto vasco cesaron tiempo atrás, el sufrimiento, el trauma y las secuelas psicosociales siguen pesando en silencio en la intimidad de muchas personas y en sus entornos afectivos y comunitarios.\n"
+"      "
+msgstr ""
+"\n"
+"      Las heridas invisibles no se borran solo con el invierno de los años. Aunque las vulneraciones más graves de los derechos humanos ligadas al contexto vasco cesaron tiempo atrás, el sufrimiento, el trauma y las secuelas psicosociales siguen pesando en silencio en la intimidad de muchas personas y en sus entornos afectivos y comunitarios.\n"
+"      "
+
+#: templates/pages/what_we_do.html:25
+msgid ""
+"\n"
+"      Los procesos institucionales de reconocimiento y reparación cumplen una función fundamental y necesaria. Sin embargo, la sanación emocional y comunitaria es una tarea humana que requiere otro tipo de espacios complementarios.\n"
+"      "
+msgstr ""
+"\n"
+"      Los procesos institucionales de reconocimiento y reparación cumplen una función fundamental y necesaria. Sin embargo, la sanación emocional y comunitaria es una tarea humana que requiere otro tipo de espacios complementarios.\n"
+"      "
+
+#: templates/pages/what_we_do.html:30
+msgid ""
+"\n"
+"      Sendaoroi nace para ser esa comunidad de cuidados que complementa los marcos existentes: un lugar donde descansar del peso del pasado, un suelo firme para el trabajo personal y un ágora donde tejer de nuevo, paso a paso, los lazos que un día se desgastaron.\n"
+"      "
+msgstr ""
+"\n"
+"      Sendaoroi nace para ser esa comunidad de cuidados que complementa los marcos existentes: un lugar donde descansar del peso del pasado, un suelo firme para el trabajo personal y un ágora donde tejer de nuevo, paso a paso, los lazos que un día se desgastaron.\n"
+"      "
+
+#: templates/pages/what_we_do.html:39
+msgid "El dolor no responde a plazos ni a leyes"
+msgstr "El dolor no responde a plazos ni a leyes"
+
+#: templates/pages/what_we_do.html:41
+msgid ""
+"El sufrimiento derivado de lo vivido es una realidad viva hoy. Palpita en el"
+" presente y necesita atención diaria, más allá del estado de los trámites "
+"oficiales, los expedientes o las acreditaciones de cada persona."
+msgstr ""
+"El sufrimiento derivado de lo vivido es una realidad viva hoy. Palpita en el"
+" presente y necesita atención diaria, más allá del estado de los trámites "
+"oficiales, los expedientes o las acreditaciones de cada persona."
+
+#: templates/pages/what_we_do.html:45
+msgid "Sanar es un camino íntimo y compartido"
+msgstr "Sanar es un camino íntimo y compartido"
+
+#: templates/pages/what_we_do.html:47
+msgid ""
+"Este proceso requiere paciencia, esfuerzo personal y valentía para transitar"
+" la herida, poner palabras a la propia historia y respetar los tiempos y "
+"necesidades. A veces necesita privacidad; otras, encuentro con otras "
+"realidades y abrazo colectivo para romper el aislamiento y sanar en común."
+msgstr ""
+"Este proceso requiere paciencia, esfuerzo personal y valentía para transitar"
+" la herida, poner palabras a la propia historia y respetar los tiempos y "
+"necesidades. A veces necesita privacidad; otras, encuentro con otras "
+"realidades y abrazo colectivo para romper el aislamiento y sanar en común."
+
+#: templates/pages/what_we_do.html:51
+msgid "El impacto viaja en el silencio de los hogares"
+msgstr "El impacto viaja en el silencio de los hogares"
+
+#: templates/pages/what_we_do.html:53
+msgid ""
+"El trauma no se limita a quien sufrió la violencia en primera persona; se "
+"transmite, como un peso invisible, a los entornos familiares y afectivos, "
+"que a menudo quedan desdibujados en los relatos públicos."
+msgstr ""
+"El trauma no se limita a quien sufrió la violencia en primera persona; se "
+"transmite, como un peso invisible, a los entornos familiares y afectivos, "
+"que a menudo quedan desdibujados en los relatos públicos."
+
+#: templates/pages/what_we_do.html:57
+msgid "Acompañar es sostener la raíz"
+msgstr "Acompañar es sostener la raíz"
+
+#: templates/pages/what_we_do.html:59
+msgid ""
+"Para que la luz y la primavera retornen al corazón de cada persona y de sus "
+"hogares, primero es imprescindible escuchar sin condiciones, caminar al lado"
+" de cada una y cuidar con delicadeza las raíces que quedaron dañadas bajo la"
+" tierra."
+msgstr ""
+"Para que la luz y la primavera retornen al corazón de cada persona y de sus "
+"hogares, primero es imprescindible escuchar sin condiciones, caminar al lado"
+" de cada una y cuidar con delicadeza las raíces que quedaron dañadas bajo la"
+" tierra."
+
+#: templates/pages/what_we_do.html:65
+msgid "Ver nuestra brújula"
+msgstr "Ver nuestra brújula"

@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n %}
+{% load i18n static %}
 
 {% block title %}{% trans "Equipo Sendaoroi" %} | Sendaoroi.org{% endblock %}
 
@@ -18,16 +18,24 @@
 
 <section class="mt-10">
   <h2 class="text-2xl font-bold text-sendaoroi-blue">{% trans "Grupo de trabajo del programa" %}</h2>
-  <div class="mt-5 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+  <div class="mt-5 grid gap-5 md:grid-cols-2">
     <article class="card-sendaoroi">
-      <div class="flex items-start gap-4">
-        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-sendaoroi-blue text-lg font-bold text-white">PZ</div>
-        <div>
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
+        <div class="team-card-media">
+          <img src="{% static 'img/pili_zabala.png' %}" alt="Pili Zabala Artano" class="team-photo">
+        </div>
+        <div class="min-w-0 flex-1">
           <h3 class="text-lg font-semibold text-sendaoroi-blue">Pili Zabala Artano</h3>
-          <p class="text-sm text-sendaoroi-green">{% trans "Vicepresidenta de Berridatzi Elkartea" %}</p>
+          <p class="mt-1 text-sm text-sendaoroi-green">{% trans "Vicepresidenta de Berridatzi Elkartea" %}</p>
+          <!-- Redes sociales futuras:
+          <div class="mt-3 flex flex-wrap gap-2">
+            <a href="URL_REAL" class="team-social-link" aria-label="LinkedIn de Pili Zabala Artano">in</a>
+            <a href="URL_REAL" class="team-social-link" aria-label="Web de Pili Zabala Artano">web</a>
+          </div>
+          -->
         </div>
       </div>
-      <div class="mt-4 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">
+      <div class="mt-5 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">
         <p>
           {% blocktrans %}
           La imaginación moral me ha permitido soñar que es posible cocrear y construir, junto a otras personas, una comunidad de apoyo, acompañamiento y solidaridad expansiva que nos permita confiar en los demás y reconstruir los vínculos dañados, fragmentados, deteriorados o destruidos por la violencia padecida.
@@ -42,14 +50,20 @@
     </article>
 
     <article class="card-sendaoroi">
-      <div class="flex items-start gap-4">
-        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-sendaoroi-blue text-lg font-bold text-white">JG</div>
-        <div>
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
+        <div class="team-photo-placeholder">JG</div>
+        <div class="min-w-0 flex-1">
           <h3 class="text-lg font-semibold text-sendaoroi-blue">Jesus Mari Garate Urruzola “Txisus”</h3>
-          <p class="text-sm text-sendaoroi-green">{% trans "Secretario y tesorero de Berridatzi Elkartea" %}</p>
+          <p class="mt-1 text-sm text-sendaoroi-green">{% trans "Secretario y tesorero de Berridatzi Elkartea" %}</p>
+          <!-- Redes sociales futuras:
+          <div class="mt-3 flex flex-wrap gap-2">
+            <a href="URL_REAL" class="team-social-link" aria-label="LinkedIn de Jesus Mari Garate Urruzola “Txisus”">in</a>
+            <a href="URL_REAL" class="team-social-link" aria-label="Web de Jesus Mari Garate Urruzola “Txisus”">web</a>
+          </div>
+          -->
         </div>
       </div>
-      <div class="mt-4 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">
+      <div class="mt-5 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">
         <p>
           {% blocktrans %}
           Además de máster en Memoria Social y Derechos Humanos, soy el secretario y tesorero de Berridatzi Elkartea.
@@ -73,15 +87,21 @@
       </div>
     </article>
 
-    <article class="card-sendaoroi md:col-span-2 xl:col-span-1">
-      <div class="flex items-start gap-4">
-        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-sendaoroi-blue text-lg font-bold text-white">MP</div>
-        <div>
+    <article class="card-sendaoroi">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
+        <div class="team-photo-placeholder">MP</div>
+        <div class="min-w-0 flex-1">
           <h3 class="text-lg font-semibold text-sendaoroi-blue">Mar Puga</h3>
-          <p class="text-sm text-sendaoroi-green">{% trans "Facilitadora de procesos restaurativos" %}</p>
+          <p class="mt-1 text-sm text-sendaoroi-green">{% trans "Facilitadora de procesos restaurativos" %}</p>
+          <!-- Redes sociales futuras:
+          <div class="mt-3 flex flex-wrap gap-2">
+            <a href="URL_REAL" class="team-social-link" aria-label="LinkedIn de Mar Puga">in</a>
+            <a href="URL_REAL" class="team-social-link" aria-label="Web de Mar Puga">web</a>
+          </div>
+          -->
         </div>
       </div>
-      <div class="mt-4 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">
+      <div class="mt-5 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">
         <p>
           {% blocktrans %}
           Me dedico a generar espacios de escucha y de diálogo desde un paradigma restaurativo desde hace unos años en diferentes contextos.
@@ -99,6 +119,27 @@
         </p>
       </div>
     </article>
+
+    <article class="card-sendaoroi">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
+        <div class="team-photo-placeholder">AB</div>
+        <div class="min-w-0 flex-1">
+          <h3 class="text-lg font-semibold text-sendaoroi-blue">Aitziber Blanco Goikoetxea</h3>
+          <p class="mt-1 text-sm text-sendaoroi-green">{% trans "Miembro del grupo de trabajo del programa" %}</p>
+          <!-- Redes sociales futuras:
+          <div class="mt-3 flex flex-wrap gap-2">
+            <a href="URL_REAL" class="team-social-link" aria-label="LinkedIn de Aitziber Blanco Goikoetxea">in</a>
+            <a href="URL_REAL" class="team-social-link" aria-label="Web de Aitziber Blanco Goikoetxea">web</a>
+          </div>
+          -->
+        </div>
+      </div>
+      <div class="mt-5 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">
+        <p>
+          {% trans "Forma parte del grupo de trabajo del programa Sendaoroi, aportando su mirada y compromiso al desarrollo colectivo de este espacio de acompañamiento, memoria y cuidado." %}
+        </p>
+      </div>
+    </article>
   </div>
 </section>
 
@@ -106,16 +147,47 @@
   <h2 class="text-2xl font-bold text-sendaoroi-blue">{% trans "Personas colaboradoras" %}</h2>
   <div class="mt-5 grid gap-5 md:grid-cols-2">
     <article class="card-sendaoroi">
-      <div class="flex items-start gap-4">
-        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-sendaoroi-blue text-lg font-bold text-white">IM</div>
-        <div>
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
+        <div class="team-photo-placeholder">IM</div>
+        <div class="min-w-0 flex-1">
           <h3 class="text-lg font-semibold text-sendaoroi-blue">Iñaki Markez</h3>
-          <p class="text-sm text-sendaoroi-green">{% trans "Psiquiatra e investigador social" %}</p>
+          <p class="mt-1 text-sm text-sendaoroi-green">{% trans "Psiquiatra e investigador social" %}</p>
+          <!-- Redes sociales futuras:
+          <div class="mt-3 flex flex-wrap gap-2">
+            <a href="URL_REAL" class="team-social-link" aria-label="LinkedIn de Iñaki Markez">in</a>
+            <a href="URL_REAL" class="team-social-link" aria-label="Web de Iñaki Markez">web</a>
+          </div>
+          -->
         </div>
       </div>
-      <p class="mt-4 text-sm leading-relaxed text-sendaoroi-gray">
-        {% trans "Psiquiatra e investigador social, colaborador del programa Sendaoroi desde una mirada vinculada a la salud mental, la memoria, los derechos humanos y el acompañamiento a personas afectadas por experiencias de violencia." %}
-      </p>
+      <div class="mt-5 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">
+        <p>
+          {% trans "Psiquiatra e investigador social, colaborador del programa Sendaoroi desde una mirada vinculada a la salud mental, la memoria, los derechos humanos y el acompañamiento a personas afectadas por experiencias de violencia." %}
+        </p>
+      </div>
+    </article>
+    <article class="card-sendaoroi">
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
+        <div class="team-photo-placeholder">IR</div>
+        <div class="min-w-0 flex-1">
+          <h3 class="text-lg font-semibold text-sendaoroi-blue">Iñaki Retegi</h3>
+          <p class="mt-1 text-sm text-sendaoroi-green">{% trans "Desarrollo web y apoyo tecnológico" %}</p>
+          <!-- Redes sociales futuras:
+          <div class="mt-3 flex flex-wrap gap-2">
+            <a href="URL_REAL" class="team-social-link" aria-label="LinkedIn de Iñaki Retegi">in</a>
+            <a href="URL_REAL" class="team-social-link" aria-label="Web de Iñaki Retegi">web</a>
+          </div>
+          -->
+        </div>
+      </div>
+      <div class="mt-5 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">
+        <p>
+          {% trans "Formar parte de Sendaoroi tiene sentido porque el proyecto une comunidad, memoria, derechos humanos y tecnología para crear espacios de apoyo, escucha y acompañamiento que ayuden a cuidar mejor a las personas y reconstruir vínculos dañados." %}
+        </p>
+        <p>
+          {% trans "Además, desde el desarrollo web y la parte técnica, mi aportación es ayudar a que Sendaoroi tenga una presencia digital clara, accesible, segura y preparada para llegar a quienes puedan necesitar el programa." %}
+        </p>
+      </div>
     </article>
   </div>
 </section>
@@ -127,16 +199,23 @@
   </p>
   <div class="mt-5 grid gap-5 md:grid-cols-2">
     <article class="card-sendaoroi">
-      <div class="flex items-start gap-4">
-        <div class="flex h-14 w-14 shrink-0 items-center justify-center rounded-full bg-sendaoroi-blue text-lg font-bold text-white">EE</div>
-        <div>
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
+        <div class="team-photo-placeholder">EE</div>
+        <div class="min-w-0 flex-1">
           <h3 class="text-lg font-semibold text-sendaoroi-blue">Ekimen Elkartea</h3>
-          <p class="text-sm text-sendaoroi-green">{% trans "Entidad colaboradora" %}</p>
+          <p class="mt-1 text-sm text-sendaoroi-green">{% trans "Entidad colaboradora" %}</p>
+          <!-- Redes sociales futuras:
+          <div class="mt-3 flex flex-wrap gap-2">
+            <a href="URL_REAL" class="team-social-link" aria-label="Web de Ekimen Elkartea">web</a>
+          </div>
+          -->
         </div>
       </div>
-      <p class="mt-4 text-sm leading-relaxed text-sendaoroi-gray">
-        {% trans "Entidad colaboradora en el acompañamiento psicológico y comunitario del programa." %}
-      </p>
+      <div class="mt-5 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">
+        <p>
+          {% trans "Entidad colaboradora en el acompañamiento psicológico y comunitario del programa." %}
+        </p>
+      </div>
     </article>
   </div>
 </section>

@@ -41,7 +41,23 @@
     <p class="mt-3 text-sm leading-relaxed text-sendaoroi-gray">
       {% trans "Si necesitas un primer contacto, puedes empezar por aquí y avanzar a tu ritmo." %}
     </p>
-    <div class="placeholder-sendaoroi"></div>
+    <ol class="mt-5 space-y-4 text-sm text-sendaoroi-gray">
+      <li>
+        <p class="font-semibold text-sendaoroi-blue">{% trans "1. Escríbenos o llámanos" %}</p>
+        <p class="mt-1">{% trans "No necesitas tener claro qué necesitas. Podemos empezar simplemente por hablar." %}</p>
+      </li>
+      <li>
+        <p class="font-semibold text-sendaoroi-blue">{% trans "2. Acogida en el programa" %}</p>
+        <p class="mt-1">{% trans "Escucha inicial, respeto de tus tiempos y orientación sobre posibles itinerarios." %}</p>
+      </li>
+      <li>
+        <p class="font-semibold text-sendaoroi-blue">{% trans "3. Acompañamiento flexible" %}</p>
+        <p class="mt-1">{% trans "Los servicios pueden activarse según tu situación, sin recorrido cerrado ni obligatorio." %}</p>
+      </li>
+    </ol>
+    <div class="mt-6">
+      <a href="{% url 'services' %}" class="btn-sendaoroi">{% trans "Ver pasos y servicios" %}</a>
+    </div>
   </aside>
 </section>
 
