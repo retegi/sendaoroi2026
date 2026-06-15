@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-15 11:40+0200\n"
+"POT-Creation-Date: 2026-06-15 13:09+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -38,8 +38,12 @@ msgstr "Nombre"
 #: pages/forms.py:33 pages/forms.py:45 pages/models.py:7
 #: templates/pages/team.html:38 templates/pages/team.html:63
 #: templates/pages/team.html:88 templates/pages/team.html:114
-#: templates/pages/team.html:145 templates/pages/team.html:170
-#: templates/pages/team.html:202
+#: templates/pages/team.html:143 templates/pages/team.html:169
+#: templates/pages/team.html:203 templates/pages/team.html:229
+#: templates/pages/team.html:255 templates/pages/team.html:281
+#: templates/pages/team.html:307 templates/pages/team.html:338
+#: templates/pages/team.html:371 templates/pages/team.html:396
+#: templates/pages/team.html:428
 msgid "Email"
 msgstr "Email"
 
@@ -73,8 +77,12 @@ msgstr "WhatsApp"
 
 #: pages/models.py:10 templates/pages/team.html:37 templates/pages/team.html:62
 #: templates/pages/team.html:87 templates/pages/team.html:113
-#: templates/pages/team.html:144 templates/pages/team.html:169
-#: templates/pages/team.html:201
+#: templates/pages/team.html:142 templates/pages/team.html:168
+#: templates/pages/team.html:202 templates/pages/team.html:228
+#: templates/pages/team.html:254 templates/pages/team.html:280
+#: templates/pages/team.html:306 templates/pages/team.html:337
+#: templates/pages/team.html:370 templates/pages/team.html:395
+#: templates/pages/team.html:427
 msgid "Telegram"
 msgstr "Telegram"
 
@@ -245,7 +253,7 @@ msgstr "Pasos y servicios"
 #: templates/includes/header.html:29 templates/includes/header.html:44
 #: templates/pages/home.html:23 templates/pages/home.html:86
 #: templates/pages/is_it_for_me.html:4 templates/pages/is_it_for_me.html:9
-#: templates/pages/services.html:98 templates/pages/team.html:225
+#: templates/pages/services.html:98 templates/pages/team.html:451
 #: templates/pages/what_we_do.html:66
 msgid "¿Sendaoroi es para mí?"
 msgstr "¿Sendaoroi es para mí?"
@@ -260,7 +268,7 @@ msgstr "Equipo Sendaoroi"
 #: templates/pages/contact.html:9 templates/pages/home.html:92
 #: templates/pages/is_it_for_me.html:94 templates/pages/process.html:50
 #: templates/pages/program.html:56 templates/pages/roots.html:76
-#: templates/pages/services.html:99 templates/pages/team.html:224
+#: templates/pages/services.html:99 templates/pages/team.html:450
 msgid "Contactar"
 msgstr "Contactar"
 
@@ -1359,36 +1367,56 @@ msgstr ""
 
 #: templates/pages/team.html:33 templates/pages/team.html:58
 #: templates/pages/team.html:83 templates/pages/team.html:109
-#: templates/pages/team.html:140 templates/pages/team.html:165
-#: templates/pages/team.html:197
+#: templates/pages/team.html:138 templates/pages/team.html:164
+#: templates/pages/team.html:198 templates/pages/team.html:224
+#: templates/pages/team.html:250 templates/pages/team.html:276
+#: templates/pages/team.html:302 templates/pages/team.html:333
+#: templates/pages/team.html:366 templates/pages/team.html:391
+#: templates/pages/team.html:423
 msgid "LinkedIn"
 msgstr ""
 
 #: templates/pages/team.html:34 templates/pages/team.html:59
 #: templates/pages/team.html:84 templates/pages/team.html:110
-#: templates/pages/team.html:141 templates/pages/team.html:166
-#: templates/pages/team.html:198
+#: templates/pages/team.html:139 templates/pages/team.html:165
+#: templates/pages/team.html:199 templates/pages/team.html:225
+#: templates/pages/team.html:251 templates/pages/team.html:277
+#: templates/pages/team.html:303 templates/pages/team.html:334
+#: templates/pages/team.html:367 templates/pages/team.html:392
+#: templates/pages/team.html:424
 msgid "X"
 msgstr ""
 
 #: templates/pages/team.html:35 templates/pages/team.html:60
 #: templates/pages/team.html:85 templates/pages/team.html:111
-#: templates/pages/team.html:142 templates/pages/team.html:167
-#: templates/pages/team.html:199
+#: templates/pages/team.html:140 templates/pages/team.html:166
+#: templates/pages/team.html:200 templates/pages/team.html:226
+#: templates/pages/team.html:252 templates/pages/team.html:278
+#: templates/pages/team.html:304 templates/pages/team.html:335
+#: templates/pages/team.html:368 templates/pages/team.html:393
+#: templates/pages/team.html:425
 msgid "Facebook"
 msgstr ""
 
 #: templates/pages/team.html:36 templates/pages/team.html:61
 #: templates/pages/team.html:86 templates/pages/team.html:112
-#: templates/pages/team.html:143 templates/pages/team.html:168
-#: templates/pages/team.html:200
+#: templates/pages/team.html:141 templates/pages/team.html:167
+#: templates/pages/team.html:201 templates/pages/team.html:227
+#: templates/pages/team.html:253 templates/pages/team.html:279
+#: templates/pages/team.html:305 templates/pages/team.html:336
+#: templates/pages/team.html:369 templates/pages/team.html:394
+#: templates/pages/team.html:426
 msgid "Instagram"
 msgstr ""
 
 #: templates/pages/team.html:39 templates/pages/team.html:64
 #: templates/pages/team.html:89 templates/pages/team.html:115
-#: templates/pages/team.html:146 templates/pages/team.html:171
-#: templates/pages/team.html:203
+#: templates/pages/team.html:144 templates/pages/team.html:170
+#: templates/pages/team.html:204 templates/pages/team.html:230
+#: templates/pages/team.html:256 templates/pages/team.html:282
+#: templates/pages/team.html:308 templates/pages/team.html:339
+#: templates/pages/team.html:372 templates/pages/team.html:397
+#: templates/pages/team.html:429
 msgid "Sitio web"
 msgstr ""
 
@@ -1482,22 +1510,201 @@ msgid ""
 msgstr ""
 
 #: templates/pages/team.html:129
+msgid "Grupo de psicólogas"
+msgstr ""
+
+#: templates/pages/team.html:135
+msgid "Olatz Barrenetxea"
+msgstr ""
+
+#: templates/pages/team.html:136
+msgid "Psikologo klinikoa"
+msgstr ""
+
+#: templates/pages/team.html:137
+msgid "Redes sociales de Olatz Barrenetxea"
+msgstr ""
+
+#: templates/pages/team.html:150
+msgid ""
+"Psikologo klinikoa, trauma, giza eskubideen urraketak eta indarkeria jaso "
+"dituzten pertsonak urte luzez laguntzen ibilitako esperientzia ondoren, "
+"Ekimen Elkartea eta Sendaoroi programaren kolaboratzaile gisa."
+msgstr ""
+
+#: templates/pages/team.html:161
+msgid "Maritxu Jimenez"
+msgstr ""
+
+#: templates/pages/team.html:162
+msgid "Psikoterapeuta humanista eta psikologa sanitarioa"
+msgstr ""
+
+#: templates/pages/team.html:163
+msgid "Redes sociales de Maritxu Jimenez"
+msgstr ""
+
+#: templates/pages/team.html:176
+msgid ""
+"Psikoterapeuta humanista. Psikologa sanitarioa. Banakako terapia, bikote "
+"terapia eta talde terapia. Sortzen Psikoterapia Humanista Zentroa."
+msgstr ""
+
+#: templates/pages/team.html:181
+msgid ""
+"Ekimenen kolaboratzailea eta Sendaoroi programaren kolaboratzailea naiz, "
+"bereziki urteak daramatzadalako errepresio politikoak eragindako minak eta "
+"sufrimenduak akonpainatzen. Herri eraikuntzak, justizia sozialak eta euskal "
+"memoriarekiko erantzukizunak mugitzen nau."
+msgstr ""
+
+#: templates/pages/team.html:186
+msgid "Web:"
+msgstr ""
+
+#: templates/pages/team.html:195
+msgid "Nagore López de Luzuriaga"
+msgstr ""
+
+#: templates/pages/team.html:196
+msgid "Psikologo sanitarioa. Banako, bikote eta familia terapeuta"
+msgstr ""
+
+#: templates/pages/team.html:197
+msgid "Redes sociales de Nagore López de Luzuriaga"
+msgstr ""
+
+#: templates/pages/team.html:210
+msgid ""
+"Osasun psikologoa; banako, bikote eta familia psikoterapeuta. Giza "
+"Eskubideen testuinguruan lan psikosoziala eta klinikoa garatu izan dut "
+"urteetan, familiekin esku-hartzean, indarkeria pairatutako banako zein "
+"taldeekin lanean, eta baita ikerketa eremuan ere Istanbulgo Protokoloaren "
+"peritatzaile gisa. Ekimen Elkartearen bitartez, Sendaoroi programaren "
+"kolaboratzaile egun."
+msgstr ""
+
+#: templates/pages/team.html:221
+msgid "Leire García"
+msgstr ""
+
+#: templates/pages/team.html:222 templates/pages/team.html:248
+msgid "Psikoterapeuta, Ekimen-en kolaboratzailea"
+msgstr ""
+
+#: templates/pages/team.html:223
+msgid "Redes sociales de Leire García"
+msgstr ""
+
+#: templates/pages/team.html:236
+msgid ""
+"Leire García, psikoterapeuta. Sendaoroi programaren kolaboratzailea, memoria "
+"eta giza eskubideekiko konpromisoaren alde lanean."
+msgstr ""
+
+#: templates/pages/team.html:247
+msgid "Uxoa Larramendi"
+msgstr ""
+
+#: templates/pages/team.html:249
+msgid "Redes sociales de Uxoa Larramendi"
+msgstr ""
+
+#: templates/pages/team.html:262
+msgid ""
+"Uxoa Larramendi, psikoterapeuta. Sendaoroi programaren kolaboratzailea, gure "
+"lana giza eskubideen urraketen eragina jasan dutenei laguntzea da, "
+"norbanakoaren eta gizarte osoaren osasun mentalerako memoria eta "
+"erreparazioa funtsezkoak direla ulertuta."
+msgstr ""
+
+#: templates/pages/team.html:273
+msgid "Myriam Ruiz González"
+msgstr ""
+
+#: templates/pages/team.html:274
+msgid "Psicóloga sanitaria y terapeuta ocupacional"
+msgstr ""
+
+#: templates/pages/team.html:275
+msgid "Redes sociales de Myriam Ruiz González"
+msgstr ""
+
+#: templates/pages/team.html:288
+msgid ""
+"Mi interés por la defensa de los Derechos Humanos y mi sensibilidad hacia "
+"las consecuencias psicológicas que el ejercicio de la violencia causa sobre "
+"las personas me llevan a comprometerme con la atención a aquellas que han "
+"sufrido directa o indirectamente daños derivados del abuso de poder. "
+"Considero fundamental poder ofrecer un espacio seguro y respetuoso donde "
+"puedan ser escuchadas, elaborar el impacto de lo vivido y fortalecer sus "
+"recursos personales y comunitarios."
+msgstr ""
+
+#: templates/pages/team.html:299
+msgid "Maitane Ibernia Belamendia"
+msgstr ""
+
+#: templates/pages/team.html:300
+msgid "Osasun eta gizarte psikologoa. Dantza Mugimendu Terapeuta"
+msgstr ""
+
+#: templates/pages/team.html:301
+msgid "Redes sociales de Maitane Ibernia Belamendia"
+msgstr ""
+
+#: templates/pages/team.html:314
+msgid ""
+"Psicóloga social y sanitaria y Danza Movimiento Terapeuta; forma parte del "
+"equipo terapéutico de Ekimen Gunea y colabora en el Programa Sendaoroi con "
+"un enfoque integrador, psicocorporal y con perspectiva feminista y de "
+"derechos humanos."
+msgstr ""
+
+#: templates/pages/team.html:319
+msgid ""
+"Gizarte eta osasun psikologoa eta Dantza Mugimendu Terapeuta; Ekimen Guneko "
+"taldeko kidea da eta Sendaoroi programan ere parte hartzen du. Giza "
+"eskubideak eta ikuspegi feminista batetik, bere lan terapeutikoa modu "
+"integratzailean garatzen du gorputzari ere erreparatuz."
+msgstr ""
+
+#: templates/pages/team.html:330
+msgid "Larrun Barrenetxea"
+msgstr ""
+
+#: templates/pages/team.html:331
+msgid "Psikologoa"
+msgstr ""
+
+#: templates/pages/team.html:332
+msgid "Redes sociales de Larrun Barrenetxea"
+msgstr ""
+
+#: templates/pages/team.html:345
+msgid ""
+"Psikologoa, torturaren ikerketan kolaboratzaile. Giza Ekimen Elkartearekin "
+"elkarlanean aritu naiz; horregatik, Sendaoroi programan kolaboratzaile gisa "
+"sartu naiz."
+msgstr ""
+
+#: templates/pages/team.html:355
 msgid "Personas colaboradoras"
 msgstr "Personas colaboradoras"
 
-#: templates/pages/team.html:134 templates/pages/team.html:137
+#: templates/pages/team.html:360 templates/pages/team.html:363
 msgid "Iñaki Markez"
 msgstr ""
 
-#: templates/pages/team.html:138
+#: templates/pages/team.html:364
 msgid "Psiquiatra e investigador social"
 msgstr "Psiquiatra e investigador social"
 
-#: templates/pages/team.html:139
+#: templates/pages/team.html:365
 msgid "Redes sociales de Iñaki Markez"
 msgstr ""
 
-#: templates/pages/team.html:152
+#: templates/pages/team.html:378
 msgid ""
 "Psiquiatra e investigador social, colaborador del programa Sendaoroi desde "
 "una mirada comprometida con la salud mental, la memoria, los derechos "
@@ -1508,19 +1715,19 @@ msgid ""
 "historia, los aspectos clínicos y las poblaciones vulnerables."
 msgstr ""
 
-#: templates/pages/team.html:159 templates/pages/team.html:162
+#: templates/pages/team.html:385 templates/pages/team.html:388
 msgid "Iñaki Retegi"
 msgstr ""
 
-#: templates/pages/team.html:163
+#: templates/pages/team.html:389
 msgid "Desarrollo web y apoyo tecnológico"
 msgstr "Desarrollo web y apoyo tecnológico"
 
-#: templates/pages/team.html:164
+#: templates/pages/team.html:390
 msgid "Redes sociales de Iñaki Retegi"
 msgstr ""
 
-#: templates/pages/team.html:177
+#: templates/pages/team.html:403
 #, fuzzy
 #| msgid ""
 #| "Además, desde el desarrollo web y la parte técnica, mi aportación es "
@@ -1535,11 +1742,11 @@ msgstr ""
 "a que Sendaoroi tenga una presencia digital clara, accesible, segura y "
 "preparada para llegar a quienes puedan necesitar el programa."
 
-#: templates/pages/team.html:185
+#: templates/pages/team.html:411
 msgid "Entidades colaboradoras"
 msgstr "Entidades colaboradoras"
 
-#: templates/pages/team.html:187
+#: templates/pages/team.html:413
 msgid ""
 "Sendaoroi cuenta con la colaboración de entidades y profesionales que "
 "refuerzan el acompañamiento psicológico, comunitario y restaurativo del "
@@ -1549,19 +1756,19 @@ msgstr ""
 "refuerzan el acompañamiento psicológico, comunitario y restaurativo del "
 "programa."
 
-#: templates/pages/team.html:194
+#: templates/pages/team.html:420
 msgid "Ekimen Elkartea"
 msgstr ""
 
-#: templates/pages/team.html:195
+#: templates/pages/team.html:421
 msgid "Entidad colaboradora"
 msgstr "Entidad colaboradora"
 
-#: templates/pages/team.html:196
+#: templates/pages/team.html:422
 msgid "Redes sociales de Ekimen Elkartea"
 msgstr ""
 
-#: templates/pages/team.html:209
+#: templates/pages/team.html:435
 msgid ""
 "Entidad colaboradora en el acompañamiento psicológico y comunitario del "
 "programa."
@@ -1569,11 +1776,11 @@ msgstr ""
 "Entidad colaboradora en el acompañamiento psicológico y comunitario del "
 "programa."
 
-#: templates/pages/team.html:219
+#: templates/pages/team.html:445
 msgid "¿Quieres hablar con Sendaoroi?"
 msgstr "¿Quieres hablar con Sendaoroi?"
 
-#: templates/pages/team.html:221
+#: templates/pages/team.html:447
 msgid ""
 "Si sientes que el programa puede acompañarte, puedes escribirnos o "
 "llamarnos. No necesitas tener todas las respuestas antes de dar el paso."
