@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Cookies" %} | Sendaoroi.org{% endblock %}
+
+{% block content %}
+<section class="overflow-hidden rounded-2xl bg-gradient-to-r from-sendaoroi-blue to-sendaoroi-green px-6 py-10 text-white shadow-lg md:px-10 md:py-12">
+  <div class="max-w-3xl">
+    <h1 class="text-4xl font-bold md:text-5xl">{% trans "Cookies" %}</h1>
+    <p class="mt-4 text-base leading-relaxed text-white/90 md:text-lg">
+      {% trans "En esta página explicamos cómo gestionamos las cookies y cómo puedes cambiar tu configuración." %}
+    </p>
+  </div>
+</section>
+
+<section class="mt-8">
+  <div class="card-sendaoroi space-y-6">
+    <div>
+      <h2 class="text-2xl font-bold text-sendaoroi-blue">{% trans "Uso de cookies" %}</h2>
+      <p class="mt-4 text-sm leading-relaxed text-sendaoroi-gray md:text-base">
+        {% trans "La web utiliza cookies técnicas necesarias para su funcionamiento básico. Las cookies analíticas solo se usarán si das tu consentimiento explícito." %}
+      </p>
+    </div>
+    <div>
+      <h3 class="text-xl font-semibold text-sendaoroi-blue">{% trans "Cómo cambiar la configuración" %}</h3>
+      <p class="mt-4 text-sm leading-relaxed text-sendaoroi-gray md:text-base">
+        {% trans "Puedes cambiar tu preferencia eliminando la configuración de cookies del localStorage o usando el botón de abajo." %}
+      </p>
+      <button type="button" data-cookie-reset class="mt-4 btn-sendaoroi">{% trans "Cambiar configuración de cookies" %}</button>
+    </div>
+  </div>
+</section>
+{% endblock %}

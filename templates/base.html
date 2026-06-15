@@ -9,9 +9,11 @@
 </head>
 <body class="min-h-screen bg-sendaoroi-sand/40 text-sendaoroi-blue antialiased">
   {% include "includes/header.html" %}
-  <main class="mx-auto w-full max-w-6xl px-4 py-8 md:py-10">
+  <main class="mx-auto w-full max-w-6xl px-4 pb-8 md:pb-10">
     {% block content %}{% endblock %}
   </main>
   {% include "includes/footer.html" %}
+  {% include "includes/cookie_banner.html" %}
+  <script src="{% static 'js/cookie-consent.js' %}"></script>
 </body>
 </html>

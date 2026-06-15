@@ -1,0 +1,37 @@
+{% load i18n %}
+<div id="cookie-banner" class="cookie-banner hidden" role="dialog" aria-live="polite" aria-label="{% trans "Banner de cookies" %}">
+  <div class="cookie-banner__content">
+    <div>
+      <p class="cookie-banner__title">{% trans "Cookies" %}</p>
+      <p class="cookie-banner__text">{% trans "Utilizamos cookies técnicas necesarias para el funcionamiento de la web. Con tu consentimiento, también podríamos utilizar cookies analíticas para mejorar el sitio." %}</p>
+      <a class="cookie-banner__link" href="{% url 'cookies' %}">{% trans "Más información" %}</a>
+    </div>
+    <div class="cookie-banner__actions">
+      <button type="button" class="cookie-banner__button cookie-banner__button--secondary" data-cookie-action="reject">{% trans "Rechazar" %}</button>
+      <button type="button" class="cookie-banner__button cookie-banner__button--secondary" data-cookie-action="configure">{% trans "Configurar" %}</button>
+      <button type="button" class="cookie-banner__button cookie-banner__button--primary" data-cookie-action="accept">{% trans "Aceptar" %}</button>
+    </div>
+  </div>
+  <div id="cookie-settings" class="cookie-banner__content cookie-settings hidden">
+    <div class="cookie-settings__row">
+      <div>
+        <p class="cookie-settings__title">{% trans "Cookies técnicas" %}</p>
+        <p class="cookie-settings__text">{% trans "Necesarias para el funcionamiento básico de la web." %}</p>
+      </div>
+      <span class="cookie-settings__badge">{% trans "Siempre activas" %}</span>
+    </div>
+    <div class="cookie-settings__row">
+      <div>
+        <p class="cookie-settings__title">{% trans "Cookies analíticas" %}</p>
+        <p class="cookie-settings__text">{% trans "Nos ayudan a entender el uso de la web para mejorarla." %}</p>
+      </div>
+      <label class="inline-flex items-center gap-2">
+        <input id="analytics-cookies-checkbox" type="checkbox" class="h-4 w-4 rounded border-sendaoroi-blue text-sendaoroi-blue focus:ring-sendaoroi-blue">
+        <span class="text-sm text-sendaoroi-blue">{% trans "Activar" %}</span>
+      </label>
+    </div>
+    <div class="cookie-banner__actions">
+      <button type="button" class="cookie-banner__button cookie-banner__button--primary" data-cookie-action="save-settings">{% trans "Guardar configuración" %}</button>
+    </div>
+  </div>
+</div>

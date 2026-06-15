@@ -122,13 +122,28 @@ STORAGES = {
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 SITE_ID = int(os.getenv("DJANGO_SITE_ID", "1"))
 
-CONTACT_EMAIL = os.getenv("CONTACT_EMAIL", "info@sendaoroi.org")
-DEFAULT_FROM_EMAIL = os.getenv("DEFAULT_FROM_EMAIL", "info@sendaoroi.org")
+EMAIL_BACKEND = os.getenv(
+    "EMAIL_BACKEND",
+    "django.core.mail.backends.smtp.EmailBackend",
+)
+
 EMAIL_HOST = os.getenv("EMAIL_HOST", "")
-EMAIL_PORT = int(os.getenv("EMAIL_PORT", "25") or "25")
+EMAIL_PORT = int(os.getenv("EMAIL_PORT", "587"))
+EMAIL_USE_TLS = os.getenv("EMAIL_USE_TLS", "True").lower() in ("true", "1", "yes")
 EMAIL_HOST_USER = os.getenv("EMAIL_HOST_USER", "")
 EMAIL_HOST_PASSWORD = os.getenv("EMAIL_HOST_PASSWORD", "")
-EMAIL_USE_TLS = os.getenv("EMAIL_USE_TLS", "True").lower() == "true"
+
+DEFAULT_FROM_EMAIL = os.getenv(
+    "DEFAULT_FROM_EMAIL",
+    "Sendaoroi <info@sendaoroi.org>",
+)
+SERVER_EMAIL = os.getenv("SERVER_EMAIL", DEFAULT_FROM_EMAIL)
+
+CONTACT_RECIPIENT_EMAIL = os.getenv(
+    "CONTACT_RECIPIENT_EMAIL",
+    os.getenv("CONTACT_EMAIL", "euskodev@gmail.com"),
+)
+
 ROSETTA_ACCESS_CONTROL_FUNCTION = "config.permissions.can_access_rosetta"
 
 LOGIN_REDIRECT_URL = "/"

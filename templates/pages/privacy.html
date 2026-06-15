@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Privacidad" %} | Sendaoroi.org{% endblock %}
+
+{% block content %}
+<section class="overflow-hidden rounded-2xl bg-gradient-to-r from-sendaoroi-blue to-sendaoroi-green px-6 py-10 text-white shadow-lg md:px-10 md:py-12">
+  <div class="max-w-3xl">
+    <h1 class="text-4xl font-bold md:text-5xl">{% trans "Privacidad" %}</h1>
+    <p class="mt-4 text-base leading-relaxed text-white/90 md:text-lg">
+      {% trans "Protegemos tu información y solo utilizamos los datos que nos envías para responder a tu consulta." %}
+    </p>
+  </div>
+</section>
+
+<section class="mt-8">
+  <div class="card-sendaoroi">
+    <h2 class="text-2xl font-bold text-sendaoroi-blue">{% trans "Tratamiento de datos" %}</h2>
+    <div class="mt-4 space-y-4 text-sm leading-relaxed text-sendaoroi-gray md:text-base">
+      <p>{% trans "Los datos que recibimos a través de formularios se utilizan únicamente para responder a tu mensaje y gestionar la comunicación." %}</p>
+      <p>{% trans "El email de contacto es:" %} <a class="hover:text-sendaoroi-blue" href="mailto:info@sendaoroi.org">info@sendaoroi.org</a></p>
+      <p>{% trans "La política completa está pendiente de revisión legal definitiva." %}</p>
+    </div>
+  </div>
+</section>
+{% endblock %}

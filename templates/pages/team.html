@@ -4,14 +4,16 @@
 {% block title %}{% trans "Equipo Sendaoroi" %} | Sendaoroi.org{% endblock %}
 
 {% block content %}
-<section class="overflow-hidden rounded-2xl bg-gradient-to-r from-sendaoroi-blue to-sendaoroi-green px-6 py-10 text-white shadow-lg md:px-10 md:py-12">
+<section class="mt-10 overflow-hidden rounded-2xl bg-gradient-to-r from-sendaoroi-blue to-sendaoroi-green px-6 py-10 text-white shadow-lg md:px-10 md:py-12">
   <div class="max-w-3xl">
     <h1 class="text-4xl font-bold md:text-5xl">{% trans "Equipo Sendaoroi" %}</h1>
     <p class="mt-4 text-base leading-relaxed text-white/90 md:text-lg">
       {% trans "Personas y entidades que hacen posible el programa de acompañamiento." %}
     </p>
     <p class="mt-4 text-sm leading-relaxed text-white/85 md:text-base">
-      {% trans "Sendaoroi es un proyecto colectivo que reúne miradas vinculadas a la convivencia, la memoria, la salud comunitaria, los derechos humanos, las prácticas restaurativas y el acompañamiento psicosocial." %}
+      {% blocktrans trimmed %}
+      Sendaoroi es un proyecto colectivo que reúne miradas vinculadas a la convivencia, la memoria, la salud comunitaria, los derechos humanos, las prácticas restaurativas y el acompañamiento psicosocial.
+    {% endblocktrans %}
     </p>
   </div>
 </section>
@@ -22,29 +24,26 @@
     <article class="card-sendaoroi">
       <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
         <div class="team-card-media">
-          <img src="{% static 'img/pili_zabala.png' %}" alt="Pili Zabala Artano" class="team-photo">
+          <img src="{% static 'img/pili_zabala.png' %}" alt="{% trans "Pili Zabala Artano" %}" class="team-photo">
         </div>
         <div class="min-w-0 flex-1">
-          <h3 class="text-lg font-semibold text-sendaoroi-blue">Pili Zabala Artano</h3>
+          <h3 class="text-lg font-semibold text-sendaoroi-blue">{% trans "Pili Zabala Artano" %}</h3>
           <p class="mt-1 text-sm text-sendaoroi-green">{% trans "Vicepresidenta de Berridatzi Elkartea" %}</p>
-          <!-- Redes sociales futuras:
-          <div class="mt-3 flex flex-wrap gap-2">
-            <a href="URL_REAL" class="team-social-link" aria-label="LinkedIn de Pili Zabala Artano">in</a>
-            <a href="URL_REAL" class="team-social-link" aria-label="Web de Pili Zabala Artano">web</a>
+          <div class="mt-3 flex flex-wrap items-center gap-2 team-social-icons" aria-label="{% trans "Redes sociales de Pili Zabala Artano" %}">
+            <span class="team-social-icon" role="img" aria-label="{% trans "LinkedIn" %}" title="{% trans "LinkedIn" %}">in</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "X" %}" title="{% trans "X" %}">X</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Facebook" %}" title="{% trans "Facebook" %}">f</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Instagram" %}" title="{% trans "Instagram" %}">◎</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Telegram" %}" title="{% trans "Telegram" %}">↗</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Email" %}" title="{% trans "Email" %}">@</span>
+            <span class="team-social-icon team-social-icon-web" role="img" aria-label="{% trans "Sitio web" %}" title="{% trans "Sitio web" %}">www</span>
           </div>
-          -->
         </div>
       </div>
       <div class="mt-5 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">
         <p>
           {% blocktrans %}
-          La imaginación moral me ha permitido soñar que es posible cocrear y construir, junto a otras personas, una comunidad de apoyo, acompañamiento y solidaridad expansiva que nos permita confiar en los demás y reconstruir los vínculos dañados, fragmentados, deteriorados o destruidos por la violencia padecida.
-          {% endblocktrans %}
-        </p>
-        <p>
-          {% blocktrans %}
-          Esa necesidad e inquietud compartida de habitar espacios sociales de diálogo respetuoso para asentar, impulsar y promover condiciones de no repetición intenta ser Sendaoroi, es decir, un programa de salud comunitaria y derechos humanos.
-          {% endblocktrans %}
+          Hermana de Joxi Zabala y vicepresidenta de Berridatzi Elkartea. Mi trayectoria se asienta en la búsqueda incansable de memoria, verdad y justicia, una historia personal que me ha vinculado para siempre con la defensa de los Derechos Humanos. Es precisamente esa mirada, desde la imaginación moral, la que hoy me permite soñar con una comunidad de solidaridad real donde sanar los vínculos que la violencia fragmentó. Sendaoroi se articula como ese deseo de abrir espacios compartidos de diálogo y confianza; estoy convencida de que solo cuidando de esas heridas podemos asentar, de verdad, las bases de la no repetición. {% endblocktrans %}
         </p>
       </div>
     </article>
@@ -53,36 +52,23 @@
       <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
         <div class="team-photo-placeholder">JG</div>
         <div class="min-w-0 flex-1">
-          <h3 class="text-lg font-semibold text-sendaoroi-blue">Jesus Mari Garate Urruzola “Txisus”</h3>
+          <h3 class="text-lg font-semibold text-sendaoroi-blue">{% trans "Jesus Mari Garate Urruzola “Txisus”" %}</h3>
           <p class="mt-1 text-sm text-sendaoroi-green">{% trans "Secretario y tesorero de Berridatzi Elkartea" %}</p>
-          <!-- Redes sociales futuras:
-          <div class="mt-3 flex flex-wrap gap-2">
-            <a href="URL_REAL" class="team-social-link" aria-label="LinkedIn de Jesus Mari Garate Urruzola “Txisus”">in</a>
-            <a href="URL_REAL" class="team-social-link" aria-label="Web de Jesus Mari Garate Urruzola “Txisus”">web</a>
+          <div class="mt-3 flex flex-wrap items-center gap-2 team-social-icons" aria-label="{% trans "Redes sociales de Jesus Mari Garate Urruzola “Txisus”" %}">
+            <span class="team-social-icon" role="img" aria-label="{% trans "LinkedIn" %}" title="{% trans "LinkedIn" %}">in</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "X" %}" title="{% trans "X" %}">X</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Facebook" %}" title="{% trans "Facebook" %}">f</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Instagram" %}" title="{% trans "Instagram" %}">◎</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Telegram" %}" title="{% trans "Telegram" %}">↗</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Email" %}" title="{% trans "Email" %}">@</span>
+            <span class="team-social-icon team-social-icon-web" role="img" aria-label="{% trans "Sitio web" %}" title="{% trans "Sitio web" %}">www</span>
           </div>
-          -->
         </div>
       </div>
       <div class="mt-5 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">
         <p>
           {% blocktrans %}
-          Además de máster en Memoria Social y Derechos Humanos, soy el secretario y tesorero de Berridatzi Elkartea.
-          {% endblocktrans %}
-        </p>
-        <p>
-          {% blocktrans %}
-          Aunque Sendaoroi nació como mi TFM, hoy es un proyecto colectivo con el que buscamos atender las hendiduras que la violencia ha dejado en nuestra tierra.
-          {% endblocktrans %}
-        </p>
-        <p>
-          {% blocktrans %}
-          No existen técnicas mágicas para sanar esta erosión, sino el compromiso de estar presentes, de cuidar y abrir surcos con paciencia para que la vida poco a poco vuelva a florecer, incluso cuando las raíces están muy dañadas.
-          {% endblocktrans %}
-        </p>
-        <p>
-          {% blocktrans %}
-          No negaré que me subyuga meterme en jardines; bueno, más bien en huertas que piden manos para que no queden baldías. Espero que la que tenemos en casa me sirva para algo, aunque mis vecinos seguramente dirán que soy mejor haciendo números que con la azada.
-          {% endblocktrans %}
+          Secretario/tesorero de Berridatzi y máster en Memoria Social y Derechos Humanos. Sendaoroi nació como mi TFM, pero hoy es un proyecto colectivo para atender las hendiduras que la violencia ha dejado en nuestra tierra. No hay técnicas mágicas para sanar esta erosión; solo el compromiso de estar presentes y cuidar, abriendo surcos con paciencia para que la vida poco a poco vuelva a florecer. Confieso que me gusta meterme en huertas, que no en jardines. Espero que la que tenemos en casa me sirva para algo, aunque mis vecinos digan que me manejo mejor con los números que con la azada. {% endblocktrans %}
         </p>
       </div>
     </article>
@@ -91,31 +77,24 @@
       <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
         <div class="team-photo-placeholder">MP</div>
         <div class="min-w-0 flex-1">
-          <h3 class="text-lg font-semibold text-sendaoroi-blue">Mar Puga</h3>
+          <h3 class="text-lg font-semibold text-sendaoroi-blue">{% trans "Mar Puga" %}</h3>
           <p class="mt-1 text-sm text-sendaoroi-green">{% trans "Facilitadora de procesos restaurativos" %}</p>
-          <!-- Redes sociales futuras:
-          <div class="mt-3 flex flex-wrap gap-2">
-            <a href="URL_REAL" class="team-social-link" aria-label="LinkedIn de Mar Puga">in</a>
-            <a href="URL_REAL" class="team-social-link" aria-label="Web de Mar Puga">web</a>
+          <div class="mt-3 flex flex-wrap items-center gap-2 team-social-icons" aria-label="{% trans "Redes sociales de Mar Puga" %}">
+            <span class="team-social-icon" role="img" aria-label="{% trans "LinkedIn" %}" title="{% trans "LinkedIn" %}">in</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "X" %}" title="{% trans "X" %}">X</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Facebook" %}" title="{% trans "Facebook" %}">f</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Instagram" %}" title="{% trans "Instagram" %}">◎</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Telegram" %}" title="{% trans "Telegram" %}">↗</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Email" %}" title="{% trans "Email" %}">@</span>
+            <span class="team-social-icon team-social-icon-web" role="img" aria-label="{% trans "Sitio web" %}" title="{% trans "Sitio web" %}">www</span>
           </div>
-          -->
         </div>
       </div>
       <div class="mt-5 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">
         <p>
           {% blocktrans %}
-          Me dedico a generar espacios de escucha y de diálogo desde un paradigma restaurativo desde hace unos años en diferentes contextos.
-          {% endblocktrans %}
-        </p>
-        <p>
-          {% blocktrans %}
-          Tengo el privilegio de formar parte de este proyecto porque resuena profundamente con mis valores y con mi visión de cómo debemos sostener y acompañar a quienes atraviesan historias de dolor inmerecido.
-          {% endblocktrans %}
-        </p>
-        <p>
-          {% blocktrans %}
-          Creo en un acompañamiento con alma, que se construye desde un respeto absoluto hacia la experiencia del otro. Mi compromiso aquí es acompañar a las personas afectadas facilitando un espacio seguro, donde el cuidado y la escucha sirvan para que cada persona recupere su propia agencia y vuelva a adueñarse de su voz.
-          {% endblocktrans %}
+          Me dedico a generar espacios de escucha y de diálogo desde un paradigma restaurativo desde hace unos años en diferentes contextos (organizacionales, interpersonales). Tengo el privilegio de formar parte de este proyecto porque resuena profundamente con mis valores y con mi visión de cómo debemos sostener y acompañar a quienes atraviesan historias de daños. Creo en un acompañamiento con alma, y que se construye desde un respeto absoluto hacia la experiencia del otro. Mi compromiso aquí es acompañar a las personas afectadas facilitando un espacio seguro, donde el cuidado y la escucha sirvan para que cada persona recupere su propia agencia y vuelva a adueñarse de su voz. Mi rol se centrará, entre otros temas, en ofrecer a las personas que se acerquen a Sendaoroi esa primera escucha y acogida al Programa. 
+{% endblocktrans %}
         </p>
       </div>
     </article>
@@ -124,14 +103,17 @@
       <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
         <div class="team-photo-placeholder">AB</div>
         <div class="min-w-0 flex-1">
-          <h3 class="text-lg font-semibold text-sendaoroi-blue">Aitziber Blanco Goikoetxea</h3>
+          <h3 class="text-lg font-semibold text-sendaoroi-blue">{% trans "Aitziber Blanco Goikoetxea" %}</h3>
           <p class="mt-1 text-sm text-sendaoroi-green">{% trans "Miembro del grupo de trabajo del programa" %}</p>
-          <!-- Redes sociales futuras:
-          <div class="mt-3 flex flex-wrap gap-2">
-            <a href="URL_REAL" class="team-social-link" aria-label="LinkedIn de Aitziber Blanco Goikoetxea">in</a>
-            <a href="URL_REAL" class="team-social-link" aria-label="Web de Aitziber Blanco Goikoetxea">web</a>
+          <div class="mt-3 flex flex-wrap items-center gap-2 team-social-icons" aria-label="{% trans "Redes sociales de Aitziber Blanco Goikoetxea" %}">
+            <span class="team-social-icon" role="img" aria-label="{% trans "LinkedIn" %}" title="{% trans "LinkedIn" %}">in</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "X" %}" title="{% trans "X" %}">X</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Facebook" %}" title="{% trans "Facebook" %}">f</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Instagram" %}" title="{% trans "Instagram" %}">◎</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Telegram" %}" title="{% trans "Telegram" %}">↗</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Email" %}" title="{% trans "Email" %}">@</span>
+            <span class="team-social-icon team-social-icon-web" role="img" aria-label="{% trans "Sitio web" %}" title="{% trans "Sitio web" %}">www</span>
           </div>
-          -->
         </div>
       </div>
       <div class="mt-5 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">
@@ -148,44 +130,51 @@
   <div class="mt-5 grid gap-5 md:grid-cols-2">
     <article class="card-sendaoroi">
       <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
-        <div class="team-photo-placeholder">IM</div>
+        <div class="team-card-media">
+          <img src="{% static 'img/inaki_markez2.png' %}" alt="{% trans "Iñaki Markez" %}" class="team-photo">
+        </div>
         <div class="min-w-0 flex-1">
-          <h3 class="text-lg font-semibold text-sendaoroi-blue">Iñaki Markez</h3>
+          <h3 class="text-lg font-semibold text-sendaoroi-blue">{% trans "Iñaki Markez" %}</h3>
           <p class="mt-1 text-sm text-sendaoroi-green">{% trans "Psiquiatra e investigador social" %}</p>
-          <!-- Redes sociales futuras:
-          <div class="mt-3 flex flex-wrap gap-2">
-            <a href="URL_REAL" class="team-social-link" aria-label="LinkedIn de Iñaki Markez">in</a>
-            <a href="URL_REAL" class="team-social-link" aria-label="Web de Iñaki Markez">web</a>
+          <div class="mt-3 flex flex-wrap items-center gap-2 team-social-icons" aria-label="{% trans "Redes sociales de Iñaki Markez" %}">
+            <span class="team-social-icon" role="img" aria-label="{% trans "LinkedIn" %}" title="{% trans "LinkedIn" %}">in</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "X" %}" title="{% trans "X" %}">X</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Facebook" %}" title="{% trans "Facebook" %}">f</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Instagram" %}" title="{% trans "Instagram" %}">◎</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Telegram" %}" title="{% trans "Telegram" %}">↗</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Email" %}" title="{% trans "Email" %}">@</span>
+            <span class="team-social-icon team-social-icon-web" role="img" aria-label="{% trans "Sitio web" %}" title="{% trans "Sitio web" %}">www</span>
           </div>
-          -->
         </div>
       </div>
       <div class="mt-5 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">
         <p>
-          {% trans "Psiquiatra e investigador social, colaborador del programa Sendaoroi desde una mirada vinculada a la salud mental, la memoria, los derechos humanos y el acompañamiento a personas afectadas por experiencias de violencia." %}
+          {% trans "Psiquiatra e investigador social, colaborador del programa Sendaoroi desde una mirada comprometida con la salud mental, la memoria, los derechos humanos y el acompañamiento a personas afectadas por experiencias de violencia. Aporta asimismo su experiencia como asesor en la formación de profesionales y como autor de numerosas publicaciones sobre el ámbito penitenciario, la violencia, las adicciones, la atención comunitaria, la historia, los aspectos clínicos y las poblaciones vulnerables." %}
         </p>
       </div>
     </article>
     <article class="card-sendaoroi">
       <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
-        <div class="team-photo-placeholder">IR</div>
+        <div class="team-card-media">
+          <img src="{% static 'img/inaki_retegi.png' %}" alt="{% trans "Iñaki Retegi" %}" class="team-photo">
+        </div>
         <div class="min-w-0 flex-1">
-          <h3 class="text-lg font-semibold text-sendaoroi-blue">Iñaki Retegi</h3>
+          <h3 class="text-lg font-semibold text-sendaoroi-blue">{% trans "Iñaki Retegi" %}</h3>
           <p class="mt-1 text-sm text-sendaoroi-green">{% trans "Desarrollo web y apoyo tecnológico" %}</p>
-          <!-- Redes sociales futuras:
-          <div class="mt-3 flex flex-wrap gap-2">
-            <a href="URL_REAL" class="team-social-link" aria-label="LinkedIn de Iñaki Retegi">in</a>
-            <a href="URL_REAL" class="team-social-link" aria-label="Web de Iñaki Retegi">web</a>
+          <div class="mt-3 flex flex-wrap items-center gap-2 team-social-icons" aria-label="{% trans "Redes sociales de Iñaki Retegi" %}">
+            <span class="team-social-icon" role="img" aria-label="{% trans "LinkedIn" %}" title="{% trans "LinkedIn" %}">in</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "X" %}" title="{% trans "X" %}">X</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Facebook" %}" title="{% trans "Facebook" %}">f</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Instagram" %}" title="{% trans "Instagram" %}">◎</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Telegram" %}" title="{% trans "Telegram" %}">↗</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Email" %}" title="{% trans "Email" %}">@</span>
+            <span class="team-social-icon team-social-icon-web" role="img" aria-label="{% trans "Sitio web" %}" title="{% trans "Sitio web" %}">www</span>
           </div>
-          -->
         </div>
       </div>
       <div class="mt-5 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">
         <p>
-          {% trans "Formar parte de Sendaoroi tiene sentido porque el proyecto une comunidad, memoria, derechos humanos y tecnología para crear espacios de apoyo, escucha y acompañamiento que ayuden a cuidar mejor a las personas y reconstruir vínculos dañados." %}
-        </p>
-        <p>
-          {% trans "Además, desde el desarrollo web y la parte técnica, mi aportación es ayudar a que Sendaoroi tenga una presencia digital clara, accesible, segura y preparada para llegar a quienes puedan necesitar el programa." %}
+          {% trans "Mi aportación a Sendaoroi se centra en la parte técnica y el desarrollo web, ayudando a que el proyecto tenga una presencia digital clara, accesible y útil para las personas que puedan necesitarlo." %}
         </p>
       </div>
     </article>
@@ -202,13 +191,17 @@
       <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
         <div class="team-photo-placeholder">EE</div>
         <div class="min-w-0 flex-1">
-          <h3 class="text-lg font-semibold text-sendaoroi-blue">Ekimen Elkartea</h3>
+          <h3 class="text-lg font-semibold text-sendaoroi-blue">{% trans "Ekimen Elkartea" %}</h3>
           <p class="mt-1 text-sm text-sendaoroi-green">{% trans "Entidad colaboradora" %}</p>
-          <!-- Redes sociales futuras:
-          <div class="mt-3 flex flex-wrap gap-2">
-            <a href="URL_REAL" class="team-social-link" aria-label="Web de Ekimen Elkartea">web</a>
+          <div class="mt-3 flex flex-wrap items-center gap-2 team-social-icons" aria-label="{% trans "Redes sociales de Ekimen Elkartea" %}">
+            <span class="team-social-icon" role="img" aria-label="{% trans "LinkedIn" %}" title="{% trans "LinkedIn" %}">in</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "X" %}" title="{% trans "X" %}">X</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Facebook" %}" title="{% trans "Facebook" %}">f</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Instagram" %}" title="{% trans "Instagram" %}">◎</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Telegram" %}" title="{% trans "Telegram" %}">↗</span>
+            <span class="team-social-icon" role="img" aria-label="{% trans "Email" %}" title="{% trans "Email" %}">@</span>
+            <span class="team-social-icon team-social-icon-web" role="img" aria-label="{% trans "Sitio web" %}" title="{% trans "Sitio web" %}">www</span>
           </div>
-          -->
         </div>
       </div>
       <div class="mt-5 space-y-3 text-sm leading-relaxed text-sendaoroi-gray">

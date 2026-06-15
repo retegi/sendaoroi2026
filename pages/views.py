@@ -1,11 +1,15 @@
+import logging
+
 from django.conf import settings
 from django.contrib import messages
-from django.core.mail import send_mail
+from django.core.mail import EmailMessage
 from django.urls import reverse_lazy
 from django.utils.translation import gettext as _
 from django.views.generic import FormView, TemplateView
 
 from .forms import ContactForm
+
+logger = logging.getLogger(__name__)
 
 
 class HomeView(TemplateView):
@@ -44,6 +48,18 @@ class TeamView(TemplateView):
     template_name = "pages/team.html"
 
 
+class LegalNoticeView(TemplateView):
+    template_name = "pages/legal_notice.html"
+
+
+class PrivacyView(TemplateView):
+    template_name = "pages/privacy.html"
+
+
+class CookiesView(TemplateView):
+    template_name = "pages/cookies.html"
+
+
 class ContactView(FormView):
     template_name = "pages/contact.html"
     form_class = ContactForm
@@ -51,30 +67,50 @@ class ContactView(FormView):
 
     def form_valid(self, form):
         contact_message = form.save()
+        contact_recipient = getattr(settings, "CONTACT_RECIPIENT_EMAIL", None)
+        default_from_email = getattr(settings, "DEFAULT_FROM_EMAIL", "Sendaoroi <info@sendaoroi.org>")
 
-        contact_email = getattr(settings, "CONTACT_EMAIL", "info@sendaoroi.org")
-        default_from_email = getattr(settings, "DEFAULT_FROM_EMAIL", "info@sendaoroi.org")
-        email_host = getattr(settings, "EMAIL_HOST", "")
-
-        if email_host:
-            send_mail(
-                subject=f"[Sendaoroi] Nuevo mensaje de {contact_message.name}",
-                message=(
+        if contact_recipient:
+            email_message = EmailMessage(
+                subject=f"Nuevo mensaje desde Sendaoroi: {contact_message.name}",
+                body=(
                     f"Nombre: {contact_message.name}\n"
                     f"Email: {contact_message.email}\n"
-                    f"Telefono: {contact_message.phone}\n"
+                    f"Teléfono: {contact_message.phone}\n"
                     f"Preferencia: {contact_message.get_preferred_contact_method_display()}\n\n"
                     f"Mensaje:\n{contact_message.message}"
                 ),
                 from_email=default_from_email,
-                recipient_list=[contact_email],
-                fail_silently=True,
+                to=[contact_recipient],
+                reply_to=[contact_message.email] if contact_message.email else [],
             )
 
-        messages.success(
-            self.request,
-            _("Gracias por escribirnos. Hemos recibido tu mensaje y te responderemos con el mayor cuidado posible."),
-        )
+            try:
+                email_message.send(fail_silently=False)
+                messages.success(
+                    self.request,
+                    _(
+                        "Gracias por escribirnos. Hemos recibido tu mensaje y te responderemos con el mayor cuidado posible."
+                    ),
+                )
+            except Exception:
+                logger.exception("Error enviando email de contacto")
+                messages.error(
+                    self.request,
+                    _(
+                        "Hubo un problema al enviar tu mensaje. Por favor intenta de nuevo más tarde."
+                    ),
+                )
+                return super().form_valid(form)
+        else:
+            logger.warning("No hay CONTACT_RECIPIENT_EMAIL configurado para el envío de emails de contacto")
+            messages.error(
+                self.request,
+                _(
+                    "No se ha podido enviar el mensaje porque falta una configuración de correo. Contacta con el administrador."
+                ),
+            )
+
         return super().form_valid(form)
 
     def form_invalid(self, form):

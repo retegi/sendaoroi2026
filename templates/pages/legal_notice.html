@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load i18n %}
+
+{% block title %}{% trans "Aviso legal" %} | Sendaoroi.org{% endblock %}
+
+{% block content %}
+<section class="overflow-hidden rounded-2xl bg-gradient-to-r from-sendaoroi-blue to-sendaoroi-green px-6 py-10 text-white shadow-lg md:px-10 md:py-12">
+  <div class="max-w-3xl">
+    <h1 class="text-4xl font-bold md:text-5xl">{% trans "Aviso legal" %}</h1>
+    <p class="mt-4 text-base leading-relaxed text-white/90 md:text-lg">
+      {% trans "Esta página contiene información legal básica sobre Sendaoroi. Los datos definitivos de la entidad responsable están pendientes de revisión legal." %}
+    </p>
+  </div>
+</section>
+
+<section class="mt-8">
+  <div class="card-sendaoroi">
+    <h2 class="text-2xl font-bold text-sendaoroi-blue">{% trans "Datos legales" %}</h2>
+    <div class="mt-4 space-y-4 text-sm leading-relaxed text-sendaoroi-gray md:text-base">
+      <p><span class="font-semibold text-sendaoroi-blue">{% trans "Titular:" %}</span> Sendaoroi</p>
+      <p><span class="font-semibold text-sendaoroi-blue">{% trans "Sitio web:" %}</span> sendaoroi.org</p>
+      <p><span class="font-semibold text-sendaoroi-blue">{% trans "Email de contacto:" %}</span> <a class="hover:text-sendaoroi-blue" href="mailto:info@sendaoroi.org">info@sendaoroi.org</a></p>
+      <p>{% trans "La información legal completa y definitiva de la entidad responsable está pendiente de revisión y se actualizará aquí en cuanto esté disponible." %}</p>
+    </div>
+  </div>
+</section>
+{% endblock %}
