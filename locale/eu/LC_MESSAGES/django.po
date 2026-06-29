@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-15 13:09+0200\n"
+"POT-Creation-Date: 2026-06-29 22:08+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -35,14 +35,14 @@ msgid "Nombre"
 msgstr "Izena"
 
 #: pages/forms.py:33 pages/forms.py:45 pages/models.py:7
-#: templates/pages/team.html:38 templates/pages/team.html:63
-#: templates/pages/team.html:88 templates/pages/team.html:114
-#: templates/pages/team.html:143 templates/pages/team.html:169
-#: templates/pages/team.html:203 templates/pages/team.html:229
-#: templates/pages/team.html:255 templates/pages/team.html:281
-#: templates/pages/team.html:307 templates/pages/team.html:338
-#: templates/pages/team.html:371 templates/pages/team.html:396
-#: templates/pages/team.html:428
+#: templates/pages/team.html:38 templates/pages/team.html:65
+#: templates/pages/team.html:90 templates/pages/team.html:114
+#: templates/pages/team.html:161 templates/pages/team.html:203
+#: templates/pages/team.html:252 templates/pages/team.html:293
+#: templates/pages/team.html:334 templates/pages/team.html:375
+#: templates/pages/team.html:416 templates/pages/team.html:462
+#: templates/pages/team.html:495 templates/pages/team.html:520
+#: templates/pages/team.html:554
 msgid "Email"
 msgstr "Emaila"
 
@@ -70,29 +70,34 @@ msgstr ""
 msgid "Debes aceptar la política de privacidad para continuar."
 msgstr "Pribatutasun-politika onartu behar duzu jarraitzeko."
 
-#: pages/models.py:9 templates/pages/contact.html:39
+#: pages/models.py:9 templates/pages/contact.html:58
 msgid "WhatsApp"
 msgstr "WhatsApp"
 
-#: pages/models.py:10 templates/pages/team.html:37 templates/pages/team.html:62
-#: templates/pages/team.html:87 templates/pages/team.html:113
-#: templates/pages/team.html:142 templates/pages/team.html:168
-#: templates/pages/team.html:202 templates/pages/team.html:228
-#: templates/pages/team.html:254 templates/pages/team.html:280
-#: templates/pages/team.html:306 templates/pages/team.html:337
-#: templates/pages/team.html:370 templates/pages/team.html:395
-#: templates/pages/team.html:427
+#: pages/models.py:10 templates/pages/contact.html:57
+#: templates/pages/team.html:37 templates/pages/team.html:64
+#: templates/pages/team.html:89 templates/pages/team.html:113
+#: templates/pages/team.html:160 templates/pages/team.html:202
+#: templates/pages/team.html:251 templates/pages/team.html:292
+#: templates/pages/team.html:333 templates/pages/team.html:374
+#: templates/pages/team.html:415 templates/pages/team.html:461
+#: templates/pages/team.html:494 templates/pages/team.html:519
+#: templates/pages/team.html:553
 msgid "Telegram"
 msgstr "Telegrama"
 
-#: pages/models.py:11 templates/pages/contact.html:41
+#: pages/models.py:11 templates/pages/contact.html:60
 msgid "SMS"
 msgstr "SMS"
 
 #: pages/views.py:93
+#, fuzzy
+#| msgid ""
+#| "Gracias por escribirnos. Hemos recibido tu mensaje y te responderemos con "
+#| "el mayor cuidado posible."
 msgid ""
-"Gracias por escribirnos. Hemos recibido tu mensaje y te responderemos con el "
-"mayor cuidado posible."
+"Gracias. Hemos recibido tu mensaje correctamente y te responderemos lo antes "
+"posible."
 msgstr ""
 "Eskerrik asko guri idazteagatik. Zure mezua jaso dugu eta ahalik eta arreta "
 "handien erantzungo dizugu."
@@ -124,7 +129,7 @@ msgstr ""
 msgid "Banner de cookies"
 msgstr ""
 
-#: templates/includes/cookie_banner.html:5 templates/includes/footer.html:16
+#: templates/includes/cookie_banner.html:5 templates/includes/footer.html:17
 #: templates/pages/cookies.html:4 templates/pages/cookies.html:9
 msgid "Cookies"
 msgstr ""
@@ -184,39 +189,43 @@ msgstr ""
 msgid "Sendaoroi.org"
 msgstr "Sendaoroi.org"
 
-#: templates/includes/footer.html:12
+#: templates/includes/footer.html:8 templates/pages/contact.html:53
+msgid "Lunes a viernes"
+msgstr ""
+
+#: templates/includes/footer.html:13
 msgid "Todos los derechos reservados."
 msgstr ""
 
-#: templates/includes/footer.html:14 templates/pages/legal_notice.html:4
+#: templates/includes/footer.html:15 templates/pages/legal_notice.html:4
 #: templates/pages/legal_notice.html:9
 msgid "Aviso legal"
 msgstr ""
 
-#: templates/includes/footer.html:15 templates/pages/privacy.html:4
+#: templates/includes/footer.html:16 templates/pages/privacy.html:4
 #: templates/pages/privacy.html:9
 msgid "Privacidad"
 msgstr ""
 
-#: templates/includes/header.html:9 templates/includes/header.html:48
+#: templates/includes/header.html:9 templates/includes/header.html:51
 msgid "EUS"
 msgstr "EUS"
 
-#: templates/includes/header.html:10 templates/includes/header.html:49
+#: templates/includes/header.html:10 templates/includes/header.html:52
 msgid "CAS"
 msgstr "CAS"
 
-#: templates/includes/header.html:15 templates/includes/header.html:37
+#: templates/includes/header.html:15 templates/includes/header.html:40
 msgid "Página principal"
 msgstr "Hasiera"
 
-#: templates/includes/header.html:16 templates/includes/header.html:38
+#: templates/includes/header.html:16 templates/includes/header.html:41
 #: templates/pages/home.html:74 templates/pages/roots.html:4
 #: templates/pages/roots.html:10
 msgid "Nuestras raíces"
 msgstr "Gure sustraiak"
 
-#: templates/includes/header.html:19 templates/includes/header.html:39
+#: templates/includes/header.html:19 templates/includes/header.html:42
 #: templates/pages/compass.html:9 templates/pages/home.html:12
 #: templates/pages/home.html:80 templates/pages/process.html:9
 #: templates/pages/program.html:4 templates/pages/program.html:10
@@ -224,52 +233,52 @@ msgstr "Gure sustraiak"
 msgid "Programa Sendaoroi"
 msgstr "Sendaoroi programa"
 
-#: templates/includes/header.html:23 templates/includes/header.html:40
+#: templates/includes/header.html:25 templates/includes/header.html:43
 #: templates/pages/program.html:24 templates/pages/what_we_do.html:4
 #: templates/pages/what_we_do.html:10
 msgid "Qué hacemos"
 msgstr "Zer egiten dugu"
 
-#: templates/includes/header.html:24 templates/includes/header.html:41
+#: templates/includes/header.html:26 templates/includes/header.html:44
 #: templates/pages/compass.html:4 templates/pages/compass.html:10
 #: templates/pages/program.html:30
 msgid "Nuestra brújula"
 msgstr "Gure iparrorratza"
 
-#: templates/includes/header.html:25 templates/includes/header.html:42
+#: templates/includes/header.html:27 templates/includes/header.html:45
 #: templates/pages/process.html:4 templates/pages/process.html:10
 #: templates/pages/program.html:36
 msgid "El acompañamiento como proceso"
 msgstr "Laguntza prozesu gisa"
 
-#: templates/includes/header.html:26 templates/includes/header.html:43
+#: templates/includes/header.html:28 templates/includes/header.html:46
 #: templates/pages/program.html:42 templates/pages/services.html:4
 msgid "Pasos y servicios"
 msgstr "Urratsak eta zerbitzuak"
 
-#: templates/includes/header.html:29 templates/includes/header.html:44
+#: templates/includes/header.html:32 templates/includes/header.html:47
 #: templates/pages/home.html:23 templates/pages/home.html:86
 #: templates/pages/is_it_for_me.html:4 templates/pages/is_it_for_me.html:9
-#: templates/pages/services.html:98 templates/pages/team.html:451
+#: templates/pages/services.html:98 templates/pages/team.html:577
 #: templates/pages/what_we_do.html:66
 msgid "¿Sendaoroi es para mí?"
 msgstr "Sendaoroi niretzat al da?"
 
-#: templates/includes/header.html:30 templates/includes/header.html:45
+#: templates/includes/header.html:33 templates/includes/header.html:48
 #: templates/pages/team.html:4 templates/pages/team.html:9
 msgid "Equipo Sendaoroi"
 msgstr "Sendaoroi taldea"
 
-#: templates/includes/header.html:31 templates/includes/header.html:46
+#: templates/includes/header.html:34 templates/includes/header.html:49
 #: templates/pages/compass.html:83 templates/pages/contact.html:4
 #: templates/pages/contact.html:9 templates/pages/home.html:92
-#: templates/pages/is_it_for_me.html:94 templates/pages/process.html:50
+#: templates/pages/is_it_for_me.html:101 templates/pages/process.html:50
 #: templates/pages/program.html:56 templates/pages/roots.html:76
-#: templates/pages/services.html:99 templates/pages/team.html:450
+#: templates/pages/services.html:99 templates/pages/team.html:576
 msgid "Contactar"
 msgstr "Harremanetan jarri"
 
-#: templates/includes/header.html:35
+#: templates/includes/header.html:38
 msgid "Menú"
 msgstr "Menua"
 
@@ -348,8 +357,10 @@ msgstr ""
 "gertatzen bere borondaterik gabe eta bere jakiturian fidatzen gara."
 
 #: templates/pages/compass.html:52
-msgid "Acompañamiento individualizado"
-msgstr "Laguntza indibidualizatua"
+#, fuzzy
+#| msgid "Acompañamiento profesional"
+msgid "Acompañamiento a cada persona"
+msgstr "Laguntza profesionala"
 
 #: templates/pages/compass.html:53
 msgid ""
@@ -418,11 +429,19 @@ msgstr ""
 "Idatz diezagukezu edo deitu. Ez duzu zer behar duzun argi izan behar; "
 "Besterik gabe, hitz egiten has gaitezke."
 
-#: templates/pages/contact.html:28
+#: templates/pages/contact.html:23
+msgid "Mensaje enviado correctamente"
+msgstr ""
+
+#: templates/pages/contact.html:32
+msgid "No hemos podido enviar el mensaje"
+msgstr ""
+
+#: templates/pages/contact.html:45
 msgid "Hablemos con calma"
 msgstr "Lasai hitz egin dezagun"
 
-#: templates/pages/contact.html:30
+#: templates/pages/contact.html:47
 msgid ""
 "Si sientes que Sendaoroi puede acompañarte, o si quieres consultar en nombre "
 "de una persona cercana, puedes contactar con nosotras. Toda comunicación "
@@ -432,39 +451,45 @@ msgstr ""
 "izenean kontsultatu nahi baduzu, jar zaitezke gurekin harremanetan. "
 "Komunikazio guztiak konfidentzialtasunez eta errespetuz tratatuko dira."
 
-#: templates/pages/contact.html:33
+#: templates/pages/contact.html:50
 msgid "Email:"
 msgstr "Emaila:"
 
-#: templates/pages/contact.html:34
+#: templates/pages/contact.html:51
 msgid "Teléfono:"
 msgstr "Telefonoa:"
 
-#: templates/pages/contact.html:35
+#: templates/pages/contact.html:52
 msgid "Canales:"
 msgstr "Kanalak:"
 
-#: templates/pages/contact.html:35
-msgid "Llamada, WhatsApp, Telegram y SMS."
+#: templates/pages/contact.html:52
+#, fuzzy
+#| msgid "Llamada, WhatsApp, Telegram y SMS."
+msgid "Llamada, Telegram, WhatsApp, Telegram, SMS e Email."
 msgstr "Deia, WhatsApp, Telegram eta SMS."
 
-#: templates/pages/contact.html:38 templates/pages/is_it_for_me.html:95
+#: templates/pages/contact.html:53
+msgid "Horario:"
+msgstr ""
+
+#: templates/pages/contact.html:56 templates/pages/is_it_for_me.html:102
 msgid "Llamar"
 msgstr "Deitu"
 
-#: templates/pages/contact.html:40
+#: templates/pages/contact.html:59
 msgid "Enviar email"
 msgstr "Emaila bidali"
 
-#: templates/pages/contact.html:44
+#: templates/pages/contact.html:63
 msgid "También puedes escribirnos por Telegram usando el número 688 611 573."
 msgstr "Telegramen ere idatz diezagukezu 688 611 573 zenbakia erabiliz."
 
-#: templates/pages/contact.html:49
+#: templates/pages/contact.html:68
 msgid "Formulario de contacto"
 msgstr "Harremanetarako formularioa"
 
-#: templates/pages/contact.html:84
+#: templates/pages/contact.html:103
 msgid "Enviar mensaje"
 msgstr "Mezua bidali"
 
@@ -511,15 +536,15 @@ msgstr "Laguntza psikosoziala"
 #| "      "
 msgid ""
 "\n"
-"          Acompañamiento psicosocial a personas afectadas por vulneraciones "
-"de derechos humanos en el contexto vasco.\n"
+"          Caminamos junto a personas afectadas por vulneraciones de derechos "
+"humanos<br>en el Caso Vasco.\n"
 "          "
 msgstr ""
 "\n"
 "euskal testuinguruan giza eskubideen urraketak eragindako pertsonei laguntza "
 "psikosoziala."
 
-#: templates/pages/home.html:20 templates/pages/is_it_for_me.html:86
+#: templates/pages/home.html:20 templates/pages/is_it_for_me.html:93
 msgid "¿Empezamos a hablar?"
 msgstr "Hitz egiten hasiko gara?"
 
@@ -534,17 +559,12 @@ msgstr "Zaintzeko, entzuteko eta laguntzeko gune segurua"
 #: templates/pages/home.html:38
 msgid ""
 "\n"
-"      Sendaoroi nace para ofrecer un lugar donde descansar del peso del "
-"pasado, abrir espacios de escucha y acompañar procesos personales y "
-"comunitarios desde la dignidad, la confidencialidad y el respeto a los "
-"tiempos de cada persona.\n"
+"      Nuestro propósito es garantizar una atención equitativa e inclusiva "
+"superando cualquier enfoque asimétrico, asegurando que cada persona reciba "
+"el mismo trato, apoyo y dignidad, independientemente de su contexto social, "
+"político o de quién haya generado el daño.\n"
 "      "
 msgstr ""
-"\n"
-"Sendaoroi iraganaren pisutik atseden hartzeko lekua eskaintzeko jaio da, "
-"entzuteko gune irekiak eta prozesu pertsonal eta komunitarioak bideratzeko "
-"duintasunetik, konfidentzialtasunetik eta pertsona bakoitzaren denbora "
-"errespetuz."
 
 #: templates/pages/home.html:44
 msgid "Primeros pasos"
@@ -634,23 +654,37 @@ msgstr ""
 "eman aurretik."
 
 #: templates/pages/is_it_for_me.html:11
+#, fuzzy
+#| msgid ""
+#| "Te invitamos a leer estas situaciones; si alguna se parece a tu caso, "
+#| "puedes escribirnos. Estamos aquí para empezar a caminar contigo."
 msgid ""
-"Te invitamos a leer estas situaciones; si alguna se parece a tu caso, puedes "
-"escribirnos. Estamos aquí para empezar a caminar contigo."
+"Cada historia es única y cada proceso tiene su propio tiempo. Te invitamos a "
+"leer estas situaciones; si alguna es tu caso, escríbenos. Estamos aquí para "
+"empezar a caminar contigo."
 msgstr ""
 "Egoera hauek irakurtzera gonbidatzen zaituztegu; Horietakoren bat zure "
 "kasuaren antzekoa bada, idatz diezagukezu. Hemen gaude zurekin ibiltzen "
 "hasteko."
 
 #: templates/pages/is_it_for_me.html:18
-msgid "He sufrido graves vulneraciones de derechos humanos en primera persona"
+#, fuzzy
+#| msgid ""
+#| "He sufrido graves vulneraciones de derechos humanos en primera persona"
+msgid ""
+"He sufrido graves vulnerabilidades de derechos humanos en primera persona"
 msgstr "Giza eskubideen urraketa larriak jasan ditut zuzenean"
 
 #: templates/pages/is_it_for_me.html:20
+#, fuzzy
+#| msgid ""
+#| "Si has vivido graves vulneraciones de derechos humanos en primera "
+#| "persona, o si te arrebataron a un ser querido, te ofrecemos un espacio de "
+#| "acompañamiento profesional."
 msgid ""
-"Si has vivido graves vulneraciones de derechos humanos en primera persona, o "
-"si te arrebataron a un ser querido, te ofrecemos un espacio de "
-"acompañamiento profesional."
+"Si eres una persona directamente afectada por graves vulneraciones de "
+"derechos humanos, o si te arrebataron a un ser querido, te ofrecemos un "
+"espacio de acompañamiento individualizado."
 msgstr ""
 "Giza eskubideen urraketa larriak zuzenean bizi izan badituzu, edo pertsona "
 "maite bat kendu bazaizu, laguntza profesionalerako espazio bat eskaintzen "
@@ -665,12 +699,26 @@ msgstr ""
 "ondorioak lantzen, zure erritmoan oreka berreskuratzeko."
 
 #: templates/pages/is_it_for_me.html:27
+msgid "Busco reflexionar sobre mis actos del pasado"
+msgstr ""
+
+#: templates/pages/is_it_for_me.html:29
+msgid ""
+"Si sientes la necesidad de mirar atrás para revisar el impacto que tus "
+"decisiones han tenido en la sociedad, en tu vida y en tu entorno, te "
+"facilitamos un espacio profesional de acompañamiento. Aquí trabajamos en una "
+"reflexión ética para asumir la responsabilidad, integrar la historia "
+"personal y avanzar hacia una forma de relacionarse basada en el respeto, el "
+"cuidado y la reparación de lo que ha sido dañado."
+msgstr ""
+
+#: templates/pages/is_it_for_me.html:33
 msgid ""
 "Mantengo un vínculo cercano con una persona que ha vivido estos impactos"
 msgstr ""
 "Inpaktu hauek jasan dituen pertsona batekin lotura estua mantentzen dut"
 
-#: templates/pages/is_it_for_me.html:29
+#: templates/pages/is_it_for_me.html:35
 msgid ""
 "Si te une un lazo estrecho con alguien que ha padecido el impacto de la "
 "violencia, entendemos que tú también puedes experimentar sus consecuencias."
@@ -678,7 +726,7 @@ msgstr ""
 "Indarkeriaren eragina jasan duen norbaitekin lotura estua baduzu, ulertzen "
 "dugu zuk ere jasan ditzakezula horren ondorioak."
 
-#: templates/pages/is_it_for_me.html:32
+#: templates/pages/is_it_for_me.html:38
 msgid ""
 "Estamos aquí para ayudarte a cuidar de tu bienestar y a gestionar esa "
 "realidad emocional que compartís."
@@ -686,11 +734,11 @@ msgstr ""
 "Hemen gaude zure ongizatea zaintzen eta partekatzen duzun errealitate "
 "emozional hori kudeatzen laguntzeko."
 
-#: templates/pages/is_it_for_me.html:36
+#: templates/pages/is_it_for_me.html:42
 msgid "El pasado de mi familia me condiciona"
 msgstr "Nire familiaren iraganak baldintzatzen nau"
 
-#: templates/pages/is_it_for_me.html:38
+#: templates/pages/is_it_for_me.html:44
 msgid ""
 "Si eres descendiente de personas marcadas por estos impactos y sientes que "
 "el silencio, la historia familiar o los traumas heredados condicionan tu "
@@ -702,11 +750,11 @@ msgstr ""
 "dutela sentitzen baduzu, ondare hori integratzeko eta gaur egun zarenari "
 "nola eragiten dion ulertzeko espazio bat eskaintzen dizugu."
 
-#: templates/pages/is_it_for_me.html:42
+#: templates/pages/is_it_for_me.html:48
 msgid "Quiero ayudar a alguien de mi entorno"
 msgstr "Nire inguruko norbait lagundu nahi dut"
 
-#: templates/pages/is_it_for_me.html:44
+#: templates/pages/is_it_for_me.html:50
 msgid ""
 "Si has detectado que una persona de tu círculo cercano —amistad, vecindad o "
 "familia— necesita acompañamiento pero no sabe cómo pedirlo, te asesoramos "
@@ -717,15 +765,15 @@ msgstr ""
 "aholkatuko dizugu, modu baliagarri, errespetuz eta eraginkorrean hurbil "
 "dezazun."
 
-#: templates/pages/is_it_for_me.html:50
+#: templates/pages/is_it_for_me.html:57
 msgid "Preguntas frecuentes"
 msgstr "Ohiko galderak"
 
-#: templates/pages/is_it_for_me.html:53
+#: templates/pages/is_it_for_me.html:60
 msgid "¿La comunicación es estrictamente confidencial?"
 msgstr "Komunikazioa erabat konfidentziala al da?"
 
-#: templates/pages/is_it_for_me.html:55
+#: templates/pages/is_it_for_me.html:62
 msgid ""
 "Sí. Todo lo que nos transmitas, ya sea sobre tu propia experiencia o la de "
 "alguien cercano, se gestiona bajo absoluta privacidad y con el máximo "
@@ -735,11 +783,11 @@ msgstr ""
 "norbaitena, erabateko pribatutasunean eta zure pribatutasunarekiko errespetu "
 "handienarekin kudeatzen da."
 
-#: templates/pages/is_it_for_me.html:59
+#: templates/pages/is_it_for_me.html:66
 msgid "¿Es necesario que sepa exactamente qué necesito antes de escribir?"
 msgstr "Idatzi aurretik zer behar dudan zehatz-mehatz jakin behar al dut?"
 
-#: templates/pages/is_it_for_me.html:61
+#: templates/pages/is_it_for_me.html:68
 msgid ""
 "No. Puedes contactar para expresar cómo te sientes o qué observas en tu "
 "entorno, y nosotras te ayudaremos a identificar el itinerario de "
@@ -749,11 +797,11 @@ msgstr ""
 "edo zer behatzen duzun adierazteko, eta hobekien egokitzen zaizun "
 "akonpainamendu-ibilbidea identifikatzen lagunduko dizugu."
 
-#: templates/pages/is_it_for_me.html:65
+#: templates/pages/is_it_for_me.html:72
 msgid "¿Debo tener un reconocimiento oficial para acogerme al programa?"
 msgstr "Aitorpen ofiziala izan behar al dut programan sartzeko?"
 
-#: templates/pages/is_it_for_me.html:67
+#: templates/pages/is_it_for_me.html:74
 msgid ""
 "En absoluto. Nuestro acompañamiento no requiere ninguna certificación ni "
 "reconocimiento administrativo previo. Si sientes que necesitas apoyo o "
@@ -763,11 +811,11 @@ msgstr ""
 "administrazio-aitorpenik behar. Laguntza edo entzutea behar duzula uste "
 "baduzu, hori da gurekin harremanetan jartzeko baldintza bakarra."
 
-#: templates/pages/is_it_for_me.html:71
+#: templates/pages/is_it_for_me.html:78
 msgid "¿Puedo contactar en nombre de otra persona?"
 msgstr "Jarri al naiz harremanetan beste pertsona baten izenean?"
 
-#: templates/pages/is_it_for_me.html:73
+#: templates/pages/is_it_for_me.html:80
 msgid ""
 "Por supuesto. Si conoces a alguien que podría beneficiarse de este "
 "acompañamiento, escríbenos y te guiaremos sobre cómo abordar el contacto o "
@@ -777,11 +825,11 @@ msgstr ""
 "idatzi iezaguzu eta kontaktura nola hurbildu edo zubi hori modu seguruan eta "
 "eraginkorrean eraikitzen lagunduko dizugu."
 
-#: templates/pages/is_it_for_me.html:77
+#: templates/pages/is_it_for_me.html:84
 msgid "¿Cuál es el coste del acompañamiento?"
 msgstr "Zein da akonpainamenduaren kostua?"
 
-#: templates/pages/is_it_for_me.html:79
+#: templates/pages/is_it_for_me.html:86
 msgid ""
 "Sendaoroi es un proyecto de acompañamiento totalmente gratuito. No hay "
 "costes asociados a ninguno de nuestros servicios."
@@ -789,7 +837,7 @@ msgstr ""
 "Sendaoroi guztiz doako proiektua da. Ez dago gure zerbitzuekin lotutako "
 "kosturik."
 
-#: templates/pages/is_it_for_me.html:88
+#: templates/pages/is_it_for_me.html:95
 msgid ""
 "En Sendaoroi, no trabajamos con diagnósticos cerrados ni etiquetas. "
 "Entendemos que cada persona y cada historia es única, y por eso nuestra "
@@ -799,7 +847,7 @@ msgstr ""
 "bakoitza eta istorio bakoitza bakarra dela ulertzen dugu, eta horregatik "
 "gure lehentasuna erritmoa jartzen duzun giza espazio bat eskaintzea da."
 
-#: templates/pages/is_it_for_me.html:91
+#: templates/pages/is_it_for_me.html:98
 msgid ""
 "No necesitas tener todas las respuestas antes de dar el paso; este es el "
 "lugar para empezar a hablar."
@@ -937,10 +985,19 @@ msgstr ""
 "psikosozialeko programa."
 
 #: templates/pages/program.html:15
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "      Sendaoroi nace para acompañar a personas afectadas por "
+#| "vulneraciones de derechos humanos en el contexto vasco, ofreciendo "
+#| "espacios seguros donde poder poner palabras a la experiencia vivida, "
+#| "cuidar las heridas invisibles y reconstruir vínculos personales, "
+#| "familiares y comunitarios.\n"
+#| "      "
 msgid ""
 "\n"
 "      Sendaoroi nace para acompañar a personas afectadas por vulneraciones "
-"de derechos humanos en el contexto vasco, ofreciendo espacios seguros donde "
+"de derechos humanos en el caso vasco, ofreciendo espacios seguros donde "
 "poder poner palabras a la experiencia vivida, cuidar las heridas invisibles "
 "y reconstruir vínculos personales, familiares y comunitarios.\n"
 "      "
@@ -1016,10 +1073,19 @@ msgid "Berridatzi Elkartea"
 msgstr "Berridatzi Elkartea"
 
 #: templates/pages/roots.html:24
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "        Berridatzi Bizikidetza Josteko Elkartea nace de una necesidad "
+#| "vital: transformar en esperanza el trauma que marcó a muchas familias. "
+#| "Esa experiencia personal fue el germen de nuestra asociación sin ánimo de "
+#| "lucro, constituida en 2019 con la misión fundamental de consolidar la paz "
+#| "y tejer la convivencia.\n"
+#| "        "
 msgid ""
 "\n"
-"        Berridatzi Bizikidetza Josteko Elkartea nace de una necesidad vital: "
-"transformar en esperanza el trauma que marcó a muchas familias. Esa "
+"        Berridatzi (Bizikidetza Josteko Elkartea) nace de una necesidad "
+"vital: transformar en esperanza el trauma que marcó a muchas familias. Esa "
 "experiencia personal fue el germen de nuestra asociación sin ánimo de lucro, "
 "constituida en 2019 con la misión fundamental de consolidar la paz y tejer "
 "la convivencia.\n"
@@ -1249,11 +1315,18 @@ msgid "B. Procesos restaurativos"
 msgstr "B. Prozesu errestauratiboak"
 
 #: templates/pages/services.html:61
+#, fuzzy
+#| msgid ""
+#| "Espacios de reparación individuales, grupales o familiares. Cada proceso "
+#| "nace con un objetivo claro y, cuando existe un acompañamiento terapéutico "
+#| "paralelo, coordinamos ambos enfoques para asegurar una intervención "
+#| "personalizada, unitaria y coherente con nuestros valores."
 msgid ""
 "Espacios de reparación individuales, grupales o familiares. Cada proceso "
 "nace con un objetivo claro y, cuando existe un acompañamiento terapéutico "
 "paralelo, coordinamos ambos enfoques para asegurar una intervención "
-"personalizada, unitaria y coherente con nuestros valores."
+"personalizada, unitaria y coherente con nuestros valores. Círculos "
+"restaurativos, grupos de cuidado, círculos de diálogo, reparación simbólica…"
 msgstr ""
 "Banakako, taldeko edo familiako konponketa espazioak. Prozesu bakoitza "
 "helburu argi batekin jaiotzen da eta, laguntza terapeutiko paraleloa "
@@ -1265,9 +1338,15 @@ msgid "C. Acompañamiento psicoterapéutico/psiquiátrico"
 msgstr "C. Laguntza psikoterapeutikoa/psikiatrikoa"
 
 #: templates/pages/services.html:67
+#, fuzzy
+#| msgid ""
+#| "Contamos con un equipo de profesionales con amplia trayectoria y "
+#| "experiencia, que ejerce su labor desde la absoluta independencia."
 msgid ""
 "Contamos con un equipo de profesionales con amplia trayectoria y "
-"experiencia, que ejerce su labor desde la absoluta independencia."
+"experiencia, que ejerce su labor desde la absoluta independencia. Terapia "
+"individual y grupal (en la actualidad destinada a personas torturadas) y se "
+"irán abriendo a otras realidades a medida que surja la necesidad."
 msgstr ""
 "Esperientzia eta eskarmentu handiko profesional talde bat dugu, bere lana "
 "burujabetasun osoz burutzen duena."
@@ -1321,7 +1400,10 @@ msgstr ""
 "aukera mantentzen dugu."
 
 #: templates/pages/team.html:11
-msgid "Personas y entidades que hacen posible el programa de acompañamiento."
+#, fuzzy
+#| msgid ""
+#| "Personas y entidades que hacen posible el programa de acompañamiento."
+msgid "Personas y entidades que hacen posible el programa de acompañamiento"
 msgstr "Laguntza programa posible egiten duten pertsonak eta entitateak."
 
 #: templates/pages/team.html:14
@@ -1339,6 +1421,7 @@ msgid "Grupo de trabajo del programa"
 msgstr "Programako lan-taldea"
 
 #: templates/pages/team.html:27 templates/pages/team.html:30
+#: templates/pages/team.html:54
 msgid "Pili Zabala Artano"
 msgstr ""
 
@@ -1350,88 +1433,87 @@ msgstr "Berridatzi Elkartea-ko presidenteordea"
 msgid "Redes sociales de Pili Zabala Artano"
 msgstr ""
 
-#: templates/pages/team.html:33 templates/pages/team.html:58
-#: templates/pages/team.html:83 templates/pages/team.html:109
-#: templates/pages/team.html:138 templates/pages/team.html:164
-#: templates/pages/team.html:198 templates/pages/team.html:224
-#: templates/pages/team.html:250 templates/pages/team.html:276
-#: templates/pages/team.html:302 templates/pages/team.html:333
-#: templates/pages/team.html:366 templates/pages/team.html:391
-#: templates/pages/team.html:423
+#: templates/pages/team.html:33 templates/pages/team.html:60
+#: templates/pages/team.html:85 templates/pages/team.html:109
+#: templates/pages/team.html:156 templates/pages/team.html:198
+#: templates/pages/team.html:247 templates/pages/team.html:288
+#: templates/pages/team.html:329 templates/pages/team.html:370
+#: templates/pages/team.html:411 templates/pages/team.html:457
+#: templates/pages/team.html:490 templates/pages/team.html:515
+#: templates/pages/team.html:549
 msgid "LinkedIn"
 msgstr ""
 
-#: templates/pages/team.html:34 templates/pages/team.html:59
-#: templates/pages/team.html:84 templates/pages/team.html:110
-#: templates/pages/team.html:139 templates/pages/team.html:165
-#: templates/pages/team.html:199 templates/pages/team.html:225
-#: templates/pages/team.html:251 templates/pages/team.html:277
-#: templates/pages/team.html:303 templates/pages/team.html:334
-#: templates/pages/team.html:367 templates/pages/team.html:392
-#: templates/pages/team.html:424
+#: templates/pages/team.html:34 templates/pages/team.html:61
+#: templates/pages/team.html:86 templates/pages/team.html:110
+#: templates/pages/team.html:157 templates/pages/team.html:199
+#: templates/pages/team.html:248 templates/pages/team.html:289
+#: templates/pages/team.html:330 templates/pages/team.html:371
+#: templates/pages/team.html:412 templates/pages/team.html:458
+#: templates/pages/team.html:491 templates/pages/team.html:516
+#: templates/pages/team.html:550
 msgid "X"
 msgstr ""
 
-#: templates/pages/team.html:35 templates/pages/team.html:60
-#: templates/pages/team.html:85 templates/pages/team.html:111
-#: templates/pages/team.html:140 templates/pages/team.html:166
-#: templates/pages/team.html:200 templates/pages/team.html:226
-#: templates/pages/team.html:252 templates/pages/team.html:278
-#: templates/pages/team.html:304 templates/pages/team.html:335
-#: templates/pages/team.html:368 templates/pages/team.html:393
-#: templates/pages/team.html:425
+#: templates/pages/team.html:35 templates/pages/team.html:62
+#: templates/pages/team.html:87 templates/pages/team.html:111
+#: templates/pages/team.html:158 templates/pages/team.html:200
+#: templates/pages/team.html:249 templates/pages/team.html:290
+#: templates/pages/team.html:331 templates/pages/team.html:372
+#: templates/pages/team.html:413 templates/pages/team.html:459
+#: templates/pages/team.html:492 templates/pages/team.html:517
+#: templates/pages/team.html:551
 msgid "Facebook"
 msgstr ""
 
-#: templates/pages/team.html:36 templates/pages/team.html:61
-#: templates/pages/team.html:86 templates/pages/team.html:112
-#: templates/pages/team.html:141 templates/pages/team.html:167
-#: templates/pages/team.html:201 templates/pages/team.html:227
-#: templates/pages/team.html:253 templates/pages/team.html:279
-#: templates/pages/team.html:305 templates/pages/team.html:336
-#: templates/pages/team.html:369 templates/pages/team.html:394
-#: templates/pages/team.html:426
+#: templates/pages/team.html:36 templates/pages/team.html:63
+#: templates/pages/team.html:88 templates/pages/team.html:112
+#: templates/pages/team.html:159 templates/pages/team.html:201
+#: templates/pages/team.html:250 templates/pages/team.html:291
+#: templates/pages/team.html:332 templates/pages/team.html:373
+#: templates/pages/team.html:414 templates/pages/team.html:460
+#: templates/pages/team.html:493 templates/pages/team.html:518
+#: templates/pages/team.html:552
 msgid "Instagram"
 msgstr ""
 
-#: templates/pages/team.html:39 templates/pages/team.html:64
-#: templates/pages/team.html:89 templates/pages/team.html:115
-#: templates/pages/team.html:144 templates/pages/team.html:170
-#: templates/pages/team.html:204 templates/pages/team.html:230
-#: templates/pages/team.html:256 templates/pages/team.html:282
-#: templates/pages/team.html:308 templates/pages/team.html:339
-#: templates/pages/team.html:372 templates/pages/team.html:397
-#: templates/pages/team.html:429
+#: templates/pages/team.html:39 templates/pages/team.html:66
+#: templates/pages/team.html:91 templates/pages/team.html:115
+#: templates/pages/team.html:162 templates/pages/team.html:204
+#: templates/pages/team.html:253 templates/pages/team.html:294
+#: templates/pages/team.html:335 templates/pages/team.html:376
+#: templates/pages/team.html:417 templates/pages/team.html:463
+#: templates/pages/team.html:496 templates/pages/team.html:521
+#: templates/pages/team.html:555
 msgid "Sitio web"
 msgstr ""
 
 #: templates/pages/team.html:45
 msgid ""
 "\n"
-"          Hermana de Joxi Zabala y vicepresidenta de Berridatzi Elkartea. Mi "
-"trayectoria se asienta en la búsqueda incansable de memoria, verdad y "
-"justicia, una historia personal que me ha vinculado para siempre con la "
-"defensa de los Derechos Humanos. Es precisamente esa mirada, desde la "
-"imaginación moral, la que hoy me permite soñar con una comunidad de "
-"solidaridad real donde sanar los vínculos que la violencia fragmentó. "
-"Sendaoroi se articula como ese deseo de abrir espacios compartidos de "
-"diálogo y confianza; estoy convencida de que solo cuidando de esas heridas "
-"podemos asentar, de verdad, las bases de la no repetición. "
+"          Hermana de Joxi Zabala. Mi trayectoria se asienta en la búsqueda "
+"incansable de memoria, verdad y justicia, una historia personal que me ha "
+"vinculado para siempre con la defensa de los Derechos Humanos. Es "
+"precisamente esa mirada, desde la imaginación moral, la que hoy me permite "
+"soñar con una comunidad de solidaridad real donde sanar los vínculos que la "
+"violencia fragmentó. Sendaoroi se articula como ese deseo de abrir espacios "
+"compartidos de diálogo y confianza; estoy convencida de que solo cuidando de "
+"esas heridas podemos asentar, de verdad, las bases de la no repetición. "
 msgstr ""
 
-#: templates/pages/team.html:55
+#: templates/pages/team.html:57
 msgid "Jesus Mari Garate Urruzola “Txisus”"
 msgstr ""
 
-#: templates/pages/team.html:56
+#: templates/pages/team.html:58
 msgid "Secretario y tesorero de Berridatzi Elkartea"
 msgstr "Berridatzi Elkartea-ko idazkaria eta diruzaina"
 
-#: templates/pages/team.html:57
+#: templates/pages/team.html:59
 msgid "Redes sociales de Jesus Mari Garate Urruzola “Txisus”"
 msgstr ""
 
-#: templates/pages/team.html:70
+#: templates/pages/team.html:72
 msgid ""
 "\n"
 "          Secretario/tesorero de Berridatzi y máster en Memoria Social y "
@@ -1444,98 +1526,123 @@ msgid ""
 "mis vecinos digan que me manejo mejor con los números que con la azada. "
 msgstr ""
 
-#: templates/pages/team.html:80
-msgid "Mar Puga"
-msgstr ""
-
-#: templates/pages/team.html:81
-msgid "Facilitadora de procesos restaurativos"
-msgstr "Prozesu errestauratiboen dinamizatzailea"
-
 #: templates/pages/team.html:82
-msgid "Redes sociales de Mar Puga"
-msgstr ""
-
-#: templates/pages/team.html:95
-msgid ""
-"\n"
-"          Me dedico a generar espacios de escucha y de diálogo desde un "
-"paradigma restaurativo desde hace unos años en diferentes contextos "
-"(organizacionales, interpersonales). Tengo el privilegio de formar parte de "
-"este proyecto porque resuena profundamente con mis valores y con mi visión "
-"de cómo debemos sostener y acompañar a quienes atraviesan historias de "
-"daños. Creo en un acompañamiento con alma, y que se construye desde un "
-"respeto absoluto hacia la experiencia del otro. Mi compromiso aquí es "
-"acompañar a las personas afectadas facilitando un espacio seguro, donde el "
-"cuidado y la escucha sirvan para que cada persona recupere su propia agencia "
-"y vuelva a adueñarse de su voz. Mi rol se centrará, entre otros temas, en "
-"ofrecer a las personas que se acerquen a Sendaoroi esa primera escucha y "
-"acogida al Programa. \n"
-msgstr ""
-
-#: templates/pages/team.html:106
 msgid "Aitziber Blanco Goikoetxea"
 msgstr ""
 
-#: templates/pages/team.html:107
+#: templates/pages/team.html:83
 #, fuzzy
 #| msgid "Grupo de trabajo del programa"
 msgid "Miembro del grupo de trabajo del programa"
 msgstr "Programako lan-taldea"
 
-#: templates/pages/team.html:108
+#: templates/pages/team.html:84
 msgid "Redes sociales de Aitziber Blanco Goikoetxea"
 msgstr ""
 
-#: templates/pages/team.html:121
-msgid ""
-"Forma parte del grupo de trabajo del programa Sendaoroi, aportando su mirada "
-"y compromiso al desarrollo colectivo de este espacio de acompañamiento, "
-"memoria y cuidado."
+#: templates/pages/team.html:97
+msgid "Coordinación y facilitación"
 msgstr ""
 
-#: templates/pages/team.html:129
+#: templates/pages/team.html:106
+msgid "Mar Puga"
+msgstr ""
+
+#: templates/pages/team.html:107
+msgid "Facilitadora de procesos restaurativos"
+msgstr "Prozesu errestauratiboen dinamizatzailea"
+
+#: templates/pages/team.html:108
+msgid "Redes sociales de Mar Puga"
+msgstr ""
+
+#: templates/pages/team.html:121
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "          Creo en un acompañamiento con alma, que se construye desde un "
+#| "respeto absoluto hacia la experiencia del otro. Mi compromiso aquí es "
+#| "acompañar a las personas afectadas facilitando un espacio seguro, donde "
+#| "el cuidado y la escucha sirvan para que cada persona recupere su propia "
+#| "agencia y vuelva a adueñarse de su voz.\n"
+#| "          "
+msgid ""
+"\n"
+"          Desde hace unos años me dedico a facilitar espacios de diálogo y "
+"escucha desde un enfoque restaurativo. Formar parte de este proyecto tiene "
+"mucho sentido para mí porque resuena profundamente con mis valores y con mi "
+"visión de cómo debemos sostener y acompañar. Creo en un acompañamiento con "
+"alma, y que se construye desde un respeto absoluto hacia la experiencia del "
+"otro. Mi compromiso es acompañar a las personas afectadas facilitando un "
+"espacio seguro, donde el cuidado y la escucha sirvan para que cada persona "
+"recupere su propia agencia y vuelva a adueñarse de su voz. Mi rol se "
+"centrará, entre otros temas, en ofrecer a las personas que se acerquen a "
+"Sendaoroi esa primera escucha y acogida al Programa. "
+msgstr ""
+"\n"
+"Arimarekin akonpainamenduan sinesten dut, bestearen bizipenarekiko erabateko "
+"errespetutik eraikitzen dena. Nire konpromisoa hemen kaltetutako pertsonei "
+"laguntzea da, espazio seguru bat erraztuz, non arretak eta entzuteak "
+"pertsona bakoitzak bere agentzia berreskuratzen eta bere ahotsaren jabetza "
+"berreskuratzen laguntzen baitu."
+
+#: templates/pages/team.html:132
 msgid "Grupo de psicólogas"
 msgstr ""
 
-#: templates/pages/team.html:135
+#: templates/pages/team.html:139 templates/pages/team.html:153
 msgid "Olatz Barrenetxea"
 msgstr ""
 
-#: templates/pages/team.html:136
+#: templates/pages/team.html:146 templates/pages/team.html:188
+#: templates/pages/team.html:237 templates/pages/team.html:278
+#: templates/pages/team.html:319 templates/pages/team.html:360
+#: templates/pages/team.html:401 templates/pages/team.html:447
+#: templates/pages/team.html:546
+msgid "Ekimen Elkartea"
+msgstr ""
+
+#: templates/pages/team.html:154
 msgid "Psikologo klinikoa"
 msgstr ""
 
-#: templates/pages/team.html:137
+#: templates/pages/team.html:155
 msgid "Redes sociales de Olatz Barrenetxea"
 msgstr ""
 
-#: templates/pages/team.html:150
+#: templates/pages/team.html:169
 msgid ""
 "Psikologo klinikoa, trauma, giza eskubideen urraketak eta indarkeria jaso "
 "dituzten pertsonak urte luzez laguntzen ibilitako esperientzia ondoren, "
 "Ekimen Elkartea eta Sendaoroi programaren kolaboratzaile gisa."
 msgstr ""
 
-#: templates/pages/team.html:161
+#: templates/pages/team.html:181 templates/pages/team.html:230
+#: templates/pages/team.html:271 templates/pages/team.html:312
+#: templates/pages/team.html:353 templates/pages/team.html:394
+#: templates/pages/team.html:440
+msgid "Maritxu"
+msgstr ""
+
+#: templates/pages/team.html:195
 msgid "Maritxu Jimenez"
 msgstr ""
 
-#: templates/pages/team.html:162
+#: templates/pages/team.html:196
 msgid "Psikoterapeuta humanista eta psikologa sanitarioa"
 msgstr ""
 
-#: templates/pages/team.html:163
+#: templates/pages/team.html:197
 msgid "Redes sociales de Maritxu Jimenez"
 msgstr ""
 
-#: templates/pages/team.html:176
+#: templates/pages/team.html:210
 msgid ""
 "Psikoterapeuta humanista. Psikologa sanitarioa. Banakako terapia, bikote "
 "terapia eta talde terapia. Sortzen Psikoterapia Humanista Zentroa."
 msgstr ""
 
-#: templates/pages/team.html:181
+#: templates/pages/team.html:215
 msgid ""
 "Ekimenen kolaboratzailea eta Sendaoroi programaren kolaboratzailea naiz, "
 "bereziki urteak daramatzadalako errepresio politikoak eragindako minak eta "
@@ -1543,23 +1650,23 @@ msgid ""
 "memoriarekiko erantzukizunak mugitzen nau."
 msgstr ""
 
-#: templates/pages/team.html:186
+#: templates/pages/team.html:220
 msgid "Web:"
 msgstr ""
 
-#: templates/pages/team.html:195
+#: templates/pages/team.html:244
 msgid "Nagore López de Luzuriaga"
 msgstr ""
 
-#: templates/pages/team.html:196
+#: templates/pages/team.html:245
 msgid "Psikologo sanitarioa. Banako, bikote eta familia terapeuta"
 msgstr ""
 
-#: templates/pages/team.html:197
+#: templates/pages/team.html:246
 msgid "Redes sociales de Nagore López de Luzuriaga"
 msgstr ""
 
-#: templates/pages/team.html:210
+#: templates/pages/team.html:259
 msgid ""
 "Osasun psikologoa; banako, bikote eta familia psikoterapeuta. Giza "
 "Eskubideen testuinguruan lan psikosoziala eta klinikoa garatu izan dut "
@@ -1569,33 +1676,33 @@ msgid ""
 "kolaboratzaile egun."
 msgstr ""
 
-#: templates/pages/team.html:221
+#: templates/pages/team.html:285
 msgid "Leire García"
 msgstr ""
 
-#: templates/pages/team.html:222 templates/pages/team.html:248
+#: templates/pages/team.html:286 templates/pages/team.html:327
 msgid "Psikoterapeuta, Ekimen-en kolaboratzailea"
 msgstr ""
 
-#: templates/pages/team.html:223
+#: templates/pages/team.html:287
 msgid "Redes sociales de Leire García"
 msgstr ""
 
-#: templates/pages/team.html:236
+#: templates/pages/team.html:300
 msgid ""
 "Leire García, psikoterapeuta. Sendaoroi programaren kolaboratzailea, memoria "
 "eta giza eskubideekiko konpromisoaren alde lanean."
 msgstr ""
 
-#: templates/pages/team.html:247
+#: templates/pages/team.html:326
 msgid "Uxoa Larramendi"
 msgstr ""
 
-#: templates/pages/team.html:249
+#: templates/pages/team.html:328
 msgid "Redes sociales de Uxoa Larramendi"
 msgstr ""
 
-#: templates/pages/team.html:262
+#: templates/pages/team.html:341
 msgid ""
 "Uxoa Larramendi, psikoterapeuta. Sendaoroi programaren kolaboratzailea, gure "
 "lana giza eskubideen urraketen eragina jasan dutenei laguntzea da, "
@@ -1603,19 +1710,19 @@ msgid ""
 "erreparazioa funtsezkoak direla ulertuta."
 msgstr ""
 
-#: templates/pages/team.html:273
+#: templates/pages/team.html:367
 msgid "Myriam Ruiz González"
 msgstr ""
 
-#: templates/pages/team.html:274
+#: templates/pages/team.html:368
 msgid "Psicóloga sanitaria y terapeuta ocupacional"
 msgstr ""
 
-#: templates/pages/team.html:275
+#: templates/pages/team.html:369
 msgid "Redes sociales de Myriam Ruiz González"
 msgstr ""
 
-#: templates/pages/team.html:288
+#: templates/pages/team.html:382
 msgid ""
 "Mi interés por la defensa de los Derechos Humanos y mi sensibilidad hacia "
 "las consecuencias psicológicas que el ejercicio de la violencia causa sobre "
@@ -1626,19 +1733,19 @@ msgid ""
 "recursos personales y comunitarios."
 msgstr ""
 
-#: templates/pages/team.html:299
+#: templates/pages/team.html:408
 msgid "Maitane Ibernia Belamendia"
 msgstr ""
 
-#: templates/pages/team.html:300
+#: templates/pages/team.html:409
 msgid "Osasun eta gizarte psikologoa. Dantza Mugimendu Terapeuta"
 msgstr ""
 
-#: templates/pages/team.html:301
+#: templates/pages/team.html:410
 msgid "Redes sociales de Maitane Ibernia Belamendia"
 msgstr ""
 
-#: templates/pages/team.html:314
+#: templates/pages/team.html:423
 msgid ""
 "Psicóloga social y sanitaria y Danza Movimiento Terapeuta; forma parte del "
 "equipo terapéutico de Ekimen Gunea y colabora en el Programa Sendaoroi con "
@@ -1646,7 +1753,7 @@ msgid ""
 "derechos humanos."
 msgstr ""
 
-#: templates/pages/team.html:319
+#: templates/pages/team.html:428
 msgid ""
 "Gizarte eta osasun psikologoa eta Dantza Mugimendu Terapeuta; Ekimen Guneko "
 "taldeko kidea da eta Sendaoroi programan ere parte hartzen du. Giza "
@@ -1654,42 +1761,42 @@ msgid ""
 "integratzailean garatzen du gorputzari ere erreparatuz."
 msgstr ""
 
-#: templates/pages/team.html:330
+#: templates/pages/team.html:454
 msgid "Larrun Barrenetxea"
 msgstr ""
 
-#: templates/pages/team.html:331
+#: templates/pages/team.html:455
 msgid "Psikologoa"
 msgstr ""
 
-#: templates/pages/team.html:332
+#: templates/pages/team.html:456
 msgid "Redes sociales de Larrun Barrenetxea"
 msgstr ""
 
-#: templates/pages/team.html:345
+#: templates/pages/team.html:469
 msgid ""
 "Psikologoa, torturaren ikerketan kolaboratzaile. Giza Ekimen Elkartearekin "
 "elkarlanean aritu naiz; horregatik, Sendaoroi programan kolaboratzaile gisa "
 "sartu naiz."
 msgstr ""
 
-#: templates/pages/team.html:355
+#: templates/pages/team.html:479
 msgid "Personas colaboradoras"
 msgstr "Pertsona laguntzaileak"
 
-#: templates/pages/team.html:360 templates/pages/team.html:363
+#: templates/pages/team.html:484 templates/pages/team.html:487
 msgid "Iñaki Markez"
 msgstr ""
 
-#: templates/pages/team.html:364
+#: templates/pages/team.html:488
 msgid "Psiquiatra e investigador social"
 msgstr "Psikiatra eta gizarte-ikertzailea"
 
-#: templates/pages/team.html:365
+#: templates/pages/team.html:489
 msgid "Redes sociales de Iñaki Markez"
 msgstr ""
 
-#: templates/pages/team.html:378
+#: templates/pages/team.html:502
 msgid ""
 "Psiquiatra e investigador social, colaborador del programa Sendaoroi desde "
 "una mirada comprometida con la salud mental, la memoria, los derechos "
@@ -1700,19 +1807,20 @@ msgid ""
 "historia, los aspectos clínicos y las poblaciones vulnerables."
 msgstr ""
 
-#: templates/pages/team.html:385 templates/pages/team.html:388
+#: templates/pages/team.html:509 templates/pages/team.html:512
+#: templates/pages/team.html:543
 msgid "Iñaki Retegi"
 msgstr ""
 
-#: templates/pages/team.html:389
+#: templates/pages/team.html:513
 msgid "Desarrollo web y apoyo tecnológico"
 msgstr "Web garapena eta laguntza teknologikoa"
 
-#: templates/pages/team.html:390
+#: templates/pages/team.html:514
 msgid "Redes sociales de Iñaki Retegi"
 msgstr ""
 
-#: templates/pages/team.html:403
+#: templates/pages/team.html:527
 #, fuzzy
 #| msgid ""
 #| "Además, desde el desarrollo web y la parte técnica, mi aportación es "
@@ -1727,11 +1835,11 @@ msgstr ""
 "programaren behar izan dezaketenengana iristeko prest dagoen presentzia "
 "digital argia, eskuragarria eta segurua izaten laguntzea da."
 
-#: templates/pages/team.html:411
+#: templates/pages/team.html:535
 msgid "Entidades colaboradoras"
 msgstr "Erakunde laguntzaileak"
 
-#: templates/pages/team.html:413
+#: templates/pages/team.html:537
 msgid ""
 "Sendaoroi cuenta con la colaboración de entidades y profesionales que "
 "refuerzan el acompañamiento psicológico, comunitario y restaurativo del "
@@ -1740,30 +1848,26 @@ msgstr ""
 "Sendaoroi programaren laguntza psikologikoa, komunitarioa eta "
 "zaharberritzailea indartzen duten entitate eta profesionalen lankidetza du."
 
-#: templates/pages/team.html:420
-msgid "Ekimen Elkartea"
-msgstr ""
-
-#: templates/pages/team.html:421
+#: templates/pages/team.html:547
 msgid "Entidad colaboradora"
 msgstr "Erakunde laguntzailea"
 
-#: templates/pages/team.html:422
+#: templates/pages/team.html:548
 msgid "Redes sociales de Ekimen Elkartea"
 msgstr ""
 
-#: templates/pages/team.html:435
+#: templates/pages/team.html:561
 msgid ""
 "Entidad colaboradora en el acompañamiento psicológico y comunitario del "
 "programa."
 msgstr ""
 "Erakunde laguntzailea programaren laguntza psikologiko eta komunitarioan."
 
-#: templates/pages/team.html:445
+#: templates/pages/team.html:571
 msgid "¿Quieres hablar con Sendaoroi?"
 msgstr "Sendaoroi-rekin hitz egin nahi duzu?"
 
-#: templates/pages/team.html:447
+#: templates/pages/team.html:573
 msgid ""
 "Si sientes que el programa puede acompañarte, puedes escribirnos o "
 "llamarnos. No necesitas tener todas las respuestas antes de dar el paso."
@@ -1780,13 +1884,22 @@ msgstr ""
 "zauri ikusezinekin laguntzen diegu."
 
 #: templates/pages/what_we_do.html:20
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "      Las heridas invisibles no se borran solo con el invierno de los "
+#| "años. Aunque las vulneraciones más graves de los derechos humanos ligadas "
+#| "al contexto vasco cesaron tiempo atrás, el sufrimiento, el trauma y las "
+#| "secuelas psicosociales siguen pesando en silencio en la intimidad de "
+#| "muchas personas y en sus entornos afectivos y comunitarios.\n"
+#| "      "
 msgid ""
 "\n"
 "      Las heridas invisibles no se borran solo con el invierno de los años. "
-"Aunque las vulneraciones más graves de los derechos humanos ligadas al "
-"contexto vasco cesaron tiempo atrás, el sufrimiento, el trauma y las "
-"secuelas psicosociales siguen pesando en silencio en la intimidad de muchas "
-"personas y en sus entornos afectivos y comunitarios.\n"
+"Aunque las vulneraciones más graves de los derechos humanos ligadas al caso "
+"vasco cesaron tiempo atrás, el sufrimiento, el trauma y las secuelas "
+"psicosociales siguen pesando en silencio en la intimidad de muchas personas "
+"y en sus entornos afectivos y comunitarios.\n"
 "      "
 msgstr ""
 "\n"
@@ -1889,6 +2002,23 @@ msgstr ""
 #: templates/pages/what_we_do.html:65
 msgid "Ver nuestra brújula"
 msgstr "Gure iparrorratza ikusi"
+
+#~ msgid "Acompañamiento individualizado"
+#~ msgstr "Laguntza indibidualizatua"
+
+#~ msgid ""
+#~ "\n"
+#~ "      Sendaoroi nace para ofrecer un lugar donde descansar del peso del "
+#~ "pasado, abrir espacios de escucha y acompañar procesos personales y "
+#~ "comunitarios desde la dignidad, la confidencialidad y el respeto a los "
+#~ "tiempos de cada persona.\n"
+#~ "      "
+#~ msgstr ""
+#~ "\n"
+#~ "Sendaoroi iraganaren pisutik atseden hartzeko lekua eskaintzeko jaio da, "
+#~ "entzuteko gune irekiak eta prozesu pertsonal eta komunitarioak "
+#~ "bideratzeko duintasunetik, konfidentzialtasunetik eta pertsona "
+#~ "bakoitzaren denbora errespetuz."
 
 #~ msgid ""
 #~ "\n"
@@ -1993,22 +2123,6 @@ msgstr "Gure iparrorratza ikusi"
 #~ "Pribilegioa naiz proiektu honen parte izateak oihartzun handia duelako "
 #~ "nire balioekin eta merezi gabeko minaren istorioak bizi dituztenei nola "
 #~ "eutsi eta lagundu behar genien ikuspegiarekin."
-
-#~ msgid ""
-#~ "\n"
-#~ "          Creo en un acompañamiento con alma, que se construye desde un "
-#~ "respeto absoluto hacia la experiencia del otro. Mi compromiso aquí es "
-#~ "acompañar a las personas afectadas facilitando un espacio seguro, donde "
-#~ "el cuidado y la escucha sirvan para que cada persona recupere su propia "
-#~ "agencia y vuelva a adueñarse de su voz.\n"
-#~ "          "
-#~ msgstr ""
-#~ "\n"
-#~ "Arimarekin akonpainamenduan sinesten dut, bestearen bizipenarekiko "
-#~ "erabateko errespetutik eraikitzen dena. Nire konpromisoa hemen "
-#~ "kaltetutako pertsonei laguntzea da, espazio seguru bat erraztuz, non "
-#~ "arretak eta entzuteak pertsona bakoitzak bere agentzia berreskuratzen eta "
-#~ "bere ahotsaren jabetza berreskuratzen laguntzen baitu."
 
 #~ msgid ""
 #~ "Psiquiatra e investigador social, colaborador del programa Sendaoroi "

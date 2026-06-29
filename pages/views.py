@@ -90,7 +90,7 @@ class ContactView(FormView):
                 messages.success(
                     self.request,
                     _(
-                        "Gracias por escribirnos. Hemos recibido tu mensaje y te responderemos con el mayor cuidado posible."
+                        "Gracias. Hemos recibido tu mensaje correctamente y te responderemos lo antes posible."
                     ),
                 )
             except Exception:

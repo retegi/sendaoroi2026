@@ -4,7 +4,7 @@
 {% block title %}{% trans "Contactar" %} | Sendaoroi.org{% endblock %}
 
 {% block content %}
-<section class="overflow-hidden rounded-2xl bg-gradient-to-r from-sendaoroi-blue to-sendaoroi-green px-6 py-10 text-white shadow-lg md:px-10 md:py-12">
+<section class="mt-8 overflow-hidden rounded-2xl bg-gradient-to-r from-sendaoroi-blue to-sendaoroi-green px-6 py-10 text-white shadow-lg md:px-10 md:py-12">
   <div class="max-w-3xl">
     <h1 class="text-4xl font-bold md:text-5xl">{% trans "Contactar" %}</h1>
     <p class="mt-4 text-base leading-relaxed text-white/90 md:text-lg">
@@ -13,12 +13,29 @@
   </div>
 </section>
 
+
 {% if messages %}
-<section class="mt-6 space-y-3">
+<section class="mt-6 space-y-3" aria-live="polite">
   {% for message in messages %}
-    <div class="rounded-lg border px-4 py-3 text-sm {% if message.tags == 'success' %}border-sendaoroi-green/40 bg-sendaoroi-green/10 text-sendaoroi-blue{% else %}border-red-300 bg-red-50 text-red-700{% endif %}">
-      {{ message }}
-    </div>
+    {% if 'success' in message.tags %}
+      <div class="rounded-xl border border-[#528C6E] bg-[#528C6E] px-5 py-4 text-sm text-white shadow-lg">
+        <p class="font-semibold">
+          {% trans "Mensaje enviado correctamente" %}
+        </p>
+        <p class="mt-1 leading-relaxed text-white/90">
+          {{ message }}
+        </p>
+      </div>
+    {% else %}
+      <div class="rounded-xl border border-red-300 bg-red-50 px-5 py-4 text-sm text-red-700 shadow-md">
+        <p class="font-semibold">
+          {% trans "No hemos podido enviar el mensaje" %}
+        </p>
+        <p class="mt-1 leading-relaxed">
+          {{ message }}
+        </p>
+      </div>
+    {% endif %}
   {% endfor %}
 </section>
 {% endif %}
@@ -32,10 +49,12 @@
     <div class="mt-6 space-y-1 text-sm text-sendaoroi-gray">
       <p><span class="font-semibold text-sendaoroi-blue">{% trans "Email:" %}</span> <a class="hover:text-sendaoroi-blue" href="mailto:info@sendaoroi.org">info@sendaoroi.org</a></p>
       <p><span class="font-semibold text-sendaoroi-blue">{% trans "Teléfono:" %}</span> <a class="hover:text-sendaoroi-blue" href="tel:688611573">688 611 573</a></p>
-      <p><span class="font-semibold text-sendaoroi-blue">{% trans "Canales:" %}</span> {% trans "Llamada, WhatsApp, Telegram y SMS." %}</p>
+      <p><span class="font-semibold text-sendaoroi-blue">{% trans "Canales:" %}</span> {% trans "Llamada, Telegram, WhatsApp, Telegram, SMS e Email." %}</p>
+      <p><span class="font-semibold text-sendaoroi-blue">{% trans "Horario:" %}</span> {% trans "Lunes a viernes" %} 9:00-19:00</p>
     </div>
     <div class="mt-6 flex flex-wrap gap-3">
       <a href="tel:688611573" class="btn-sendaoroi">{% trans "Llamar" %}</a>
+      <a href="#" class="btn-sendaoroi bg-sendaoroi-green hover:bg-sendaoroi-blue">{% trans "Telegram" %}</a>
       <a href="https://wa.me/34688611573" class="btn-sendaoroi bg-sendaoroi-green hover:bg-sendaoroi-blue">{% trans "WhatsApp" %}</a>
       <a href="mailto:info@sendaoroi.org" class="btn-sendaoroi bg-sendaoroi-green hover:bg-sendaoroi-blue">{% trans "Enviar email" %}</a>
       <a href="sms:+34688611573" class="btn-sendaoroi bg-sendaoroi-green hover:bg-sendaoroi-blue">{% trans "SMS" %}</a>

@@ -19,11 +19,14 @@
           {% trans "Programa Sendaoroi" %}
           <span aria-hidden="true">▾</span>
         </a>
-        <div class="absolute left-0 mt-2 hidden min-w-64 rounded-md bg-white p-2 text-sm text-brand-teal shadow-lg group-hover:block">
-          <a href="{% url 'what_we_do' %}" class="block rounded px-3 py-2 hover:bg-brand-sand/40">{% trans "Qué hacemos" %}</a>
-          <a href="{% url 'compass' %}" class="block rounded px-3 py-2 hover:bg-brand-sand/40">{% trans "Nuestra brújula" %}</a>
-          <a href="{% url 'process' %}" class="block rounded px-3 py-2 hover:bg-brand-sand/40">{% trans "El acompañamiento como proceso" %}</a>
-          <a href="{% url 'services' %}" class="block rounded px-3 py-2 hover:bg-brand-sand/40">{% trans "Pasos y servicios" %}</a>
+
+        <div class="absolute left-0 top-full z-50 hidden min-w-64 pt-2 group-hover:block">
+          <div class="rounded-md bg-white p-2 text-sm text-brand-teal shadow-lg">
+            <a href="{% url 'what_we_do' %}" class="block rounded px-3 py-2 hover:bg-brand-sand/40">{% trans "Qué hacemos" %}</a>
+            <a href="{% url 'compass' %}" class="block rounded px-3 py-2 hover:bg-brand-sand/40">{% trans "Nuestra brújula" %}</a>
+            <a href="{% url 'process' %}" class="block rounded px-3 py-2 hover:bg-brand-sand/40">{% trans "El acompañamiento como proceso" %}</a>
+            <a href="{% url 'services' %}" class="block rounded px-3 py-2 hover:bg-brand-sand/40">{% trans "Pasos y servicios" %}</a>
+          </div>
         </div>
       </div>
       <a href="{% url 'is_it_for_me' %}" class="transition hover:text-brand-sand">{% trans "¿Sendaoroi es para mí?" %}</a>
