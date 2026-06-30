@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-06-29 22:07+0200\n"
+"POT-Creation-Date: 2026-07-01 00:10+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -223,14 +223,14 @@ msgid "Página principal"
 msgstr "Página principal"
 
 #: templates/includes/header.html:16 templates/includes/header.html:41
-#: templates/pages/home.html:74 templates/pages/roots.html:4
+#: templates/pages/home.html:77 templates/pages/roots.html:4
 #: templates/pages/roots.html:10
 msgid "Nuestras raíces"
 msgstr "Nuestras raíces"
 
 #: templates/includes/header.html:19 templates/includes/header.html:42
 #: templates/pages/compass.html:9 templates/pages/home.html:12
-#: templates/pages/home.html:80 templates/pages/process.html:9
+#: templates/pages/home.html:83 templates/pages/process.html:9
 #: templates/pages/program.html:4 templates/pages/program.html:10
 #: templates/pages/services.html:9 templates/pages/what_we_do.html:9
 msgid "Programa Sendaoroi"
@@ -260,7 +260,7 @@ msgid "Pasos y servicios"
 msgstr "Pasos y servicios"
 
 #: templates/includes/header.html:32 templates/includes/header.html:47
-#: templates/pages/home.html:23 templates/pages/home.html:86
+#: templates/pages/home.html:23 templates/pages/home.html:89
 #: templates/pages/is_it_for_me.html:4 templates/pages/is_it_for_me.html:9
 #: templates/pages/services.html:98 templates/pages/team.html:577
 #: templates/pages/what_we_do.html:66
@@ -274,7 +274,7 @@ msgstr "Equipo Sendaoroi"
 
 #: templates/includes/header.html:34 templates/includes/header.html:49
 #: templates/pages/compass.html:83 templates/pages/contact.html:4
-#: templates/pages/contact.html:9 templates/pages/home.html:92
+#: templates/pages/contact.html:9 templates/pages/home.html:95
 #: templates/pages/is_it_for_me.html:101 templates/pages/process.html:50
 #: templates/pages/program.html:56 templates/pages/roots.html:76
 #: templates/pages/services.html:99 templates/pages/team.html:576
@@ -571,11 +571,29 @@ msgid ""
 "      "
 msgstr ""
 
-#: templates/pages/home.html:44
+#: templates/pages/home.html:41
+#, fuzzy
+#| msgid ""
+#| "\n"
+#| "      Acompañamiento psicosocial a personas afectadas por vulneraciones "
+#| "de derechos humanos en el contexto vasco.\n"
+#| "      "
+msgid ""
+"\n"
+"      Caminamos junto a personas afectadas por vulneraciones de derechos "
+"humanos en el Caso Vasco.\n"
+"      "
+msgstr ""
+"\n"
+"      Acompañamiento psicosocial a personas afectadas por vulneraciones de "
+"derechos humanos en el contexto vasco.\n"
+"      "
+
+#: templates/pages/home.html:47
 msgid "Primeros pasos"
 msgstr "Primeros pasos"
 
-#: templates/pages/home.html:46
+#: templates/pages/home.html:49
 msgid ""
 "Si necesitas un primer contacto, puedes empezar por aquí y avanzar a tu "
 "ritmo."
@@ -583,11 +601,11 @@ msgstr ""
 "Si necesitas un primer contacto, puedes empezar por aquí y avanzar a tu "
 "ritmo."
 
-#: templates/pages/home.html:50
+#: templates/pages/home.html:53
 msgid "1. Escríbenos o llámanos"
 msgstr "1. Escríbenos o llámanos"
 
-#: templates/pages/home.html:51
+#: templates/pages/home.html:54
 msgid ""
 "No necesitas tener claro qué necesitas. Podemos empezar simplemente por "
 "hablar."
@@ -595,11 +613,11 @@ msgstr ""
 "No necesitas tener claro qué necesitas. Podemos empezar simplemente por "
 "hablar."
 
-#: templates/pages/home.html:54
+#: templates/pages/home.html:57
 msgid "2. Acogida en el programa"
 msgstr "2. Acogida en el programa"
 
-#: templates/pages/home.html:55
+#: templates/pages/home.html:58
 msgid ""
 "Escucha inicial, respeto de tus tiempos y orientación sobre posibles "
 "itinerarios."
@@ -607,11 +625,11 @@ msgstr ""
 "Escucha inicial, respeto de tus tiempos y orientación sobre posibles "
 "itinerarios."
 
-#: templates/pages/home.html:58
+#: templates/pages/home.html:61
 msgid "3. Acompañamiento flexible"
 msgstr "3. Acompañamiento flexible"
 
-#: templates/pages/home.html:59
+#: templates/pages/home.html:62
 msgid ""
 "Los servicios pueden activarse según tu situación, sin recorrido cerrado ni "
 "obligatorio."
@@ -619,22 +637,22 @@ msgstr ""
 "Los servicios pueden activarse según tu situación, sin recorrido cerrado ni "
 "obligatorio."
 
-#: templates/pages/home.html:63 templates/pages/process.html:49
+#: templates/pages/home.html:66 templates/pages/process.html:49
 #: templates/pages/program.html:55
 msgid "Ver pasos y servicios"
 msgstr "Ver pasos y servicios"
 
-#: templates/pages/home.html:70
+#: templates/pages/home.html:73
 msgid "Explora Sendaoroi"
 msgstr "Explora Sendaoroi"
 
-#: templates/pages/home.html:76
+#: templates/pages/home.html:79
 msgid ""
 "Conoce el origen de Berridatzi Elkartea y el sentido del nombre Sendaoroi."
 msgstr ""
 "Conoce el origen de Berridatzi Elkartea y el sentido del nombre Sendaoroi."
 
-#: templates/pages/home.html:82
+#: templates/pages/home.html:85
 msgid ""
 "Descubre qué hacemos, cuáles son nuestros principios y cómo entendemos el "
 "acompañamiento."
@@ -642,7 +660,7 @@ msgstr ""
 "Descubre qué hacemos, cuáles son nuestros principios y cómo entendemos el "
 "acompañamiento."
 
-#: templates/pages/home.html:88
+#: templates/pages/home.html:91
 msgid ""
 "Lee algunas situaciones en las que este programa puede ofrecer apoyo y "
 "orientación."
@@ -650,7 +668,7 @@ msgstr ""
 "Lee algunas situaciones en las que este programa puede ofrecer apoyo y "
 "orientación."
 
-#: templates/pages/home.html:94
+#: templates/pages/home.html:97
 msgid ""
 "Puedes escribirnos o llamarnos. No necesitas tener todas las respuestas "
 "antes de dar el paso."

@@ -1,4 +1,4 @@
-{% load i18n %}
+{% load i18n static %}
 <footer class="mt-14 border-t border-sendaoroi-gray/30 bg-sendaoroi-blue text-white">
   <div class="mx-auto flex w-full max-w-6xl flex-col gap-2 px-4 py-8 text-sm md:flex-row md:items-center md:justify-between">
     <p class="font-semibold">{% trans "Sendaoroi.org" %}</p>
@@ -18,4 +18,13 @@
       </div>
     </div>
   </div>
+  <div class="mx-auto w-full max-w-6xl border-t border-white/10 px-4 py-4 text-sm text-white/90">
+  <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
+    <img
+      src="{% static 'img/eusko-jaurlaritza.jpeg' %}"
+      alt="{% trans 'Eusko Jaurlaritza' %}"
+      style="width: 180px; height: auto; display: block; margin: 0 auto;"
+    >
+  </div>
+</div>
 </footer>
