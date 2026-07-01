@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-07-01 00:10+0200\n"
-"PO-Revision-Date: 2026-07-01 00:18+0200\n"
+"PO-Revision-Date: 2026-07-01 09:58+0200\n"
 "Last-Translator:   <admin2@gmail.com>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "Language: eu\n"
@@ -679,7 +679,6 @@ msgstr ""
 "hasteko."
 
 #: templates/pages/is_it_for_me.html:18
-#, fuzzy
 #| msgid ""
 #| "He sufrido graves vulneraciones de derechos humanos en primera persona"
 msgid ""
@@ -687,7 +686,6 @@ msgid ""
 msgstr "Giza eskubideen urraketa larriak jasan ditut zuzenean"
 
 #: templates/pages/is_it_for_me.html:20
-#, fuzzy
 #| msgid ""
 #| "Si has vivido graves vulneraciones de derechos humanos en primera persona, o"
 #| " si te arrebataron a un ser querido, te ofrecemos un espacio de "
