@@ -47,6 +47,7 @@ MIDDLEWARE = [
     "whitenoise.middleware.WhiteNoiseMiddleware",
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.locale.LocaleMiddleware",
+    "pages.middleware.TranslationReloadMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
     "django.contrib.auth.middleware.AuthenticationMiddleware",
@@ -141,10 +142,21 @@ SERVER_EMAIL = os.getenv("SERVER_EMAIL", DEFAULT_FROM_EMAIL)
 
 CONTACT_RECIPIENT_EMAIL = os.getenv(
     "CONTACT_RECIPIENT_EMAIL",
-    os.getenv("CONTACT_EMAIL", "euskodev@gmail.com"),
+    os.getenv("CONTACT_EMAIL", "info@sendaoroi.org"),
 )
 
+CONTACT_FORM_MIN_SECONDS = float(os.getenv("CONTACT_FORM_MIN_SECONDS", "3"))
+CONTACT_FORM_TIMESTAMP_MAX_AGE = int(os.getenv("CONTACT_FORM_TIMESTAMP_MAX_AGE", "86400"))
+CONTACT_FORM_TIMESTAMP_SALT = "sendaoroi.contact-form.timestamp"
+CONTACT_FORM_RATE_LIMIT_WINDOW = int(os.getenv("CONTACT_FORM_RATE_LIMIT_WINDOW", "600"))
+CONTACT_FORM_RATE_LIMIT_MAX = int(os.getenv("CONTACT_FORM_RATE_LIMIT_MAX", "5"))
+TURNSTILE_SITE_KEY = os.getenv("TURNSTILE_SITE_KEY", "")
+TURNSTILE_SECRET_KEY = os.getenv("TURNSTILE_SECRET_KEY", "")
+TURNSTILE_TIMEOUT = float(os.getenv("TURNSTILE_TIMEOUT", "5"))
+TURNSTILE_VERIFY_URL = "https://challenges.cloudflare.com/turnstile/v0/siteverify"
+
 ROSETTA_ACCESS_CONTROL_FUNCTION = "config.permissions.can_access_rosetta"
+ROSETTA_AUTO_COMPILE = True
 
 LOGIN_REDIRECT_URL = "/"
 ACCOUNT_EMAIL_VERIFICATION = "none"

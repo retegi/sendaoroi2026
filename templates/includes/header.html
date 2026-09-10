@@ -3,11 +3,19 @@
   <div class="mx-auto max-w-6xl px-4 py-4">
     <div class="flex items-center justify-between gap-3">
       <a href="{% url 'home' %}" class="inline-flex items-center">
-        <img src="{% static 'img/sendaoroi_logo_blanco.svg' %}" alt="{% trans 'Sendaoroi.org' %}" class="h-14 w-auto md:h-16">
+        <img src="{% static 'img/sendaoroi_logo_slogan_bilingue_2lineas.svg' %}" alt="{% trans 'Sendaoroi.org' %}" class="h-14 w-auto md:h-16">
       </a>
       <div class="hidden items-center gap-2 text-xs uppercase md:flex md:text-sm">
-        <a href="/eu/" class="rounded border border-white px-2 py-1 transition hover:bg-white/10">{% trans "EUS" %}</a>
-        <a href="/es/" class="rounded border border-white px-2 py-1 transition hover:bg-white/10">{% trans "CAS" %}</a>
+        <form action="{% url 'set_language' %}" method="post" class="inline">
+          {% csrf_token %}
+          <input type="hidden" name="next" value="{{ request.get_full_path }}">
+          <button type="submit" name="language" value="eu" class="rounded border border-white px-2 py-1 transition hover:bg-white/10">{% trans "EUS" %}</button>
+        </form>
+        <form action="{% url 'set_language' %}" method="post" class="inline">
+          {% csrf_token %}
+          <input type="hidden" name="next" value="{{ request.get_full_path }}">
+          <button type="submit" name="language" value="es" class="rounded border border-white px-2 py-1 transition hover:bg-white/10">{% trans "CAS" %}</button>
+        </form>
       </div>
     </div>
 
@@ -48,8 +56,16 @@
         <a href="{% url 'team' %}" class="rounded px-2 py-1 hover:bg-white/10">{% trans "Equipo Sendaoroi" %}</a>
         <a href="{% url 'contact' %}" class="rounded px-2 py-1 hover:bg-white/10">{% trans "Contactar" %}</a>
         <div class="mt-2 flex items-center gap-2 text-xs uppercase">
-          <a href="/eu/" class="rounded border border-white px-2 py-1">{% trans "EUS" %}</a>
-          <a href="/es/" class="rounded border border-white px-2 py-1">{% trans "CAS" %}</a>
+          <form action="{% url 'set_language' %}" method="post" class="inline">
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ request.get_full_path }}">
+            <button type="submit" name="language" value="eu" class="rounded border border-white px-2 py-1">{% trans "EUS" %}</button>
+          </form>
+          <form action="{% url 'set_language' %}" method="post" class="inline">
+            {% csrf_token %}
+            <input type="hidden" name="next" value="{{ request.get_full_path }}">
+            <button type="submit" name="language" value="es" class="rounded border border-white px-2 py-1">{% trans "CAS" %}</button>
+          </form>
         </div>
       </div>
     </details>

@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-{% load i18n %}
+{% load i18n static %}
 
 {% block title %}{% trans "Contactar" %} | Sendaoroi.org{% endblock %}
 
@@ -48,19 +48,23 @@
     </p>
     <div class="mt-6 space-y-1 text-sm text-sendaoroi-gray">
       <p><span class="font-semibold text-sendaoroi-blue">{% trans "Email:" %}</span> <a class="hover:text-sendaoroi-blue" href="mailto:info@sendaoroi.org">info@sendaoroi.org</a></p>
-      <p><span class="font-semibold text-sendaoroi-blue">{% trans "Teléfono:" %}</span> <a class="hover:text-sendaoroi-blue" href="tel:688611573">688 611 573</a></p>
+      <p><span class="font-semibold text-sendaoroi-blue">{% trans "Teléfono:" %}</span> <a class="hover:text-sendaoroi-blue" href="tel:722566113">722 566 113</a></p>
       <p><span class="font-semibold text-sendaoroi-blue">{% trans "Canales:" %}</span> {% trans "Llamada, Telegram, WhatsApp, Telegram, SMS e Email." %}</p>
       <p><span class="font-semibold text-sendaoroi-blue">{% trans "Horario:" %}</span> {% trans "Lunes a viernes" %} 9:00-19:00</p>
     </div>
     <div class="mt-6 flex flex-wrap gap-3">
       <a href="tel:688611573" class="btn-sendaoroi">{% trans "Llamar" %}</a>
       <a href="#" class="btn-sendaoroi bg-sendaoroi-green hover:bg-sendaoroi-blue">{% trans "Telegram" %}</a>
-      <a href="https://wa.me/34688611573" class="btn-sendaoroi bg-sendaoroi-green hover:bg-sendaoroi-blue">{% trans "WhatsApp" %}</a>
+      <a href="https://wa.me/34722566113" class="btn-sendaoroi bg-sendaoroi-green hover:bg-sendaoroi-blue">{% trans "WhatsApp" %}</a>
       <a href="mailto:info@sendaoroi.org" class="btn-sendaoroi bg-sendaoroi-green hover:bg-sendaoroi-blue">{% trans "Enviar email" %}</a>
-      <a href="sms:+34688611573" class="btn-sendaoroi bg-sendaoroi-green hover:bg-sendaoroi-blue">{% trans "SMS" %}</a>
+      <a href="sms:+34722566113" class="btn-sendaoroi bg-sendaoroi-green hover:bg-sendaoroi-blue">{% trans "SMS" %}</a>
     </div>
     <p class="mt-5 text-sm text-sendaoroi-gray">
-      {% trans "También puedes escribirnos por Telegram usando el número 688 611 573." %}
+      {% trans "También puedes escribirnos por Telegram usando el número 722 566 113." %}
+    </p>
+    <p style="margin-top:20px; padding:5%;">
+      <img src="{% static 'img/proton-logo.png' %}" style="width:25%; text-align: right;">
+      {% trans "Para la gestión de nuestras comunicaciones y de la información utilizamos Proton, una plataforma orientada a la privacidad y la seguridad, con el objetivo de proteger los datos y garantizar un tratamiento confidencial de la información." %}
     </p>
   </div>
 
@@ -68,6 +72,8 @@
     <h2 class="text-2xl font-bold text-sendaoroi-blue">{% trans "Formulario de contacto" %}</h2>
     <form method="post" class="mt-6 space-y-4">
       {% csrf_token %}
+      {{ form.website }}
+      {{ form.contact_form_started }}
       <div>
         <label for="{{ form.name.id_for_label }}" class="text-sm font-medium text-sendaoroi-blue">{{ form.name.label }}</label>
         {{ form.name }}
@@ -100,6 +106,10 @@
         </label>
       </div>
       {% if form.privacy_accepted.errors %}<p class="mt-1 text-xs text-red-700">{{ form.privacy_accepted.errors|striptags }}</p>{% endif %}
+      {% if turnstile_site_key %}
+        <div class="cf-turnstile" data-sitekey="{{ turnstile_site_key }}"></div>
+        <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+      {% endif %}
       <button type="submit" class="btn-sendaoroi">{% trans "Enviar mensaje" %}</button>
     </form>
     {% if form.non_field_errors %}

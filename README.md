@@ -58,3 +58,5 @@ Definir al menos estas variables en `.env`:
 - `EMAIL_HOST_USER`
 - `EMAIL_HOST_PASSWORD`
 - `EMAIL_USE_TLS`
+- `TURNSTILE_SITE_KEY`
+- `TURNSTILE_SECRET_KEY`

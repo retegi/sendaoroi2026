@@ -7,6 +7,7 @@ from django.urls import reverse_lazy
 from django.utils.translation import gettext as _
 from django.views.generic import FormView, TemplateView
 
+from .antispam import check_rate_limit, verify_turnstile
 from .forms import ContactForm
 
 logger = logging.getLogger(__name__)
@@ -65,20 +66,69 @@ class ContactView(FormView):
     form_class = ContactForm
     success_url = reverse_lazy("contact")
 
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["turnstile_site_key"] = settings.TURNSTILE_SITE_KEY
+        context["turnstile_required"] = bool(
+            settings.TURNSTILE_SITE_KEY or settings.TURNSTILE_SECRET_KEY
+        )
+        return context
+
+    def post(self, request, *args, **kwargs):
+        if request.POST.get("website", "").strip():
+            logger.info("contact_form_spam_blocked reason=honeypot")
+            messages.success(
+                request,
+                _(
+                    "Gracias. Hemos recibido tu mensaje correctamente y te responderemos lo antes posible."
+                ),
+            )
+            return self.form_valid_without_sending()
+
+        if not check_rate_limit(request):
+            logger.info("contact_form_spam_blocked reason=rate_limit")
+            messages.error(
+                request,
+                _("Has realizado demasiados intentos. Inténtalo de nuevo más tarde."),
+            )
+            return self.form_invalid_without_form()
+
+        return super().post(request, *args, **kwargs)
+
+    def form_valid_without_sending(self):
+        return self.redirect_to_success()
+
+    def form_invalid_without_form(self):
+        return self.redirect_to_success()
+
+    def redirect_to_success(self):
+        from django.http import HttpResponseRedirect
+
+        return HttpResponseRedirect(self.get_success_url())
+
     def form_valid(self, form):
+        turnstile_token = self.request.POST.get("cf-turnstile-response", "")
+        if not verify_turnstile(self.request, turnstile_token):
+            logger.info("contact_form_spam_blocked reason=invalid_turnstile")
+            form.add_error(
+                None,
+                _("No hemos podido verificar el formulario. Inténtalo de nuevo."),
+            )
+            return self.form_invalid(form)
+
         contact_message = form.save()
         contact_recipient = getattr(settings, "CONTACT_RECIPIENT_EMAIL", None)
         default_from_email = getattr(settings, "DEFAULT_FROM_EMAIL", "Sendaoroi <info@sendaoroi.org>")
 
         if contact_recipient:
             email_message = EmailMessage(
-                subject=f"Nuevo mensaje desde Sendaoroi: {contact_message.name}",
+                subject="Sendaoroiko kontaktu-mezu berria",
                 body=(
-                    f"Nombre: {contact_message.name}\n"
-                    f"Email: {contact_message.email}\n"
-                    f"Teléfono: {contact_message.phone}\n"
-                    f"Preferencia: {contact_message.get_preferred_contact_method_display()}\n\n"
-                    f"Mensaje:\n{contact_message.message}"
+                    f"Izena: {contact_message.name}\n"
+                    f"Posta elektronikoa: {contact_message.email}\n"
+                    f"Telefonoa: {contact_message.phone}\n"
+                    f"Harremanetarako hobespena: {contact_message.get_preferred_contact_method_display()}\n\n"
+                    f"Mezua:\n{contact_message.message}"
                 ),
                 from_email=default_from_email,
                 to=[contact_recipient],
