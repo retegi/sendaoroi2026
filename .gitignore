@@ -13,3 +13,6 @@ staticfiles/
 media/
 *.log
 .DS_Store
+# Django / Rosetta translations - managed only in production
+**/locale/**/*.po
+**/locale/**/*.mo
