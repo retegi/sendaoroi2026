@@ -3,12 +3,14 @@ import logging
 from django.conf import settings
 from django.contrib import messages
 from django.core.mail import EmailMessage
+from django.db.models import Count, Prefetch, Q
 from django.urls import reverse_lazy
 from django.utils.translation import gettext as _
 from django.views.generic import FormView, TemplateView
 
 from .antispam import check_rate_limit, verify_turnstile
 from .forms import ContactForm
+from .models import CollaboratingEntity, TeamGroup, TeamMembership
 
 logger = logging.getLogger(__name__)
 
@@ -47,6 +49,36 @@ class IsItForMeView(TemplateView):
 
 class TeamView(TemplateView):
     template_name = "pages/team.html"
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        memberships_queryset = TeamMembership.objects.filter(
+            is_active=True,
+            member__is_active=True,
+        ).select_related("member").order_by("order", "pk")
+
+        groups = (
+            TeamGroup.objects.filter(is_active=True)
+            .annotate(
+                visible_member_count=Count(
+                    "memberships",
+                    filter=Q(memberships__is_active=True, memberships__member__is_active=True),
+                )
+            )
+            .filter(visible_member_count__gt=0)
+            .prefetch_related(
+                Prefetch(
+                    "memberships",
+                    queryset=memberships_queryset,
+                    to_attr="visible_memberships",
+                )
+            )
+            .order_by("order", "pk")
+        )
+
+        context["groups"] = groups
+        context["entities"] = CollaboratingEntity.objects.filter(is_active=True).order_by("order", "pk")
+        return context
 
 
 class LegalNoticeView(TemplateView):
