@@ -18,23 +18,21 @@
       </div>
     </div>
   </div>
-  <div class="mx-auto w-full max-w-6xl border-t border-white/10 px-4 py-4 text-sm text-white/90;">
-  
-    <div style="width: 100%; display: flex; justify-content: center; align-items: center;">
-    <img
-      src="{% static 'img/berridatzi-elkartea.jpg' %}"
-      alt="{% trans 'Eusko Jaurlaritza' %}"
-      style="width: 350px; height: auto; display: block; margin: 0 auto; padding:1%;background-color:white;"
-    >
+  <div class="mx-auto w-full max-w-6xl border-t border-white/10 px-4 py-4 text-sm text-white/90">
+    <div class="footer-partners">
+      <img
+        src="{% static 'img/berridatzi-elkartea.jpg' %}"
+        alt="{% trans 'Eusko Jaurlaritza' %}"
+        class="footer-partner-logo"
+      >
+      <div class="footer-partner-collaborator">
+        <p>{% trans "Colaborador:" %}</p>
+        <img
+          src="{% static 'img/eusko-jaurlaritza.jpeg' %}"
+          alt="{% trans 'Eusko Jaurlaritza' %}"
+          class="footer-partner-logo"
+        >
+      </div>
+    </div>
   </div>
-  
-    <p style="width: 100%; display: flex; justify-content: center; align-items: center; margin-top:30px;">{% trans "Colaborador:" %}</p>
-  <div style="width: 100%; display: flex; justify-content: center; align-items: center;"></div>
-    <img
-      src="{% static 'img/eusko-jaurlaritza.jpeg' %}"
-      alt="{% trans 'Eusko Jaurlaritza' %}"
-      style="width: 250px; height: auto; display: block; margin: 0 auto;"
-    >
-  </div>
-</div>
 </footer>

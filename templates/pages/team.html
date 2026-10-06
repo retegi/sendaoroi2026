@@ -32,6 +32,11 @@
               {% if member.has_photo %}
                 <div class="team-card-media">
                   <img src="{{ member.photo.url }}" alt="{{ member.full_name }}" class="team-photo">
+                  {% if member.has_organization_logo %}
+                    <span class="team-organization-logo">
+                      <img src="{{ member.organization_logo.url }}" alt="{% if member.organization_name %}Logo de {{ member.organization_name }}{% else %}Logo de la organización de {{ member.full_name }}{% endif %}">
+                    </span>
+                  {% endif %}
                 </div>
               {% else %}
                 <div class="team-photo-placeholder" aria-label="{{ member.full_name }}">{{ member.initials|default:"?" }}</div>

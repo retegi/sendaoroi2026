@@ -8,7 +8,12 @@ services:
       DJANGO_DEBUG: "False"
       POSTGRES_HOST: db
       POSTGRES_PORT: "5432"
+    volumes:
+      - locale_data:/app/locale
     expose:
       - "8000"
     ports:
       - "127.0.0.1:8050:8000"
+
+volumes:
+  locale_data:

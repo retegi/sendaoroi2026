@@ -1,16 +1,24 @@
 import os
+from pathlib import Path
 import tempfile
 import time
 from unittest.mock import patch
 
+from django.conf import settings
+from django.contrib import admin
+from django.contrib.admin.widgets import AdminFileWidget
+from django.contrib.auth import get_user_model
 from django.core import mail
+from django.core.files.uploadedfile import SimpleUploadedFile
 from django.core.cache import cache
 from django.core.management import call_command
 from django.core.signing import dumps
 from django.db import IntegrityError
-from django.test import Client, TestCase, override_settings
+from django.template.loader import get_template
+from django.test import Client, RequestFactory, TestCase, override_settings
 from django.utils import translation
 
+from .middleware import TranslationReloadMiddleware
 from .models import ContactMessage, CollaboratingEntity, TeamGroup, TeamMember, TeamMembership
 
 
@@ -250,6 +258,46 @@ class TeamContentTests(TestCase):
         self.assertEqual(self.member_1.full_name, "Ana López")
         self.assertEqual(self.member_1.initials, "AL")
 
+    def test_team_member_admin_form_exposes_organization_fields(self):
+        request = RequestFactory().get("/es/admin/pages/teammember/")
+        request.user = get_user_model().objects.create_superuser(
+            username="admin-test",
+            email="admin.com",
+            password="test-password",
+        )
+        model_admin = admin.site._registry[TeamMember]
+        form_class = model_admin.get_form(request, self.member_1)
+
+        self.assertIn("organization_name", form_class.base_fields)
+        self.assertIn("organization_logo", form_class.base_fields)
+        self.assertIsInstance(form_class.base_fields["organization_logo"].widget, AdminFileWidget)
+
+    @override_settings(MEDIA_ROOT=tempfile.gettempdir())
+    def test_team_page_overlays_organization_logo_with_named_alt_text(self):
+        self.member_1.photo = SimpleUploadedFile("ana.jpg", b"photo", content_type="image/jpeg")
+        self.member_1.organization_name = "Ekimen Elkartea"
+        self.member_1.organization_logo = SimpleUploadedFile("ekimen.png", b"logo", content_type="image/png")
+        self.member_1.save()
+
+        response = self.client.get("/es/equipo/")
+
+        self.assertContains(response, 'class="team-organization-logo"')
+        self.assertContains(response, 'alt="Logo de Ekimen Elkartea"')
+
+    @override_settings(MEDIA_ROOT=tempfile.gettempdir())
+    def test_organization_logo_alt_falls_back_to_member_name(self):
+        self.member_1.photo = SimpleUploadedFile("ana-fallback.jpg", b"photo", content_type="image/jpeg")
+        self.member_1.organization_logo = SimpleUploadedFile("logo-fallback.png", b"logo", content_type="image/png")
+        self.member_1.save()
+
+        response = self.client.get("/es/equipo/")
+
+        self.assertContains(response, 'alt="Logo de la organización de Ana López"')
+
+    def test_team_page_without_logo_keeps_overlay_absent(self):
+        response = self.client.get("/es/equipo/")
+        self.assertNotContains(response, 'class="team-organization-logo"')
+
     def test_public_team_page_only_shows_active_content(self):
         response = self.client.get("/es/equipo/")
         self.assertEqual(response.status_code, 200)
@@ -272,3 +320,92 @@ class TeamContentTests(TestCase):
     def test_entity_description_and_web_url_are_safe(self):
         self.assertEqual(self.entity.get_description_for_language(), "Entidad colaboradora")
         self.assertEqual(self.entity.website, "https://www.ekimen.eus")
+
+class TranslationReloadMiddlewareTests(TestCase):
+    def test_reload_middleware_runs_before_locale_activation(self):
+        reload_index = settings.MIDDLEWARE.index(
+            "pages.middleware.TranslationReloadMiddleware"
+        )
+        locale_index = settings.MIDDLEWARE.index(
+            "django.middleware.locale.LocaleMiddleware"
+        )
+
+        self.assertLess(reload_index, locale_index)
+
+    @patch.object(TranslationReloadMiddleware, "_reset_translation_caches")
+    @patch.object(
+        TranslationReloadMiddleware,
+        "_get_catalog_signature",
+        return_value=(("/app/locale/eu/LC_MESSAGES/django.mo", 2, 100),),
+    )
+    def test_each_worker_instance_detects_the_shared_catalog_change(
+        self, get_signature, reset_translation_caches
+    ):
+        first_worker = TranslationReloadMiddleware(lambda request: None)
+        second_worker = TranslationReloadMiddleware(lambda request: None)
+        old_signature = (("/app/locale/eu/LC_MESSAGES/django.mo", 1, 90),)
+        first_worker._catalog_signature = old_signature
+        second_worker._catalog_signature = old_signature
+
+        first_worker(RequestFactory().get("/eu/"))
+        second_worker(RequestFactory().get("/eu/"))
+        first_worker(RequestFactory().get("/eu/"))
+        second_worker(RequestFactory().get("/eu/"))
+
+        self.assertEqual(get_signature.call_count, 4)
+        self.assertEqual(reset_translation_caches.call_count, 2)
+
+
+class TemplateTranslationRegressionTests(TestCase):
+    public_routes = (
+        "",
+        "nuestras-raices/",
+        "programa/",
+        "programa/que-hacemos/",
+        "programa/nuestra-brujula/",
+        "programa/acompanamiento-como-proceso/",
+        "programa/pasos-y-servicios/",
+        "sendaoroi-es-para-mi/",
+        "equipo/",
+        "contactar/",
+        "aviso-legal/",
+        "privacidad/",
+        "cookies/",
+    )
+    visible_template_markers = ("{%", "%}", "{{", "}}", "&lbrace;", "&#123;")
+
+    def test_all_project_templates_load(self):
+        template_root = Path(settings.BASE_DIR) / "templates"
+        template_names = sorted(
+            str(path.relative_to(template_root)) for path in template_root.rglob("*.html")
+        )
+
+        self.assertTrue(template_names)
+        for template_name in template_names:
+            with self.subTest(template=template_name):
+                get_template(template_name)
+
+    def test_public_pages_do_not_render_template_translation_tags(self):
+        for language_code in ("es", "eu"):
+            for route in self.public_routes:
+                path = f"/{language_code}/{route}"
+                with self.subTest(language=language_code, path=path):
+                    response = self.client.get(path)
+                    self.assertEqual(response.status_code, 200)
+                    rendered_html = response.content.decode()
+                    for marker in self.visible_template_markers:
+                        self.assertNotIn(marker, rendered_html)
+
+    def test_is_it_for_me_renders_the_three_fixed_answers(self):
+        expected_answers = (
+            "No. Puedes contactar con nosotras para expresar cómo te sientes",
+            "En absoluto. El acompañamiento no requiere ninguna certificación",
+            "Por supuesto. Si conoces a alguien que podría beneficiarse",
+        )
+
+        response = self.client.get("/es/sendaoroi-es-para-mi/")
+
+        self.assertEqual(response.status_code, 200)
+        for answer in expected_answers:
+            self.assertContains(response, answer)
+        self.assertNotContains(response, "{% trans")

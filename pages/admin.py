@@ -46,6 +46,8 @@ class TeamMemberAdmin(admin.ModelAdmin):
                 "fields": (
                     "user",
                     "photo",
+                    "organization_name",
+                    "organization_logo",
                     "first_name",
                     "last_name_1",
                     "last_name_2",

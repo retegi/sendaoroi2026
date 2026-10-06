@@ -83,6 +83,20 @@ class TeamMember(models.Model):
         blank=True,
     )
     photo = models.ImageField(upload_to="team/members/", blank=True, null=True)
+    organization_name = models.CharField(
+        "Nombre de la organización",
+        max_length=200,
+        blank=True,
+        default="",
+        help_text="Nombre que se utilizará para identificar el logo y generar su texto alternativo.",
+    )
+    organization_logo = models.ImageField(
+        "Logo de la organización",
+        upload_to="team/members/organizations/",
+        blank=True,
+        null=True,
+        help_text="Imagen opcional. Puede cargarla, sustituirla o marcarla para eliminarla.",
+    )
     first_name = models.CharField(max_length=120, blank=True, default="")
     last_name_1 = models.CharField(max_length=120, blank=True, default="")
     last_name_2 = models.CharField(max_length=120, blank=True, default="")
@@ -123,6 +137,15 @@ class TeamMember(models.Model):
             return False
         try:
             return self.photo.storage.exists(self.photo.name)
+        except Exception:
+            return False
+
+    @property
+    def has_organization_logo(self):
+        if not self.organization_logo:
+            return False
+        try:
+            return self.organization_logo.storage.exists(self.organization_logo.name)
         except Exception:
             return False
 
