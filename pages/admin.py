@@ -1,7 +1,16 @@
+from django import forms
 from django.contrib import admin
+from django.db import models
 from django.utils.translation import gettext_lazy as _
 
-from .models import CollaboratingEntity, ContactMessage, TeamGroup, TeamMember, TeamMembership
+from .models import (
+    CollaboratingEntity,
+    ContactMessage,
+    LegalTexts,
+    TeamGroup,
+    TeamMember,
+    TeamMembership,
+)
 
 
 class TeamMembershipInline(admin.TabularInline):
@@ -23,6 +32,58 @@ class ContactMessageAdmin(admin.ModelAdmin):
     @admin.action(description=_("Marcar seleccionados como leidos"))
     def mark_as_read(self, request, queryset):
         queryset.update(is_read=True)
+
+
+@admin.register(LegalTexts)
+class LegalTextsAdmin(admin.ModelAdmin):
+    fieldsets = (
+        (
+            _("Aviso legal"),
+            {
+                "fields": (
+                    "legal_notice_es",
+                    "legal_notice_eu",
+                    "legal_notice_revision_date",
+                    "legal_notice_published",
+                )
+            },
+        ),
+        (
+            _("Privacidad"),
+            {
+                "fields": (
+                    "privacy_es",
+                    "privacy_eu",
+                    "privacy_revision_date",
+                    "privacy_published",
+                )
+            },
+        ),
+        (
+            _("Cookies"),
+            {
+                "fields": (
+                    "cookies_es",
+                    "cookies_eu",
+                    "cookies_revision_date",
+                    "cookies_published",
+                )
+            },
+        ),
+        (_("Fechas del registro"), {"fields": ("created_at", "updated_at")}),
+    )
+    readonly_fields = ("created_at", "updated_at")
+    formfield_overrides = {
+        models.TextField: {
+            "widget": forms.Textarea(attrs={"rows": 18, "cols": 100})
+        }
+    }
+
+    def has_add_permission(self, request):
+        return super().has_add_permission(request) and not LegalTexts.objects.exists()
+
+    def has_delete_permission(self, request, obj=None):
+        return False
 
 
 @admin.register(TeamGroup)

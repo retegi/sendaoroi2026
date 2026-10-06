@@ -10,7 +10,7 @@ from django.views.generic import FormView, TemplateView
 
 from .antispam import check_rate_limit, verify_turnstile
 from .forms import ContactForm
-from .models import CollaboratingEntity, TeamGroup, TeamMembership
+from .models import CollaboratingEntity, LegalTexts, TeamGroup, TeamMembership
 
 logger = logging.getLogger(__name__)
 
@@ -81,16 +81,43 @@ class TeamView(TemplateView):
         return context
 
 
-class LegalNoticeView(TemplateView):
+class LegalTextView(TemplateView):
+    page_prefix = None
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        legal_texts = LegalTexts.objects.first()
+        language_code = self.request.LANGUAGE_CODE.split("-", 1)[0]
+        content = ""
+        revision_date = None
+        if legal_texts and getattr(legal_texts, f"{self.page_prefix}_published"):
+            content = getattr(
+                legal_texts, f"{self.page_prefix}_{language_code}", ""
+            )
+            if content.strip():
+                revision_date = getattr(
+                    legal_texts, f"{self.page_prefix}_revision_date"
+                )
+            else:
+                content = ""
+        context["legal_content"] = content
+        context["revision_date"] = revision_date
+        return context
+
+
+class LegalNoticeView(LegalTextView):
     template_name = "pages/legal_notice.html"
+    page_prefix = "legal_notice"
 
 
-class PrivacyView(TemplateView):
+class PrivacyView(LegalTextView):
     template_name = "pages/privacy.html"
+    page_prefix = "privacy"
 
 
-class CookiesView(TemplateView):
+class CookiesView(LegalTextView):
     template_name = "pages/cookies.html"
+    page_prefix = "cookies"
 
 
 class ContactView(FormView):

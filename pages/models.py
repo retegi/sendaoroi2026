@@ -1,4 +1,5 @@
 from django.conf import settings
+from django.core.exceptions import ValidationError
 from django.db import models
 from django.utils.translation import get_language, gettext_lazy as _
 
@@ -46,6 +47,87 @@ class ContactMessage(models.Model):
 
     def __str__(self) -> str:
         return f"{self.name} - {self.created_at:%Y-%m-%d %H:%M}"
+
+
+class LegalTexts(models.Model):
+    CONTENT_HELP_TEXT = _(
+        "Introduce el texto completo, con párrafos y saltos de línea. No admite HTML."
+    )
+
+    singleton = models.BooleanField(default=True, unique=True, editable=False)
+    legal_notice_es = models.TextField(
+        _("Aviso legal — Castellano"), blank=True, default="", help_text=CONTENT_HELP_TEXT
+    )
+    legal_notice_eu = models.TextField(
+        _("Aviso legal — Euskera"), blank=True, default="", help_text=CONTENT_HELP_TEXT
+    )
+    legal_notice_published = models.BooleanField(_("Aviso legal publicado"), default=False)
+    legal_notice_revision_date = models.DateField(
+        _("Fecha de revisión del aviso legal"), blank=True, null=True
+    )
+    privacy_es = models.TextField(
+        _("Privacidad — Castellano"), blank=True, default="", help_text=CONTENT_HELP_TEXT
+    )
+    privacy_eu = models.TextField(
+        _("Privacidad — Euskera"), blank=True, default="", help_text=CONTENT_HELP_TEXT
+    )
+    privacy_published = models.BooleanField(_("Privacidad publicada"), default=False)
+    privacy_revision_date = models.DateField(
+        _("Fecha de revisión de privacidad"), blank=True, null=True
+    )
+    cookies_es = models.TextField(
+        _("Cookies — Castellano"), blank=True, default="", help_text=CONTENT_HELP_TEXT
+    )
+    cookies_eu = models.TextField(
+        _("Cookies — Euskera"), blank=True, default="", help_text=CONTENT_HELP_TEXT
+    )
+    cookies_published = models.BooleanField(_("Cookies publicadas"), default=False)
+    cookies_revision_date = models.DateField(
+        _("Fecha de revisión de cookies"), blank=True, null=True
+    )
+    created_at = models.DateTimeField(_("Creado"), auto_now_add=True)
+    updated_at = models.DateTimeField(_("Actualizado"), auto_now=True)
+
+    class Meta:
+        verbose_name = _("Textos legales")
+        verbose_name_plural = _("Textos legales")
+        constraints = [
+            models.CheckConstraint(
+                condition=models.Q(singleton=True),
+                name="legaltexts_singleton_must_be_true",
+            )
+        ]
+
+    def __str__(self):
+        return str(_("Textos legales"))
+
+    def clean(self):
+        super().clean()
+        errors = {}
+        pages = (
+            ("legal_notice", _("Aviso legal")),
+            ("privacy", _("Privacidad")),
+            ("cookies", _("Cookies")),
+        )
+        for prefix, page_name in pages:
+            if not getattr(self, f"{prefix}_published"):
+                continue
+            for language_code, language_name in (
+                ("es", _("castellano")),
+                ("eu", _("euskera")),
+            ):
+                field_name = f"{prefix}_{language_code}"
+                if not getattr(self, field_name, "").strip():
+                    errors[field_name] = _(
+                        "Para publicar %(page)s, completa el texto en %(language)s."
+                    ) % {"page": page_name, "language": language_name}
+            revision_field = f"{prefix}_revision_date"
+            if not getattr(self, revision_field):
+                errors[revision_field] = _(
+                    "Para publicar %(page)s, indica su fecha de revisión."
+                ) % {"page": page_name}
+        if errors:
+            raise ValidationError(errors)
 
 
 class TeamGroup(models.Model):

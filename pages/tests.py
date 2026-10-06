@@ -1,3 +1,4 @@
+from datetime import date
 import os
 from pathlib import Path
 import tempfile
@@ -9,19 +10,27 @@ from django.contrib import admin
 from django.contrib.admin.widgets import AdminFileWidget
 from django.contrib.auth import get_user_model
 from django.core import mail
+from django.core.exceptions import ValidationError
 from django.core.files.uploadedfile import SimpleUploadedFile
 from django.core.cache import cache
 from django.core.management import call_command
 from django.core.signing import dumps
-from django.db import IntegrityError
+from django.db import IntegrityError, transaction
 from django.template.loader import get_template
 from django.test import Client, RequestFactory, TestCase, override_settings
-from django.utils import translation
+from django.utils import formats, translation
 
 from .forms import ContactForm
 
 from .middleware import TranslationReloadMiddleware
-from .models import ContactMessage, CollaboratingEntity, TeamGroup, TeamMember, TeamMembership
+from .models import (
+    CollaboratingEntity,
+    ContactMessage,
+    LegalTexts,
+    TeamGroup,
+    TeamMember,
+    TeamMembership,
+)
 
 
 @override_settings(
@@ -336,6 +345,143 @@ class TeamContentTests(TestCase):
     def test_entity_description_and_web_url_are_safe(self):
         self.assertEqual(self.entity.get_description_for_language(), "Entidad colaboradora")
         self.assertEqual(self.entity.website, "https://www.ekimen.eus")
+
+
+class LegalTextsTests(TestCase):
+    def test_database_allows_only_one_configuration(self):
+        LegalTexts.objects.create()
+
+        with self.assertRaises(IntegrityError), transaction.atomic():
+            LegalTexts.objects.create()
+        with self.assertRaises(IntegrityError), transaction.atomic():
+            LegalTexts.objects.create(singleton=False)
+
+    def test_draft_may_be_incomplete_and_contain_only_spaces(self):
+        legal_texts = LegalTexts(legal_notice_es="   ", privacy_eu="")
+
+        legal_texts.full_clean()
+
+    def test_each_page_validates_publication_independently(self):
+        legal_texts = LegalTexts(
+            legal_notice_es="Texto castellano",
+            legal_notice_eu="   ",
+            legal_notice_published=True,
+        )
+
+        with self.assertRaises(ValidationError) as caught:
+            legal_texts.full_clean()
+
+        self.assertIn("legal_notice_eu", caught.exception.message_dict)
+        self.assertIn("legal_notice_revision_date", caught.exception.message_dict)
+        self.assertNotIn("privacy_es", caught.exception.message_dict)
+        self.assertNotIn("cookies_es", caught.exception.message_dict)
+
+        legal_texts.legal_notice_eu = "Euskarazko testua"
+        legal_texts.legal_notice_revision_date = date(2026, 10, 6)
+        legal_texts.full_clean()
+
+    def test_admin_uses_large_plain_textareas_and_blocks_duplicate_or_delete(self):
+        request = RequestFactory().get("/es/admin/pages/legaltexts/add/")
+        request.user = get_user_model().objects.create_superuser(
+            username="legal-admin-test",
+            email="legal-admin@example.com",
+            password="test-password",
+        )
+        model_admin = admin.site._registry[LegalTexts]
+        form_class = model_admin.get_form(request)
+
+        self.assertEqual(form_class.base_fields["legal_notice_es"].widget.attrs["rows"], 18)
+        self.assertIn("No admite HTML", str(form_class.base_fields["privacy_eu"].help_text))
+        self.assertFalse(model_admin.has_delete_permission(request))
+        self.assertTrue(model_admin.has_add_permission(request))
+
+        LegalTexts.objects.create()
+        self.assertFalse(model_admin.has_add_permission(request))
+
+    def test_published_pages_use_the_exact_active_language(self):
+        LegalTexts.objects.create(
+            legal_notice_es="Aviso solo castellano",
+            legal_notice_eu="Lege oharra euskaraz",
+            legal_notice_published=True,
+            legal_notice_revision_date=date(2026, 10, 6),
+            privacy_es="Privacidad castellano",
+            privacy_eu="Pribatutasuna euskaraz",
+            privacy_published=True,
+            privacy_revision_date=date(2026, 10, 6),
+            cookies_es="Cookies castellano",
+            cookies_eu="Cookieak euskaraz",
+            cookies_published=True,
+            cookies_revision_date=date(2026, 10, 6),
+        )
+
+        page_cases = (
+            ("aviso-legal", "Aviso solo castellano", "Lege oharra euskaraz"),
+            ("privacidad", "Privacidad castellano", "Pribatutasuna euskaraz"),
+            ("cookies", "Cookies castellano", "Cookieak euskaraz"),
+        )
+        for route, spanish, basque in page_cases:
+            with self.subTest(route=route, language="es"):
+                response = self.client.get(f"/es/{route}/")
+                self.assertContains(response, spanish)
+                self.assertNotContains(response, basque)
+            with self.subTest(route=route, language="eu"):
+                response = self.client.get(f"/eu/{route}/")
+                self.assertContains(response, basque)
+                self.assertNotContains(response, spanish)
+
+    def test_revision_date_uses_the_active_language_format(self):
+        revision_date = date(2026, 10, 6)
+        LegalTexts.objects.create(
+            legal_notice_es="Aviso castellano",
+            legal_notice_eu="Lege oharra",
+            legal_notice_published=True,
+            legal_notice_revision_date=revision_date,
+        )
+
+        for language_code in ("es", "eu"):
+            with self.subTest(language=language_code), translation.override(language_code):
+                expected_date = formats.date_format(revision_date, "DATE_FORMAT")
+                response = self.client.get(f"/{language_code}/aviso-legal/")
+                self.assertContains(response, expected_date)
+
+    def test_content_preserves_paragraphs_and_escapes_html(self):
+        LegalTexts.objects.create(
+            privacy_es="Primer párrafo.\n\nSegundo párrafo.\n<script>alert(1)</script>",
+            privacy_eu="Lehen paragrafoa.",
+            privacy_published=True,
+            privacy_revision_date=date(2026, 10, 6),
+        )
+
+        response = self.client.get("/es/privacidad/")
+
+        self.assertContains(response, "<p>Primer párrafo.</p>", html=True)
+        self.assertContains(response, "Segundo párrafo.<br>")
+        self.assertContains(response, "&lt;script&gt;alert(1)&lt;/script&gt;")
+        self.assertNotContains(response, "<script>alert(1)</script>")
+
+    def test_unpublished_drafts_are_not_public(self):
+        LegalTexts.objects.create(privacy_es="BORRADOR PRIVADO", privacy_published=False)
+
+        response = self.client.get("/es/privacidad/")
+
+        self.assertNotContains(response, "BORRADOR PRIVADO")
+        self.assertContains(
+            response, "El contenido de esta página está pendiente de publicación."
+        )
+
+    def test_basque_never_falls_back_to_spanish(self):
+        LegalTexts.objects.create(
+            cookies_es="BORRADOR CASTELLANO",
+            cookies_eu="",
+            cookies_published=True,
+            cookies_revision_date=date(2026, 10, 6),
+        )
+
+        response = self.client.get("/eu/cookies/")
+
+        self.assertNotContains(response, "BORRADOR CASTELLANO")
+        self.assertEqual(response.context["legal_content"], "")
+
 
 class TranslationReloadMiddlewareTests(TestCase):
     def test_reload_middleware_runs_before_locale_activation(self):

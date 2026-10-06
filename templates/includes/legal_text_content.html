@@ -1,0 +1,21 @@
+{% load i18n %}
+<section class="mx-auto mt-8 max-w-4xl">
+  <div class="card-sendaoroi">
+    {% if legal_content %}
+      {% if revision_date %}
+        <p class="mb-5 text-sm text-sendaoroi-gray/80">
+          {% blocktrans trimmed with revision=revision_date|date:"DATE_FORMAT" %}
+            Última revisión: {{ revision }}
+          {% endblocktrans %}
+        </p>
+      {% endif %}
+      <div class="legal-text-content text-sm leading-relaxed text-sendaoroi-gray md:text-base">
+        {{ legal_content|linebreaks }}
+      </div>
+    {% else %}
+      <p class="text-sm leading-relaxed text-sendaoroi-gray md:text-base">
+        {% trans "El contenido de esta página está pendiente de publicación." %}
+      </p>
+    {% endif %}
+  </div>
+</section>
