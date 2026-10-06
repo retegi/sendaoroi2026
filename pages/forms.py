@@ -11,6 +11,7 @@ from .models import ContactMessage
 
 class ContactForm(forms.ModelForm):
     message = forms.CharField(
+        label=_("Mensaje"),
         max_length=10000,
         widget=forms.Textarea(attrs={"rows": 5, "placeholder": _("Mensaje")}),
     )

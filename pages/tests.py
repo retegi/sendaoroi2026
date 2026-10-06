@@ -18,6 +18,8 @@ from django.template.loader import get_template
 from django.test import Client, RequestFactory, TestCase, override_settings
 from django.utils import translation
 
+from .forms import ContactForm
+
 from .middleware import TranslationReloadMiddleware
 from .models import ContactMessage, CollaboratingEntity, TeamGroup, TeamMember, TeamMembership
 
@@ -41,6 +43,20 @@ class ContactFormSecurityTests(TestCase):
 
     def setUp(self):
         cache.clear()
+
+    def test_message_label_and_placeholder_use_the_spanish_source_text(self):
+        with translation.override("es"):
+            field = ContactForm().fields["message"]
+
+            self.assertEqual(str(field.label), "Mensaje")
+            self.assertEqual(str(field.widget.attrs["placeholder"]), "Mensaje")
+
+    def test_message_label_is_translatable_in_basque(self):
+        with translation.override("eu"):
+            field = ContactForm().fields["message"]
+
+            self.assertNotEqual(str(field.label), "Message")
+            self.assertEqual(str(field.label), str(field.widget.attrs["placeholder"]))
 
     def signed_timestamp(self, age=4):
         return dumps(time.time() - age, salt="sendaoroi.contact-form.timestamp")
@@ -395,6 +411,15 @@ class TemplateTranslationRegressionTests(TestCase):
                     rendered_html = response.content.decode()
                     for marker in self.visible_template_markers:
                         self.assertNotIn(marker, rendered_html)
+
+    def test_footer_uses_the_correct_accessible_names_for_both_logos(self):
+        for language_code in ("es", "eu"):
+            with self.subTest(language=language_code):
+                response = self.client.get(f"/{language_code}/")
+
+                self.assertContains(response, 'alt="Berridatzi Elkartea"')
+                self.assertContains(response, 'alt="Eusko Jaurlaritza"')
+                self.assertContains(response, 'class="footer-partner-logo"', count=2)
 
     def test_is_it_for_me_renders_the_three_fixed_answers(self):
         expected_answers = (
